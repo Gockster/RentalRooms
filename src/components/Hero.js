@@ -74,6 +74,7 @@ export default function Hero() {
               {t.hero.description}
             </p>
           </div>
+          
 
         </div>
 

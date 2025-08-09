@@ -76,10 +76,12 @@ const translations = {
             },
             rooms: [
                 {
+                    id: "orpheus-room",
                     title: "Orpheus Room",
                     description: "Modern accommodation in the heart of Mykonos."
                 },
                 {
+                    id: "persephone-room",
                     title: "Persephone Room",
                     description: "Perfect for families seeking comfort and spaciousness."
                 } 
@@ -292,10 +294,12 @@ const translations = {
             },
             rooms: [
                 {
+                    id: "orpheus-room",
                     title: "Δωμάτιο Ορφέας",
                     description: "Μοντέρνο κατάλυμα στη καρδιά της Μυκόνου."
                 },
                 {
+                    id: "persephone-room",
                     title: "Δωμάτιο Περσεφόνη",
                     description: "Ιδανικό για οικογένειες που αναζητούν άνεση και ευρυχωρία."
                 }
@@ -440,11 +444,20 @@ const translations = {
 };
 
 // Language Provider Component
+
 export const LanguageProvider = ({ children }) => {
-    const [currentLanguage, setCurrentLanguage] = useState('en');
+    // Read from localStorage or default to 'en'
+    const getInitialLanguage = () => {
+        const stored = typeof window !== 'undefined' ? localStorage.getItem('language') : null;
+        return stored || 'en';
+    };
+    const [currentLanguage, setCurrentLanguage] = useState(getInitialLanguage);
 
     const switchLanguage = (lang) => {
         setCurrentLanguage(lang);
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('language', lang);
+        }
     };
 
     const t = translations[currentLanguage];

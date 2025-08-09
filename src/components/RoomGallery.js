@@ -1,30 +1,54 @@
 import React, { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { galleryImages } from "../data/RoomsImages";
+import { useNavigate } from "react-router-dom";
 import "../styles/main.css";
 
 export default function RoomGallery() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [priceFilter, setPriceFilter] = useState("all");
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const filteredRooms = galleryImages.filter(room => {
-    const matchesSearch = room.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         room.description.toLowerCase().includes(searchTerm.toLowerCase());
-    
+    const search = searchTerm.toLowerCase();
+    // Get English and Greek titles/descriptions from translations
+    const enTitle = t.gallery.rooms?.[room.id - 1]?.title?.toLowerCase() || '';
+    const grTitle = t.gallery.rooms?.[room.id - 1]?.title?.toLowerCase() || '';
+    const enDesc = t.gallery.rooms?.[room.id - 1]?.description?.toLowerCase() || '';
+    const grDesc = t.gallery.rooms?.[room.id - 1]?.description?.toLowerCase() || '';
+    const matchesSearch =
+      room.title.toLowerCase().includes(search) ||
+      room.description.toLowerCase().includes(search) ||
+      enTitle.includes(search) ||
+      grTitle.includes(search) ||
+      enDesc.includes(search) ||
+      grDesc.includes(search) ||
+      (room.id && room.id.toString().toLowerCase().includes(search));
+
     let matchesPrice = true;
-    if (priceFilter === "low") {
-      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) < 100;
-    } else if (priceFilter === "mid") {
-      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) >= 100 && 
-                    parseInt(room.price.replace(/[^0-9]/g, '')) <= 150;
-    } else if (priceFilter === "high") {
-      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) > 150;
+    if (priceFilter === "200") {
+      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) === 200;
+    } else if (priceFilter === "300") {
+      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) === 300;
     }
-    
     return matchesSearch && matchesPrice;
   }).slice(0, 2); // Limit to only 2 rooms
+
+  // Map gallery room IDs to route paths
+  const getRoomPath = (roomId) => {
+    const roomMap = {
+      1: "orpheus-room",
+      2: "persephone-room"
+    };
+    return roomMap[roomId] || "orpheus-room";
+  };
+
+  const handleRoomClick = (roomId) => {
+    const roomPath = getRoomPath(roomId);
+    navigate(`/rooms/${roomPath}`);
+  };
 
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);
@@ -74,9 +98,8 @@ export default function RoomGallery() {
             className="room-gallery-filter-select"
           >
             <option value="all">{t.gallery.priceOptions.all}</option>
-            <option value="low">{t.gallery.priceOptions.low}</option>
-            <option value="mid">{t.gallery.priceOptions.mid}</option>
-            <option value="high">{t.gallery.priceOptions.high}</option>
+            <option value="200">€200</option>
+            <option value="300">€300</option>
           </select>
         </div>
       </div>
@@ -114,7 +137,12 @@ export default function RoomGallery() {
                 ))}
               </div>
               <div className="room-gallery-button-container">
-                <button className="room-gallery-view-button">{t.gallery.viewButton}</button>
+                <button 
+                  className="room-gallery-view-button"
+                  onClick={() => handleRoomClick(room.id)}
+                >
+                  {t.gallery.viewButton}
+                </button>
               </div>
             </div>
           </div>
