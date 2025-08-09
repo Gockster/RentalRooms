@@ -284,7 +284,7 @@
    ============================================ */
 
 .room-gallery-container {
-  padding: 20px;
+  padding: 40px 20px;
   font-family: sans-serif;
   background-color: #f8f9fa;
   min-height: 100vh;
@@ -292,9 +292,9 @@
 
 .room-gallery-heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #2c3e50;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
@@ -303,12 +303,16 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
   background-color: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .room-gallery-search-container {
@@ -358,10 +362,19 @@
 
 .room-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .room-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 500px;
+  }
 }
 
 .room-gallery-card {
@@ -371,6 +384,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   cursor: pointer;
+  min-height: 500px;
 }
 
 .room-gallery-card:hover {
@@ -385,7 +399,7 @@
 
 .room-gallery-image {
   width: 100%;
-  height: 220px;
+  height: 280px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -415,13 +429,13 @@
 }
 
 .room-gallery-card-content {
-  padding: 20px;
+  padding: 25px;
 }
 
 .room-gallery-title {
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
   color: #2c3e50;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -429,25 +443,25 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .room-gallery-star {
   color: #f39c12;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .room-gallery-rating-text {
   color: #7f8c8d;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .room-gallery-description {
   color: #5d6d7e;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
 }
 
 .room-gallery-amenities {
@@ -472,31 +486,31 @@
 }
 
 .room-gallery-view-button {
-  flex: 1;
-  padding: 10px;
-  background-color: transparent;
-  color: #3498db;
-  border: 2px solid #3498db;
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .room-gallery-view-button:hover {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #2980b9;
+  transform: translateY(-1px);
 }
 
 .room-gallery-book-button {
   flex: 1;
-  padding: 10px;
+  padding: 12px;
   background-color: #3498db;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -738,6 +752,288 @@
 
 /* ============================================
    END HERO SECTION STYLES
+   ============================================ */
+
+/* ============================================
+   WELCOME SECTION STYLES
+   ============================================ */
+
+.welcome-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.welcome-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.welcome-text {
+  text-align: left;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-subtitle {
+  font-size: 1.8rem;
+  color: #3498db;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #5d6d7e;
+  margin-bottom: 0;
+}
+
+.welcome-collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-collage-board {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Individual collage photos with artistic positioning */
+.collage-photo {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.collage-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Photo tape effects */
+.photo-tape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tape-1 {
+  top: -8px;
+  left: 20%;
+  width: 40px;
+  height: 20px;
+  transform: rotate(-15deg);
+}
+
+.tape-2 {
+  bottom: -8px;
+  right: 15%;
+  width: 35px;
+  height: 20px;
+  transform: rotate(20deg);
+}
+
+/* Photo positioning and styling - BIGGER SIZES */
+.photo-1 {
+  top: 20px;
+  left: 30px;
+  width: 200px;
+  height: 150px;
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.photo-2 {
+  top: 40px;
+  right: 20px;
+  width: 180px;
+  height: 135px;
+  transform: rotate(8deg);
+  z-index: 4;
+}
+
+.photo-3 {
+  top: 200px;
+  left: 20px;
+  width: 170px;
+  height: 125px;
+  transform: rotate(12deg);
+  z-index: 3;
+}
+
+.photo-4 {
+  bottom: 30px;
+  right: 40px;
+  width: 190px;
+  height: 140px;
+  transform: rotate(-8deg);
+  z-index: 2;
+}
+
+.photo-5 {
+  top: 130px;
+  left: 140px;
+  width: 160px;
+  height: 120px;
+  transform: rotate(-12deg);
+  z-index: 6;
+}
+
+.photo-6 {
+  bottom: 80px;
+  left: 200px;
+  width: 175px;
+  height: 130px;
+  transform: rotate(15deg);
+  z-index: 1;
+}
+
+/* Hover effects */
+.collage-photo:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  z-index: 10 !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.collage-photo:hover .photo-tape {
+  opacity: 0;
+}
+
+/* Polaroid-style effect for some photos */
+.photo-1, .photo-4 {
+  background: white;
+  padding: 8px 8px 20px 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.photo-1 .collage-image, .photo-4 .collage-image {
+  border-radius: 2px;
+}
+
+/* Scattered photo effect */
+.photo-2:before, .photo-3:before, .photo-5:before, .photo-6:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .welcome-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    text-align: center;
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.1rem;
+  }
+  
+  .photo-collage-board {
+    width: 400px;
+    height: 350px;
+    padding: 25px;
+  }
+  
+  /* Adjust photo sizes for mobile - BIGGER SIZES */
+  .photo-1 {
+    width: 150px;
+    height: 115px;
+    top: 15px;
+    left: 20px;
+  }
+  
+  .photo-2 {
+    width: 140px;
+    height: 105px;
+    top: 30px;
+    right: 15px;
+  }
+  
+  .photo-3 {
+    width: 130px;
+    height: 95px;
+    top: 140px;
+    left: 15px;
+  }
+  
+  .photo-4 {
+    width: 145px;
+    height: 110px;
+    bottom: 25px;
+    right: 20px;
+  }
+  
+  .photo-5 {
+    width: 125px;
+    height: 90px;
+    top: 85px;
+    left: 75px;
+  }
+  
+  .photo-6 {
+    width: 135px;
+    height: 100px;
+    bottom: 65px;
+    left: 110px;
+  }
+  
+  .photo-1, .photo-4 {
+    padding: 8px 8px 18px 8px;
+  }
+}
+
+/* ============================================
+   END WELCOME SECTION STYLES
    ============================================ */
 
 /* ============================================

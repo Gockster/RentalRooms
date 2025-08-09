@@ -74,34 +74,7 @@ export default function Hero() {
               {t.hero.description}
             </p>
           </div>
-          
-          <div className="hero-search-section">
-            <div className="hero-search-box">
-              <input 
-                type="text" 
-                placeholder={t.hero.searchPlaceholder}
-                className="hero-search-input"
-              />
-              <button className="hero-search-button">
-                {t.hero.searchButton}
-              </button>
-            </div>
-            
-            <div className="hero-features">
-              <div className="hero-feature">
-                <span className="hero-feature-icon">🏠</span>
-                <span>{t.hero.features[0]}</span>
-              </div>
-              <div className="hero-feature">
-                <span className="hero-feature-icon">⭐</span>
-                <span>{t.hero.features[1]}</span>
-              </div>
-              <div className="hero-feature">
-                <span className="hero-feature-icon">🔒</span>
-                <span>{t.hero.features[2]}</span>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         {/* Carousel indicators */}

@@ -24,7 +24,7 @@ export default function RoomGallery() {
     }
     
     return matchesSearch && matchesPrice;
-  });
+  }).slice(0, 2); // Limit to only 2 rooms
 
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);
@@ -38,6 +38,17 @@ export default function RoomGallery() {
       stars.push(<span key="half" className="room-gallery-star">★</span>);
     }
     return stars;
+  };
+
+  const translatePrice = (price) => {
+    // Parse price format like "200€/night"
+    const priceMatch = price.match(/^(.+?)\/(.+)$/);
+    if (priceMatch) {
+      const [, amount, period] = priceMatch;
+      const translatedPeriod = t.gallery.priceLabels?.[period] || `/${period}`;
+      return `${amount}${translatedPeriod}`;
+    }
+    return price;
   };
 
   return (
@@ -85,8 +96,8 @@ export default function RoomGallery() {
           >
             <div className="room-gallery-image-container">
               <img src={room.image} alt={room.title} className="room-gallery-image" />
-              <div className="room-gallery-price-tag">{room.price}</div>
-              <div className="room-gallery-availability-tag">{room.availability}</div>
+              <div className="room-gallery-price-tag">{translatePrice(room.price)}</div>
+              <div className="room-gallery-availability-tag">{t.gallery.availabilityLabels?.[room.availability] || room.availability}</div>
             </div>
             <div className="room-gallery-card-content">
               <h2 className="room-gallery-title">{t.gallery.rooms[room.id - 1]?.title || room.title}</h2>
@@ -98,13 +109,12 @@ export default function RoomGallery() {
               <div className="room-gallery-amenities">
                 {room.amenities.map((amenity, index) => (
                   <span key={index} className="room-gallery-amenity-tag">
-                    {amenity}
+                    {t.gallery.amenityLabels?.[amenity] || amenity}
                   </span>
                 ))}
               </div>
               <div className="room-gallery-button-container">
                 <button className="room-gallery-view-button">{t.gallery.viewButton}</button>
-                <button className="room-gallery-book-button">{t.gallery.bookButton}</button>
               </div>
             </div>
           </div>
