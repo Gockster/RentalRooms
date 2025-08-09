@@ -52,16 +52,16 @@ export default function Navbar() {
           </li>
           <li className="navbar-item">
             <a 
-              href="tel:+30123456789" 
+              href="tel:+306955217820" 
               className="nav-link"
               title={t.navbar.callUs}
             >
-              {t.navbar.mobile}
+              📱 +30 6955217820
             </a>
           </li>
           <li className="navbar-item">
             <a 
-              href="https://maps.google.com/?q=Nana's+Rooms+Athens+Greece" 
+              href="https://www.google.com/maps/place/nanasroooms+Town+1/@37.4401481,25.3166531,14.13z/data=!4m13!1m2!2m1!1sNana's+Rooms+Mykonos+Chora+Greece!3m9!1s0x14a2bfbe1317b0dd:0xf8aa5ffd5a3297ef!5m2!4m1!1i2!8m2!3d37.4467706!4d25.3274205!15sCiFOYW5hJ3MgUm9vbXMgTXlrb25vcyBDaG9yYSBHcmVlY2WSARZzZXJ2aWNlZF9hY2NvbW1vZGF0aW9u4AEA!16s%2Fg%2F11kqs3tn93?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" 
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"

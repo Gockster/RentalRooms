@@ -115,8 +115,8 @@ const translations = {
       contactInfo: {
         title: "Contact Info",
         email: "info@nanasrooms.com",
-        phone: "+30 123 456 7890",
-        address: "123 Main St, Athens"
+        phone: "+30 6955217820",
+        address: "Mykonos Chora"
       },
       copyright: "© 2025 Nana's Rooms. All rights reserved."
     },
@@ -316,8 +316,8 @@ const translations = {
       contactInfo: {
         title: "Στοιχεία Επικοινωνίας",
         email: "info@nanasrooms.com",
-        phone: "+30 123 456 7890",
-        address: "123 Κεντρική, Αθήνα"
+        phone: "+30 6955217820",
+        address: "Μύκονος Χώρα"
       },
       copyright: "© 2025 Δωμάτια της Νάνας. Όλα τα δικαιώματα διατηρούνται."
     },
