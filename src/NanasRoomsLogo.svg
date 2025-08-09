@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="80" viewBox="0 0 220 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cycladic blue arch -->
+  <path d="M30,60 Q110,0 190,60" stroke="#1976D2" stroke-width="8" fill="none" />
+  <!-- Brand text -->
+  <text x="50%" y="82%" text-anchor="middle" dominant-baseline="middle" font-family="Montserrat, Arial, sans-serif" font-size="36" fill="#1976D2" font-weight="bold" letter-spacing="3">
+    NANA'S
+  </text>
+</svg>
