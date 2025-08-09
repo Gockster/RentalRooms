@@ -1,44 +1,14 @@
 import React, { useState } from "react";
-
-const rooms = [
-  {
-    id: 1,
-    title: "Cozy Studio Apartment",
-    image: "/images/room1.jpg",
-    description: "Perfect for solo travelers. Close to city center.",
-    price: "$85/night",
-    amenities: ["WiFi", "Kitchen", "Air Conditioning"],
-    rating: 4.8,
-    availability: "Available"
-  },
-  {
-    id: 2,
-    title: "Luxury Suite with Balcony",
-    image: "/images/room2.jpg",
-    description: "Spacious and bright. Enjoy the skyline views.",
-    price: "$150/night",
-    amenities: ["WiFi", "Balcony", "Room Service", "Gym Access"],
-    rating: 4.9,
-    availability: "Available"
-  },
-  {
-    id: 3,
-    title: "Modern 2-Bedroom Loft",
-    image: "/images/room3.jpg",
-    description: "Great for families or small groups.",
-    price: "$200/night",
-    amenities: ["WiFi", "Kitchen", "Parking", "Pet Friendly"],
-    rating: 4.7,
-    availability: "2 rooms left"
-  }
-];
+import { useLanguage } from "../contexts/LanguageContext";
+import { galleryImages } from "../data/RoomsImages";
 
 export default function RoomGallery() {
+  const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState("");
   const [priceFilter, setPriceFilter] = useState("all");
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  const filteredRooms = rooms.filter(room => {
+  const filteredRooms = galleryImages.filter(room => {
     const matchesSearch = room.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          room.description.toLowerCase().includes(searchTerm.toLowerCase());
     
@@ -71,37 +41,37 @@ export default function RoomGallery() {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Find Your Perfect Room</h1>
+      <h1 style={styles.heading}>{t.gallery.heading}</h1>
       
       {/* Search and Filter Section */}
       <div style={styles.filterSection}>
         <div style={styles.searchContainer}>
           <input
             type="text"
-            placeholder="Search rooms..."
+            placeholder={t.gallery.searchPlaceholder}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             style={styles.searchInput}
           />
         </div>
         <div style={styles.filterContainer}>
-          <label style={styles.filterLabel}>Price Range:</label>
+          <label style={styles.filterLabel}>{t.gallery.priceFilter}</label>
           <select 
             value={priceFilter} 
             onChange={(e) => setPriceFilter(e.target.value)}
             style={styles.filterSelect}
           >
-            <option value="all">All Prices</option>
-            <option value="low">Under $100</option>
-            <option value="mid">$100 - $150</option>
-            <option value="high">Over $150</option>
+            <option value="all">{t.gallery.priceOptions.all}</option>
+            <option value="low">{t.gallery.priceOptions.low}</option>
+            <option value="mid">{t.gallery.priceOptions.mid}</option>
+            <option value="high">{t.gallery.priceOptions.high}</option>
           </select>
         </div>
       </div>
 
       {/* Results count */}
       <div style={styles.resultsCount}>
-        {filteredRooms.length} room{filteredRooms.length !== 1 ? 's' : ''} found
+        {t.gallery.resultsCount(filteredRooms.length)}
       </div>
 
       <div style={styles.grid}>
@@ -121,12 +91,12 @@ export default function RoomGallery() {
               <div style={styles.availabilityTag}>{room.availability}</div>
             </div>
             <div style={styles.cardContent}>
-              <h2 style={styles.title}>{room.title}</h2>
+              <h2 style={styles.title}>{t.gallery.rooms[room.id - 1]?.title || room.title}</h2>
               <div style={styles.rating}>
                 {renderStars(room.rating)}
                 <span style={styles.ratingText}>{room.rating}</span>
               </div>
-              <p style={styles.description}>{room.description}</p>
+              <p style={styles.description}>{t.gallery.rooms[room.id - 1]?.description || room.description}</p>
               <div style={styles.amenities}>
                 {room.amenities.map((amenity, index) => (
                   <span key={index} style={styles.amenityTag}>
@@ -135,8 +105,8 @@ export default function RoomGallery() {
                 ))}
               </div>
               <div style={styles.buttonContainer}>
-                <button style={styles.viewButton}>View Details</button>
-                <button style={styles.bookButton}>Book Now</button>
+                <button style={styles.viewButton}>{t.gallery.viewButton}</button>
+                <button style={styles.bookButton}>{t.gallery.bookButton}</button>
               </div>
             </div>
           </div>
@@ -145,8 +115,8 @@ export default function RoomGallery() {
       
       {filteredRooms.length === 0 && (
         <div style={styles.noResults}>
-          <h3>No rooms found</h3>
-          <p>Try adjusting your search criteria</p>
+          <h3>{t.gallery.noResults.title}</h3>
+          <p>{t.gallery.noResults.subtitle}</p>
         </div>
       )}
     </div>
