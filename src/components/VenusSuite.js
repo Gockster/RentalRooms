@@ -79,9 +79,14 @@ export default function VenusSuite() {
                 {currentLanguage === 'en' ? 'Venus Suite' : 'Venus Suite'}
               </h1>
               <p className="room-subtitle">
-                {currentLanguage === 'en' 
-                  ? 'Luxurious suite inspired by the goddess of love and beauty.' 
-                  : 'Πολυτελής σουίτα εμπνευσμένη από τη θεά του έρωτα και της ομορφιάς.'}
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=%CE%A0%CE%B5%CF%84%CF%81%CE%BF%CF%85+%CE%94%CF%81%CE%B1%CE%BA%CE%BF%CF%80%CE%BF%CF%8D%CE%BB%CE%BF%CF%85+14%2C+%CE%9C%CF%8D%CE%BA%CE%BF%CE%BD%CE%BF%CF%82+%CE%A7%CF%8E%CF%81%CE%B1%2C+846+00%2C+%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: '#007bff', textDecoration: 'underline' }}
+                >
+                  Πετρου Δρακοπούλου 14, Μύκονος Χώρα, 846 00, Ελλάδα
+                </a>
               </p>
             </div>
           </div>
@@ -262,8 +267,8 @@ export default function VenusSuite() {
                 <div className="property-description" style={{ marginBottom: '25px' }}>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
                     {currentLanguage === 'en' 
-                      ? "VENUS Suite is located in Mykonos Town and is 300m from Agia Anna Beach. It features a terrace, free WiFi, 24-hour front desk and ATM. The property was built in 1980 and has a balcony." 
-                      : "Το VENUS Suite είναι στη Μύκονο Χώρα και απέχει 300μ από Παραλία Αγία Άννα. Διαθέτει βεράντα, δωρεάν WiFi, 24ωρη ρεσεψιόν και ΑΤΜ. Το κατάλυμα χτίστηκε το 1980 και έχει μπαλκόνι."}
+                      ? "VENUS Suite is located at Petrou Drakopoulu 14 in the center of Mykonos Town, just 300m from Agia Anna Beach. It features a terrace, free WiFi, 24-hour front desk and ATM. The property was built in 1980 and has a balcony." 
+                      : "Το VENUS Suite βρίσκεται στην Πετρου Δρακοπούλου 14 στο κέντρο της Μυκόνου Χώρα και απέχει μόλις 300μ από την Παραλία Αγία Άννα. Διαθέτει βεράντα, δωρεάν WiFi, 24ωρη ρεσεψιόν και ΑΤΜ. Το κατάλυμα χτίστηκε το 1980 και έχει μπαλκόνι."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
                     {currentLanguage === 'en' 

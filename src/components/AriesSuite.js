@@ -79,9 +79,14 @@ export default function AriesSuite() {
                 {currentLanguage === 'en' ? 'Aries Suite' : 'Aries Suite'}
               </h1>
               <p className="room-subtitle">
-                {currentLanguage === 'en' 
-                  ? 'Elegant suite inspired by the Aries constellation.' 
-                  : 'Κομψή σουίτα εμπνευσμένη από τον αστερισμό του Αρη.'}
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CE%AC%CF%81%CF%87%CE%B7+9%2C+%CE%9C%CF%8D%CE%BA%CE%BF%CE%BD%CE%BF%CF%82+%CE%A7%CF%8E%CF%81%CE%B1%2C+846+00%2C+%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: '#007bff', textDecoration: 'underline' }}
+                >
+                  Καλλιάρχη 9, Μύκονος Χώρα, 846 00, Ελλάδα
+                </a>
               </p>
             </div>
           </div>
