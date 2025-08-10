@@ -367,44 +367,44 @@ export default function VenusSuite() {
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                    <span>{currentLanguage === 'en' ? 'Municipal Garden of Meletopoulos' : 'Δημοτικός Κήπος του Μελετόπουλου'}</span>
+                    <span style={{ color: '#666' }}>150 μ.</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Little Venice' : 'Μικρή Βενετία'}</span>
-                    <span style={{ color: '#666' }}>200 μ.</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Archaeological Museum of Mykonos' : 'Αρχαιολογικό Μουσείο Μυκόνου'}</span>
-                    <span style={{ color: '#666' }}>250 μ.</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Agia Anna Beach' : 'Παραλία Αγία Άννα'}</span>
-                    <span style={{ color: '#666' }}>300 μ.</span>
+                    <span style={{ color: '#666' }}>150 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Mykonos Windmills' : 'Ανεμόμυλοι Μυκόνου'}</span>
-                    <span style={{ color: '#666' }}>400 μ.</span>
+                    <span style={{ color: '#666' }}>350 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Mykonos Old Port' : 'Παλιό Λιμάνι Μυκόνου'}</span>
+                    <span>{currentLanguage === 'en' ? 'Archaeological Museum of Mykonos' : 'Αρχαιολογικό Μουσείο Μυκόνου'}</span>
                     <span style={{ color: '#666' }}>500 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>Fabrica Square</span>
-                    <span style={{ color: '#666' }}>600 μ.</span>
+                    <span style={{ color: '#666' }}>550 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Tholos Tomb of Mykonos' : 'Θολωτοσ Ταφοσ Μυκονου'}</span>
-                    <span style={{ color: '#666' }}>1,5 χλμ.</span>
+                    <span style={{ color: '#666' }}>1,6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Armenistis Lighthouse' : 'Φάρος Αρμενιστής'}</span>
-                    <span style={{ color: '#666' }}>4,8 χλμ.</span>
+                    <span style={{ color: '#666' }}>5 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Neolithic Settlement of Ftelia Mykonos' : 'Νεολιθικοσ Οικισμοσ Φτελιασ Μυκονου'}</span>
-                    <span style={{ color: '#666' }}>5,8 χλμ.</span>
+                    <span style={{ color: '#666' }}>6 χλμ.</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                    <span>{currentLanguage === 'en' ? 'Kastro Gyzi' : 'Καστρο Γκυζη'}</span>
+                    <span style={{ color: '#666' }}>7 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <span>{currentLanguage === 'en' ? 'Stadium District' : 'Συνοικια Του Σταδιου'}</span>
-                    <span style={{ color: '#666' }}>9,5 χλμ.</span>
+                    <span style={{ color: '#666' }}>10 χλμ.</span>
                   </div>
                 </div>
               </div>
@@ -422,16 +422,16 @@ export default function VenusSuite() {
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Venetia' : 'Καφέ/μπαρ Βενετία'}</span>
-                    <span style={{ color: '#666' }}>50 μ.</span>
+                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Room 101' : 'Καφέ/μπαρ Room 101'}</span>
+                    <span style={{ color: '#666' }}>20 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Restaurant Kastro' : 'Εστιατόριο Κάστρο'}</span>
-                    <span style={{ color: '#666' }}>100 μ.</span>
+                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Boutique di Vito' : 'Καφέ/μπαρ Boutique di Vito'}</span>
+                    <span style={{ color: '#666' }}>0 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Sunset' : 'Καφέ/μπαρ Sunset'}</span>
-                    <span style={{ color: '#666' }}>150 μ.</span>
+                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Paloma Bar' : 'Καφέ/μπαρ Paloma Bar'}</span>
+                    <span style={{ color: '#666' }}>20 μ.</span>
                   </div>
                 </div>
               </div>
@@ -450,23 +450,23 @@ export default function VenusSuite() {
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Agia Anna Beach' : 'Παραλία Αγία Άννα'}</span>
-                    <span style={{ color: '#666' }}>300 μ.</span>
+                    <span style={{ color: '#666' }}>200 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Agios Charalampos Beach' : 'Παραλία Άγιος Χαράλαμπος'}</span>
-                    <span style={{ color: '#666' }}>450 μ.</span>
+                    <span style={{ color: '#666' }}>550 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Megali Ammos Beach' : 'Παραλία Μεγάλη Άμμος'}</span>
-                    <span style={{ color: '#666' }}>850 μ.</span>
+                    <span style={{ color: '#666' }}>950 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Korfos Beach' : 'Παραλία Κόρφος'}</span>
-                    <span style={{ color: '#666' }}>1,4 χλμ.</span>
+                    <span style={{ color: '#666' }}>1,7 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <span>{currentLanguage === 'en' ? 'Tourlos Beach' : 'Παραλία Τούρλος'}</span>
-                    <span style={{ color: '#666' }}>1,5 χλμ.</span>
+                    <span style={{ color: '#666' }}>1,7 χλμ.</span>
                   </div>
                 </div>
               </div>
@@ -485,7 +485,7 @@ export default function VenusSuite() {
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Mykonos Airport' : 'Αεροδρόμιο Μυκόνου'}</span>
-                    <span style={{ color: '#666' }}>3 χλμ.</span>
+                    <span style={{ color: '#666' }}>1,8 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{currentLanguage === 'en' ? 'Syros Airport' : 'Αεροδρόμιο Σύρου'}</span>
