@@ -11,6 +11,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 Mobile",
             maps: "🗺️ Maps",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 EN",
             selectLang: "Select Language",
             callUs: "Call us",
@@ -310,7 +311,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Contact Info",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora"
             },
@@ -408,6 +409,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 Κινητό",
             maps: "🗺️ Χάρτες",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 ΕΛ",
             selectLang: "Επιλογή Γλώσσας",
             callUs: "Καλέστε μας",
@@ -688,7 +690,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Στοιχεία Επικοινωνίας",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Μύκονος Χώρα"
             },
@@ -786,6 +788,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 Cellulare",
             maps: "🗺️ Mappe",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 IT",
             selectLang: "Seleziona Lingua",
             callUs: "Chiamaci",
@@ -1070,7 +1073,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Informazioni di Contatto",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora"
             },
@@ -1083,6 +1086,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 Handy",
             maps: "🗺️ Karten",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 DE",
             selectLang: "Sprache Wählen",
             callUs: "Rufen Sie uns an",
@@ -1367,7 +1371,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Kontakt Information",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora"
             },
@@ -1380,6 +1384,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 Móvil",
             maps: "🗺️ Mapas",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 ES",
             selectLang: "Seleccionar Idioma",
             callUs: "Llámanos",
@@ -1664,7 +1669,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Información de Contacto",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora"
             },
@@ -1677,6 +1682,7 @@ const translations = {
             brandName: "Nana's Rooms",
             mobile: "📱 الهاتف المحمول",
             maps: "🗺️ الخرائط",
+            email: "📧 atdimitriadou@gmail.com",
             language: "🌐 ع",
             selectLang: "اختيار اللغة",
             callUs: "اتصل بنا",
@@ -1961,7 +1967,7 @@ const translations = {
             },
             contactInfo: {
                 title: "معلومات الاتصال",
-                email: "info@nanasrooms.com",
+                email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "ميكونوس تشورا"
             },
