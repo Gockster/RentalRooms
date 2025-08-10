@@ -306,12 +306,11 @@ export default function VenusSuite() {
                 <div className="room-pricing">
                   <h3>{t.roomDetails?.pricing || 'Pricing'}</h3>
                   <div className="price-info">
-                    <span className="price">300</span>
-                    <span className="price-period">{t.gallery?.priceLabels?.night}</span>
+                    <span className="price">{t.gallery?.priceLabels?.from || 'from'} 280€{t.gallery?.priceLabels?.night || '/night'}</span>
                   </div>
                   <div className="availability-status available">
                     <span className="status-indicator"></span>
-                    <span>{t.gallery?.availabilityLabels?.Available}</span>
+                    <span>{t.gallery?.availabilityLabels?.Available || 'Available'}</span>
                   </div>
                 </div>
                 {!enlargedImage && (
