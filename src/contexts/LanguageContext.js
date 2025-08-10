@@ -1015,6 +1015,20 @@ const translations = {
             brandName: "Nana's Rooms",
             description: "Il tuo partner fidato per trovare la sistemazione perfetta",
             subDescription: "Soggiorni confortevoli, prezzi convenienti.",
+            quickLinks: {
+                title: "Link Rapidi",
+                home: "Home",
+                rooms: "Camere",
+                about: "Chi Siamo",
+                contact: "Contatti"
+            },
+            support: {
+                title: "Supporto",
+                helpCenter: "Centro Assistenza",
+                safety: "Sicurezza",
+                cancellation: "Cancellazione",
+                terms: "Termini e Condizioni"
+            },
             contactInfo: {
                 title: "Informazioni di Contatto",
                 email: "info@nanasrooms.com",
@@ -1269,6 +1283,20 @@ const translations = {
             brandName: "Nana's Rooms",
             description: "Ihr vertrauensvoller Partner bei der Suche nach der perfekten Unterkunft",
             subDescription: "Komfortable Aufenthalte, erschwingliche Preise.",
+            quickLinks: {
+                title: "Schnelle Links",
+                home: "Startseite",
+                rooms: "Zimmer",
+                about: "Über Uns",
+                contact: "Kontakt"
+            },
+            support: {
+                title: "Support",
+                helpCenter: "Hilfe-Center",
+                safety: "Sicherheit",
+                cancellation: "Stornierung",
+                terms: "Allgemeine Geschäftsbedingungen"
+            },
             contactInfo: {
                 title: "Kontakt Information",
                 email: "info@nanasrooms.com",
@@ -1523,6 +1551,20 @@ const translations = {
             brandName: "Nana's Rooms",
             description: "Tu socio de confianza para encontrar el alojamiento perfecto",
             subDescription: "Estancias cómodas, precios asequibles.",
+            quickLinks: {
+                title: "Enlaces Rápidos",
+                home: "Inicio",
+                rooms: "Habitaciones",
+                about: "Acerca de Nosotros",
+                contact: "Contacto"
+            },
+            support: {
+                title: "Soporte",
+                helpCenter: "Centro de Ayuda",
+                safety: "Seguridad",
+                cancellation: "Cancelación",
+                terms: "Términos y Condiciones"
+            },
             contactInfo: {
                 title: "Información de Contacto",
                 email: "info@nanasrooms.com",
@@ -1777,6 +1819,20 @@ const translations = {
             brandName: "Nana's Rooms",
             description: "شريكك الموثوق في العثور على الإقامة المثالية",
             subDescription: "إقامات مريحة، أسعار معقولة.",
+            quickLinks: {
+                title: "روابط سريعة",
+                home: "الرئيسية",
+                rooms: "الغرف",
+                about: "من نحن",
+                contact: "اتصل بنا"
+            },
+            support: {
+                title: "الدعم",
+                helpCenter: "مركز المساعدة",
+                safety: "الأمان",
+                cancellation: "الإلغاء",
+                terms: "الشروط والأحكام"
+            },
             contactInfo: {
                 title: "معلومات الاتصال",
                 email: "info@nanasrooms.com",
