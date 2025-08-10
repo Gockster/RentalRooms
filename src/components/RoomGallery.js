@@ -13,28 +13,24 @@ export default function RoomGallery() {
 
   const filteredRooms = galleryImages.filter(room => {
     const search = searchTerm.toLowerCase();
-    // Get English and Greek titles/descriptions from translations
-    const enTitle = t.gallery.rooms?.[room.id - 1]?.title?.toLowerCase() || '';
-    const grTitle = t.gallery.rooms?.[room.id - 1]?.title?.toLowerCase() || '';
-    const enDesc = t.gallery.rooms?.[room.id - 1]?.description?.toLowerCase() || '';
-    const grDesc = t.gallery.rooms?.[room.id - 1]?.description?.toLowerCase() || '';
+    // Get translated titles/descriptions from translations
+    const translatedTitle = t.gallery.rooms?.[room.id - 1]?.title?.toLowerCase() || '';
+    const translatedDesc = t.gallery.rooms?.[room.id - 1]?.description?.toLowerCase() || '';
     const matchesSearch =
-      room.title.toLowerCase().includes(search) ||
-      room.description.toLowerCase().includes(search) ||
-      enTitle.includes(search) ||
-      grTitle.includes(search) ||
-      enDesc.includes(search) ||
-      grDesc.includes(search) ||
+      room.titleKey.toLowerCase().includes(search) ||
+      room.descriptionKey.toLowerCase().includes(search) ||
+      translatedTitle.includes(search) ||
+      translatedDesc.includes(search) ||
       (room.id && room.id.toString().toLowerCase().includes(search));
 
     let matchesPrice = true;
-    if (priceFilter === "200") {
-      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) === 200;
-    } else if (priceFilter === "300") {
-      matchesPrice = parseInt(room.price.replace(/[^0-9]/g, '')) === 300;
+    if (priceFilter === "280") {
+      matchesPrice = room.basePrice === 280;
+    } else if (priceFilter === "380") {
+      matchesPrice = room.basePrice === 380;
     }
     return matchesSearch && matchesPrice;
-  }).slice(0, 2); // Limit to only 2 rooms
+  }); // Show all rooms without limit
 
   // Map gallery room IDs to route paths
   const getRoomPath = (roomId) => {
@@ -66,15 +62,11 @@ export default function RoomGallery() {
     return stars;
   };
 
-  const translatePrice = (price) => {
-    // Parse price format like "200€/night"
-    const priceMatch = price.match(/^(.+?)\/(.+)$/);
-    if (priceMatch) {
-      const [, amount, period] = priceMatch;
-      const translatedPeriod = t.gallery.priceLabels?.[period] || `/${period}`;
-      return `${amount}${translatedPeriod}`;
-    }
-    return price;
+  const formatPrice = (basePrice) => {
+    // Build translated price string using basePrice and translation labels
+    const from = t.gallery?.priceLabels?.from || 'from';
+    const night = t.gallery?.priceLabels?.night || '/night';
+    return `${from} ${basePrice}€${night}`;
   };
 
   return (
@@ -100,8 +92,8 @@ export default function RoomGallery() {
             className="room-gallery-filter-select"
           >
             <option value="all">{t.gallery.priceOptions.all}</option>
-            <option value="200">€200</option>
-            <option value="300">€300</option>
+            <option value="280">€280</option>
+            <option value="380">€380</option>
           </select>
         </div>
       </div>
@@ -120,17 +112,17 @@ export default function RoomGallery() {
             onMouseLeave={() => setHoveredCard(null)}
           >
             <div className="room-gallery-image-container">
-              <img src={room.image} alt={room.title} className="room-gallery-image" />
-              <div className="room-gallery-price-tag">{translatePrice(room.price)}</div>
-              <div className="room-gallery-availability-tag">{t.gallery.availabilityLabels?.[room.availability] || room.availability}</div>
+              <img src={room.image} alt={t.gallery.rooms[room.id - 1]?.title || room.titleKey} className="room-gallery-image" />
+              <div className="room-gallery-price-tag">{formatPrice(room.basePrice)}</div>
+              <div className="room-gallery-availability-tag">{t.gallery.availabilityLabels?.[room.availabilityKey] || room.availabilityKey}</div>
             </div>
             <div className="room-gallery-card-content">
-              <h2 className="room-gallery-title">{t.gallery.rooms[room.id - 1]?.title || room.title}</h2>
+              <h2 className="room-gallery-title">{t.gallery.rooms[room.id - 1]?.title || room.titleKey}</h2>
               <div className="room-gallery-rating">
                 {renderStars(room.rating)}
                 <span className="room-gallery-rating-text">{room.rating}</span>
               </div>
-              <p className="room-gallery-description">{t.gallery.rooms[room.id - 1]?.description || room.description}</p>
+              <p className="room-gallery-description">{t.gallery.rooms[room.id - 1]?.description || room.descriptionKey}</p>
               <div className="room-gallery-amenities">
                 {room.amenities.map((amenity, index) => (
                   <span key={index} className="room-gallery-amenity-tag">

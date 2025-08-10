@@ -58,7 +58,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "Find Your Perfect Room",
+            heading: "Find Your Perfect Suite",
             searchPlaceholder: "Search rooms...",
             priceFilter: "Price Range:",
             priceOptions: {
@@ -454,7 +454,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "Βρείτε το Τέλειο Δωμάτιό σας",
+            heading: "Βρείτε την Τέλεια Σουίτα σας",
             searchPlaceholder: "Αναζήτηση δωματίων...",
             priceFilter: "Εύρος Τιμών:",
             priceOptions: {
@@ -827,7 +827,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "Trova la Tua Camera Perfetta",
+            heading: "Trova la Tua Suite Perfetta",
             searchPlaceholder: "Cerca camere...",
             priceFilter: "Fascia di Prezzo:",
             priceOptions: {
@@ -1081,7 +1081,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "Finden Sie Ihr Perfektes Zimmer",
+            heading: "Finden Sie Ihre Perfekte Suite",
             searchPlaceholder: "Zimmer suchen...",
             priceFilter: "Preisbereich:",
             priceOptions: {
@@ -1335,7 +1335,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "Encuentra Tu Habitación Perfecta",
+            heading: "Encuentra Tu Suite Perfecta",
             searchPlaceholder: "Buscar habitaciones...",
             priceFilter: "Rango de Precios:",
             priceOptions: {
@@ -1589,7 +1589,7 @@ const translations = {
         },
         // Room Gallery
         gallery: {
-            heading: "ابحث عن غرفتك المثالية",
+            heading: "ابحث عن جناحك المثالي",
             searchPlaceholder: "البحث عن غرف...",
             priceFilter: "نطاق الأسعار:",
             priceOptions: {

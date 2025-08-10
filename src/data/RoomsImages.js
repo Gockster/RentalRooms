@@ -91,23 +91,23 @@ export const venusSuiteImages = [
 export const galleryImages = [
     {
         id: 1,
-        title: "Aries Suite",
+        titleKey: "aries-suite",
+        descriptionKey: "aries-suite", 
         image: "/images/AriesSuiteImages/694316674.jpg",
-        description: "Elegant suite inspired by the Aries constellation.",
-        price: "200€/night",
-        amenities: ["WiFi", "Kitchen", "City View", "Air Conditioning"],
+        basePrice: 380,
+        amenities: ["Free Wi-Fi", "Air Conditioning", "24/7 Reception", "Entire place to yourself", "Private Bathroom"],
         rating: 4.9,
-        availability: "Available"
+        availabilityKey: "Available"
     },
     {
         id: 2,
-        title: "Venus Suite",
+        titleKey: "venus-suite",
+        descriptionKey: "venus-suite",
         image: "/images/VenusSuiteImages/456521685.jpg",
-        description: "Luxurious suite inspired by the goddess of love and beauty.",
-        price: "300€/night",
-        amenities: ["WiFi", "Workspace", "Room Service", "Business Center"],
+        basePrice: 280,
+        amenities: ["Free Wi-Fi", "Air Conditioning", "Balcony", "Entire place to yourself"],
         rating: 4.8,
-        availability: "Available"
+        availabilityKey: "Available"
     }
 ];
 
