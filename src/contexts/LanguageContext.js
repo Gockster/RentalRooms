@@ -182,6 +182,7 @@ const translations = {
             ariesDescription2: "The property features 2 bathrooms with bath or shower, and free toiletries and hair dryer are provided.",
             ariesDescription3: "The reception staff speaks Arabic, Greek and English.",
             ariesDescription4: "Near ARIES Suite you will find popular attractions such as Mykonos Old Port, Mykonos Windmills and Little Venice. Mykonos Airport is 3 km away from the property.",
+            ariesAddress: "Kalliarchi 9, Mykonos Chora, 846 00, Greece",
             // Property descriptions - Venus
             venusSubtitle: "Modern suite located at Petrou Drakopoulu 14, in the heart of Mykonos Town.",
             venusDescription1: "VENUS Suite is located at Petrou Drakopoulu 14 in the center of Mykonos Town, just 300m from Agia Anna Beach. It features a terrace, free WiFi, 24-hour front desk and ATM. The property was built in 1980 and has a balcony.",
@@ -558,6 +559,7 @@ const translations = {
             ariesDescription2: "Το κατάλυμα έχει επίσης 2 μπάνια με μπανιέρα ή ντους, ενώ διατίθενται δωρεάν προϊόντα μπάνιου και στεγνωτήρας μαλλιών.",
             ariesDescription3: "Οι γλώσσες που μιλάει το προσωπικό στη ρεσεψιόν είναι Αραβικά, Ελληνικά και Αγγλικά.",
             ariesDescription4: "Κοντά στο ARIES Suite θα βρείτε δημοφιλή σημεία ενδιαφέροντος, όπως Παλιό Λιμάνι Μυκόνου, Ανεμόμυλοι Μυκόνου και Μικρή Βενετία. Το αεροδρόμιο Αεροδρόμιο Μυκόνου είναι 3 χλμ μακριά από το κατάλυμα.",
+            ariesAddress: "Καλλιάρχη 9, Μύκονος Χώρα, 846 00, Ελλάδα",
             // Property descriptions - Venus
             venusSubtitle: "Μοντέρνα σουίτα που βρίσκεται στην Πετρου Δρακοπούλου 14, στο κέντρο της Μυκόνου Χώρα.",
             venusDescription1: "Το VENUS Suite βρίσκεται στην Πετρου Δρακοπούλου 14 στο κέντρο της Μυκόνου Χώρα και απέχει μόλις 300μ από την Παραλία Αγία Άννα. Διαθέτει βεράντα, δωρεάν WiFi, 24ωρη ρεσεψιόν και ΑΤΜ. Το κατάλυμα χτίστηκε το 1980 και έχει μπαλκόνι.",
@@ -939,6 +941,7 @@ const translations = {
             ariesDescription2: "La proprietà dispone di 2 bagni con vasca o doccia, e sono forniti asciugacapelli e articoli da toilette gratuiti.",
             ariesDescription3: "Il personale della reception parla arabo, greco e inglese.",
             ariesDescription4: "Vicino ad ARIES Suite troverete attrazioni popolari come il Porto Vecchio di Mykonos, i Mulini a Vento di Mykonos e Piccola Venezia. L'aeroporto di Mykonos si trova a 3 km dalla proprietà.",
+            ariesAddress: "Kalliarchi 9, Mykonos Chora, 846 00, Grecia",
             // Property descriptions - Venus
             venusSubtitle: "Suite moderna situata in Petrou Drakopoulu 14, nel cuore di Mykonos Town.",
             venusDescription1: "VENUS Suite si trova in Petrou Drakopoulu 14 nel centro di Mykonos Town, a soli 300m dalla spiaggia di Agia Anna. Dispone di terrazza, WiFi gratuito, reception 24 ore e ATM. La proprietà è stata costruita nel 1980 e ha un balcone.",
@@ -1235,6 +1238,7 @@ const translations = {
             ariesDescription2: "Die Unterkunft verfügt über 2 Badezimmer mit Badewanne oder Dusche, und kostenlose Toilettenartikel und Haartrockner sind vorhanden.",
             ariesDescription3: "Das Rezeptionspersonal spricht Arabisch, Griechisch und Englisch.",
             ariesDescription4: "In der Nähe der ARIES Suite finden Sie beliebte Sehenswürdigkeiten wie den Alten Hafen von Mykonos, die Windmühlen von Mykonos und Little Venice. Der Flughafen Mykonos ist 3 km von der Unterkunft entfernt.",
+            ariesAddress: "Kalliarchi 9, Mykonos Chora, 846 00, Griechenland",
             // Property descriptions - Venus
             venusSubtitle: "Moderne Suite in der Petrou Drakopoulu 14, im Herzen von Mykonos Town.",
             venusDescription1: "VENUS Suite befindet sich in der Petrou Drakopoulu 14 im Zentrum von Mykonos Town, nur 300m vom Strand Agia Anna entfernt. Es verfügt über eine Terrasse, kostenloses WiFi, 24-Stunden-Rezeption und Geldautomat. Die Unterkunft wurde 1980 erbaut und hat einen Balkon.",
@@ -1531,6 +1535,7 @@ const translations = {
             ariesDescription2: "La propiedad cuenta con 2 baños con bañera o ducha, y se proporcionan secador de pelo y artículos de aseo gratuitos.",
             ariesDescription3: "El personal de recepción habla árabe, griego e inglés.",
             ariesDescription4: "Cerca de ARIES Suite encontrarás atracciones populares como el Puerto Viejo de Mykonos, los Molinos de Viento de Mykonos y Pequeña Venecia. El Aeropuerto de Mykonos está a 3 km de la propiedad.",
+            ariesAddress: "Kalliarchi 9, Mykonos Chora, 846 00, Grecia",
             // Property descriptions - Venus
             venusSubtitle: "Suite moderna ubicada en Petrou Drakopoulu 14, en el corazón de Mykonos Town.",
             venusDescription1: "VENUS Suite está ubicada en Petrou Drakopoulu 14 en el centro de Mykonos Town, a solo 300m de la playa Agia Anna. Cuenta con terraza, WiFi gratis, recepción 24 horas y cajero automático. La propiedad fue construida en 1980 y tiene balcón.",
@@ -1827,6 +1832,7 @@ const translations = {
             ariesDescription2: "يتميز العقار بحمامين مع حوض أستحمام أو دش، ويتم توفير مجفف الشعر ولوازم الحمام المجانية.",
             ariesDescription3: "يتحدث موظفو الاستقبال العربية واليونانية والإنجليزية.",
             ariesDescription4: "بالقرب من جناح ARIES ستجد معالم سياحية شهيرة مثل ميناء ميكونوس القديم، طواحين الهواء في ميكونوس وفينيسيا الصغيرة. مطار ميكونوس على بعد 3 كم من العقار.",
+            ariesAddress: "كاليارتشي 9، ميكونوس تشورا، 846 00، اليونان",
             // Property descriptions - Venus
             venusSubtitle: "جناح حديث يقع في بيترو دراكوبولو 14، في قلب مدينة ميكونوس.",
             venusDescription1: "يقع جناح VENUS في بيترو دراكوبولو 14 في وسط مدينة ميكونوس، على بعد 300 متر فقط من شاطئ أجيا آنا. يتميز بشرفة، واي فاي مجاني، مكتب استقبال 24 ساعة وصراف آلي. تم بناء العقار في عام 1980 وله شرفة.",
