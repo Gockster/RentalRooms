@@ -76,14 +76,14 @@ const translations = {
             },
             rooms: [
                 {
-                    id: "orpheus-room",
-                    title: "Orpheus Room",
-                    description: "Modern accommodation in the heart of Mykonos."
+                    id: "aries-suite",
+                    title: "Aries Suite",
+                    description: "Elegant suite inspired by the Aries constellation."
                 },
                 {
-                    id: "persephone-room",
-                    title: "Persephone Room",
-                    description: "Perfect for families seeking comfort and spaciousness."
+                    id: "venus-suite",
+                    title: "Venus Suite",
+                    description: "Luxurious suite inspired by the goddess of love and beauty."
                 } 
             ],
             amenityLabels: {
@@ -294,14 +294,14 @@ const translations = {
             },
             rooms: [
                 {
-                    id: "orpheus-room",
-                    title: "Δωμάτιο Ορφέας",
-                    description: "Μοντέρνο κατάλυμα στη καρδιά της Μυκόνου."
+                    id: "aries-suite",
+                    title: "Aries Suite",
+                    description: "Κομψή σουίτα εμπνευσμένη από τον αστερισμό του Κριού."
                 },
                 {
-                    id: "persephone-room",
-                    title: "Δωμάτιο Περσεφόνη",
-                    description: "Ιδανικό για οικογένειες που αναζητούν άνεση και ευρυχωρία."
+                    id: "venus-suite",
+                    title: "Venus Suite",
+                    description: "Πολυτελής σουίτα εμπνευσμένη από τη θεά του έρωτα και της ομορφιάς."
                 }
             ],
             amenityLabels: {    

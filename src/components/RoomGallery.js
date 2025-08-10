@@ -39,10 +39,10 @@ export default function RoomGallery() {
   // Map gallery room IDs to route paths
   const getRoomPath = (roomId) => {
     const roomMap = {
-      1: "orpheus-room",
-      2: "persephone-room"
+      1: "AriesSuite",
+      2: "VenusSuite"
     };
-    return roomMap[roomId] || "orpheus-room";
+    return roomMap[roomId] || "AriesSuite";
   };
 
   const handleRoomClick = (roomId) => {

@@ -37,7 +37,8 @@ export default function Hero() {
             className="hero-slide"
             style={{
               opacity: index === currentSlide ? 1 : 0,
-              backgroundImage: `url(${image.url})`
+              backgroundImage: `url(${image.url})`,
+              backgroundPosition: image.url.includes('room-nana-51.jpg') ? 'center top' : 'center'
             }}
           />
         ))}

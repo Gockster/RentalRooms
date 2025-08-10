@@ -6,8 +6,8 @@ import Hero from './components/Hero';
 import WelcomeSection from './components/WelcomeSection';
 import RoomGallery from './components/RoomGallery';
 import Footer from './components/Footer';
-import OrpheusRoom from './components/OrpheusRoom';
-import PersePhoneRoom from './components/PersePhoneRoom';
+import AriesSuite from './components/AriesSuite';
+import VenusSuite from './components/VenusSuite';
 
 function HomePage() {
   return (
@@ -22,13 +22,18 @@ function HomePage() {
 }
 
 function App() {
+  const routes = [
+    { path: '/', element: <HomePage /> },
+    { path: '/rooms/AriesSuite', element: <AriesSuite /> },
+    { path: '/rooms/VenusSuite', element: <VenusSuite /> },
+  ];
   return (
     <LanguageProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/rooms/orpheus-room" element={<OrpheusRoom />} />
-          <Route path="/rooms/persephone-room" element={<PersePhoneRoom />} />
+          {routes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
         </Routes>
       </Router>
     </LanguageProvider>
