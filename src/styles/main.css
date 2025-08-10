@@ -814,221 +814,157 @@
   align-items: center;
 }
 
-.photo-collage-board {
+/* New Mosaic Collage Style */
+.mosaic-collage-board {
   position: relative;
   width: 600px;
-  height: 500px;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 8px;
 }
 
-/* Individual collage photos with artistic positioning */
-.collage-photo {
-  position: absolute;
-  border-radius: 8px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
+.mosaic-tile {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.collage-image {
+.mosaic-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  transition: transform 0.4s ease;
 }
 
-/* Photo tape effects */
-.photo-tape {
+.mosaic-overlay {
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+  color: white;
+  padding: 12px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
 }
 
-.tape-1 {
-  top: -8px;
-  left: 20%;
-  width: 40px;
-  height: 20px;
-  transform: rotate(-15deg);
+.mosaic-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-.tape-2 {
-  bottom: -8px;
-  right: 15%;
-  width: 35px;
-  height: 20px;
-  transform: rotate(20deg);
+/* Grid positioning for different tile sizes */
+.tile-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
-/* Photo positioning and styling - BIGGER SIZES */
-.photo-1 {
-  top: 20px;
-  left: 30px;
-  width: 200px;
-  height: 150px;
-  transform: rotate(-5deg);
-  z-index: 5;
+.tile-2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
 }
 
-.photo-2 {
-  top: 40px;
-  right: 20px;
-  width: 180px;
-  height: 135px;
-  transform: rotate(8deg);
-  z-index: 4;
+.tile-3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
 }
 
-.photo-3 {
-  top: 200px;
-  left: 20px;
-  width: 170px;
-  height: 125px;
-  transform: rotate(12deg);
-  z-index: 3;
+.tile-4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
-.photo-4 {
-  bottom: 30px;
-  right: 40px;
-  width: 190px;
-  height: 140px;
-  transform: rotate(-8deg);
-  z-index: 2;
+.tile-5 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
 }
 
-.photo-5 {
-  top: 130px;
-  left: 140px;
-  width: 160px;
-  height: 120px;
-  transform: rotate(-12deg);
-  z-index: 6;
-}
-
-.photo-6 {
-  bottom: 80px;
-  left: 200px;
-  width: 175px;
-  height: 130px;
-  transform: rotate(15deg);
-  z-index: 1;
+.tile-6 {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
 }
 
 /* Hover effects */
-.collage-photo:hover {
-  transform: scale(1.05) rotate(0deg) !important;
-  z-index: 10 !important;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+.mosaic-tile:hover {
+  transform: scale(1.02);
+  z-index: 10;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-.collage-photo:hover .photo-tape {
-  opacity: 0;
+.mosaic-tile:hover .mosaic-image {
+  transform: scale(1.1);
 }
 
-/* Polaroid-style effect for some photos */
-.photo-1, .photo-4 {
-  background: white;
-  padding: 8px 8px 20px 8px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.mosaic-tile:hover .mosaic-overlay {
+  transform: translateY(0);
 }
 
-.photo-1 .collage-image, .photo-4 .collage-image {
-  border-radius: 2px;
-}
-
-/* Scattered photo effect */
-.photo-2:before, .photo-3:before, .photo-5:before, .photo-6:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background: linear-gradient(45deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
-  border-radius: 10px;
-  z-index: -1;
-}
+/* Alternative color gradients for variety */
+.tile-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.tile-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.tile-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.tile-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+.tile-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.tile-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .welcome-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
+  .mosaic-collage-board {
+    width: 350px;
+    height: 280px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 6px;
+    padding: 6px;
   }
   
-  .welcome-text {
-    text-align: center;
+  .tile-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
   
-  .welcome-title {
-    font-size: 2rem;
+  .tile-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
   }
   
-  .welcome-subtitle {
-    font-size: 1.5rem;
+  .tile-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
   }
   
-  .welcome-description {
-    font-size: 1.1rem;
+  .tile-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
   }
   
-  .photo-collage-board {
-    width: 400px;
-    height: 350px;
-    padding: 25px;
+  .tile-5 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
   }
   
-  /* Adjust photo sizes for mobile - BIGGER SIZES */
-  .photo-1 {
-    width: 150px;
-    height: 115px;
-    top: 15px;
-    left: 20px;
+  .tile-6 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
   }
   
-  .photo-2 {
-    width: 140px;
-    height: 105px;
-    top: 30px;
-    right: 15px;
+  .mosaic-label {
+    font-size: 10px;
   }
   
-  .photo-3 {
-    width: 130px;
-    height: 95px;
-    top: 140px;
-    left: 15px;
-  }
-  
-  .photo-4 {
-    width: 145px;
-    height: 110px;
-    bottom: 25px;
-    right: 20px;
-  }
-  
-  .photo-5 {
-    width: 125px;
-    height: 90px;
-    top: 85px;
-    left: 75px;
-  }
-  
-  .photo-6 {
-    width: 135px;
-    height: 100px;
-    bottom: 65px;
-    left: 110px;
-  }
-  
-  .photo-1, .photo-4 {
-    padding: 8px 8px 18px 8px;
+  .mosaic-overlay {
+    padding: 8px;
   }
 }
 

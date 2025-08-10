@@ -21,7 +21,7 @@ export const heroImages = [
         title: "Executive Rooms",
         subtitle: "Professional stays with business amenities"
     },
-     {
+    {
         url: "/images/RoomsImages/room-nana-20.jpg",
         title: "Executive Rooms",
         subtitle: "Professional stays with business amenities"
@@ -106,14 +106,16 @@ export const galleryImages = [
     }
 ];
 
- export const collageImages = [
-        { src: "/images/RoomsImages/room-nana-02.jpg", alt: "Aries Suite" },
-        { src: "/images/RoomsImages/room-nana-03.jpg", alt: "Aries Suite" },
-        { src: "/images/RoomsImages/room-nana-04.webp", alt: "Aries Suite" },
-        { src: "/images/RoomsImages/room-nana-05.webp", alt: "Aries Suite" },
-        { src: "/images/RoomsImages/room-nana-46.jpg", alt: "Venus Suite" },
-        { src: "/images/RoomsImages/room-nana-08.jpg", alt: "Venus Suite" }
-    ];
+export const collageImages = [
+    { src: "/images/RoomsImages/room-nana-03.jpg", alt: "Modern Interior" },
+    { src: "/images/RoomsImages/room-nana-08.jpg", alt: "Relaxing View" },
+    { src: "/images/RoomsImages/room-nana-46.jpg", alt: "Family Room" },
+    { src: "/images/RoomsImages/room-nana-49.jpg", alt: "Comfortable Space" },
+    { src: "/images/RoomsImages/room-nana-29.jpg", alt: "Comfortable Space" },
+    { src: "/images/RoomsImages/room-nana-30.jpg", alt: "Premium Amenities" },
+
+
+];
 
 
 export default {

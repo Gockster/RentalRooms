@@ -25,16 +25,14 @@ export default function WelcomeSection() {
                     </div>
 
                     <div className="welcome-collage">
-                        <div className="photo-collage-board">
+                        <div className="mosaic-collage-board">
                             {collageImages.map((image, index) => (
-                                <div key={index} className={`collage-photo photo-${index + 1}`}>
+                                <div key={index} className={`mosaic-tile tile-${index + 1}`}>
                                     <img
                                         src={image.src}
                                         alt={image.alt}
-                                        className="collage-image"
+                                        className="mosaic-image"
                                     />
-                                    <div className="photo-tape tape-1"></div>
-                                    <div className="photo-tape tape-2"></div>
                                 </div>
                             ))}
                         </div>
