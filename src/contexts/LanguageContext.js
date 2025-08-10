@@ -87,14 +87,18 @@ const translations = {
                 } 
             ],
             amenityLabels: {
+                "Free Wi-Fi": "Free Wi-Fi",
+                "Air Conditioning": "Air Conditioning",
+                "24/7 Reception": "24/7 Reception",
+                "Entire place to yourself": "Entire place to yourself",
+                "Private Bathroom": "Private Bathroom",
+                "Balcony": "Balcony",
                 "WiFi": "WiFi",
                 "Kitchen": "Kitchen",
                 "City View": "City View",
-                "Air Conditioning": "Air Conditioning",
                 "Workspace": "Workspace",
                 "Room Service": "Room Service",
                 "Business Center": "Business Center",
-                "Balcony": "Balcony",
                 "Parking": "Parking",
                 "Gym Access": "Gym Access",
                 "Swimming Pool": "Swimming Pool",
@@ -483,14 +487,18 @@ const translations = {
                 }
             ],
             amenityLabels: {    
+                "Free Wi-Fi": "Δωρεάν Wi-Fi",
+                "Air Conditioning": "Κλιματισμός",
+                "24/7 Reception": "Ρεσεψιόν 24/7",
+                "Entire place to yourself": "Όλος ο χώρος για εσάς",
+                "Private Bathroom": "Ιδιωτικό Μπάνιο",
+                "Balcony": "Μπαλκόνι",
                 "WiFi": "WiFi",
                 "Kitchen": "Κουζίνα",
                 "City View": "Θέα Πόλης",
-                "Air Conditioning": "Κλιματισμός",
                 "Workspace": "Χώρος Εργασίας",
                 "Room Service": "Room Service",
                 "Business Center": "Κέντρο Επιχειρήσεων",
-                "Balcony": "Μπαλκόνι",
                 "Parking": "Πάρκινγκ",
                 "Gym Access": "Πρόσβαση Γυμναστηρίου",
                 "Swimming Pool": "Πισίνα",
@@ -854,7 +862,35 @@ const translations = {
                     title: "Venus Suite",
                     description: "Suite lussuosa ispirata alla dea dell'amore e della bellezza."
                 }
-            ]
+            ],
+            amenityLabels: {
+                "Free Wi-Fi": "Wi-Fi Gratuito",
+                "Air Conditioning": "Aria Condizionata",
+                "24/7 Reception": "Reception 24/7",
+                "Entire place to yourself": "Tutto per te",
+                "Private Bathroom": "Bagno Privato",
+                "Balcony": "Balcone",
+                "WiFi": "WiFi",
+                "Kitchen": "Cucina",
+                "City View": "Vista Città",
+                "Workspace": "Spazio di Lavoro",
+                "Room Service": "Servizio in Camera",
+                "Business Center": "Centro Affari",
+                "Parking": "Parcheggio",
+                "Gym Access": "Accesso Palestra",
+                "Swimming Pool": "Piscina",
+                "Breakfast": "Colazione"
+            },
+            availabilityLabels: {
+                "Available": "Disponibile",
+                "Booked": "Prenotato",
+                "Unavailable": "Non Disponibile"
+            },
+            priceLabels: {
+                "night": "/notte",
+                "per": "per",
+                "from": "da"
+            }
         },
         // Room Details
         roomDetails: {
@@ -1122,7 +1158,35 @@ const translations = {
                     title: "Venus Suite",
                     description: "Luxuriöse Suite inspiriert von der Göttin der Liebe und Schönheit."
                 }
-            ]
+            ],
+            amenityLabels: {
+                "Free Wi-Fi": "Kostenloses WLAN",
+                "Air Conditioning": "Klimaanlage",
+                "24/7 Reception": "24-Stunden-Rezeption",
+                "Entire place to yourself": "Ganzer Ort für dich",
+                "Private Bathroom": "Privates Badezimmer",
+                "Balcony": "Balkon",
+                "WiFi": "WLAN",
+                "Kitchen": "Küche",
+                "City View": "Stadtblick",
+                "Workspace": "Arbeitsplatz",
+                "Room Service": "Zimmerservice",
+                "Business Center": "Business Center",
+                "Parking": "Parkplatz",
+                "Gym Access": "Fitnessstudio Zugang",
+                "Swimming Pool": "Schwimmbad",
+                "Breakfast": "Frühstück"
+            },
+            availabilityLabels: {
+                "Available": "Verfügbar",
+                "Booked": "Gebucht",
+                "Unavailable": "Nicht Verfügbar"
+            },
+            priceLabels: {
+                "night": "/Nacht",
+                "per": "pro",
+                "from": "ab"
+            }
         },
         // Room Details
         roomDetails: {
@@ -1390,7 +1454,35 @@ const translations = {
                     title: "Venus Suite",
                     description: "Suite lujosa inspirada en la diosa del amor y la belleza."
                 }
-            ]
+            ],
+            amenityLabels: {
+                "Free Wi-Fi": "Wi-Fi Gratuito",
+                "Air Conditioning": "Aire Acondicionado",
+                "24/7 Reception": "Recepción 24/7",
+                "Entire place to yourself": "Todo el lugar para ti",
+                "Private Bathroom": "Baño Privado",
+                "Balcony": "Balcón",
+                "WiFi": "Wi-Fi",
+                "Kitchen": "Cocina",
+                "City View": "Vista de la Ciudad",
+                "Workspace": "Espacio de Trabajo",
+                "Room Service": "Servicio a la Habitación",
+                "Business Center": "Centro de Negocios",
+                "Parking": "Aparcamiento",
+                "Gym Access": "Acceso al Gimnasio",
+                "Swimming Pool": "Piscina",
+                "Breakfast": "Desayuno"
+            },
+            availabilityLabels: {
+                "Available": "Disponible",
+                "Booked": "Reservado",
+                "Unavailable": "No Disponible"
+            },
+            priceLabels: {
+                "night": "/noche",
+                "per": "por",
+                "from": "desde"
+            }
         },
         // Room Details
         roomDetails: {
@@ -1658,7 +1750,35 @@ const translations = {
                     title: "Venus Suite",
                     description: "جناح فاخر مستوحى من إلهة الحب والجمال."
                 }
-            ]
+            ],
+            amenityLabels: {
+                "Free Wi-Fi": "واي فاي مجاني",
+                "Air Conditioning": "تكييف الهواء",
+                "24/7 Reception": "استقبال 24/7",
+                "Entire place to yourself": "المكان كله لك",
+                "Private Bathroom": "حمام خاص",
+                "Balcony": "شرفة",
+                "WiFi": "واي فاي",
+                "Kitchen": "مطبخ",
+                "City View": "إطلالة على المدينة",
+                "Workspace": "مساحة عمل",
+                "Room Service": "خدمة الغرف",
+                "Business Center": "مركز الأعمال",
+                "Parking": "موقف سيارات",
+                "Gym Access": "دخول للنادي الرياضي",
+                "Swimming Pool": "حمام سباحة",
+                "Breakfast": "إفطار"
+            },
+            availabilityLabels: {
+                "Available": "متاح",
+                "Booked": "محجوز",
+                "Unavailable": "غير متاح"
+            },
+            priceLabels: {
+                "night": "/ليلة",
+                "per": "لكل",
+                "from": "من"
+            }
         },
         // Room Details
         roomDetails: {
