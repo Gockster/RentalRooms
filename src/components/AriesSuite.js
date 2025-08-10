@@ -849,6 +849,152 @@ export default function AriesSuite() {
             </div>
           </div>
         </div>
+
+        {/* Property Rules Section - Full Width */}
+        <div style={{
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          backgroundColor: '#f8f9fa',
+          padding: '60px 20px',
+          borderTop: '1px solid #e0e0e0'
+        }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
+              {currentLanguage === 'en' ? 'Property Rules & Policies' : 'Κανονισμοί καταλύματος'}
+            </h2>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
+              
+              {/* Check-in/Check-out */}
+              <div style={{ 
+                backgroundColor: 'white',
+                padding: '25px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', display: 'flex', alignItems: 'center' }}>
+                  <Calendar size={24} style={{ marginRight: '10px' }} />
+                  {currentLanguage === 'en' ? 'Check-in/Check-out' : 'Check-in/Check-out'}
+                </h3>
+                
+                <div style={{ marginBottom: '20px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+                    {currentLanguage === 'en' ? 'Check-in' : 'Check-in'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666', marginBottom: '5px' }}>
+                    {currentLanguage === 'en' ? 'From 3:00 PM to 8:00 PM' : 'Από 3:00 μ.μ. έως 8:00 μ.μ.'}
+                  </p>
+                  <p style={{ fontSize: '13px', color: '#888', fontStyle: 'italic' }}>
+                    {currentLanguage === 'en' 
+                      ? 'You must inform the property in advance about your arrival time.' 
+                      : 'Θα πρέπει να ενημερώσετε το κατάλυμα εκ των προτέρων τι ώρα θα φτάσετε.'}
+                  </p>
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+                    {currentLanguage === 'en' ? 'Check-out' : 'Check-out'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' ? 'From 8:00 AM to 12:00 PM' : 'Από 8:00 π.μ. έως 12:00 μ.μ.'}
+                  </p>
+                </div>
+              </div>
+
+            
+
+              {/* Children and Beds */}
+              <div style={{ 
+                backgroundColor: 'white',
+                padding: '25px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#28a745', display: 'flex', alignItems: 'center' }}>
+                  <Home size={24} style={{ marginRight: '10px' }} />
+                  {currentLanguage === 'en' ? 'Children and Beds' : 'Παιδιά και κρεβάτια'}
+                </h3>
+                
+                <div style={{ marginBottom: '15px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+                    {currentLanguage === 'en' ? 'Children Policies' : 'Πολιτικές σχετικά με τα παιδιά'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' ? 'Children are not allowed.' : 'Δεν επιτρέπονται τα παιδιά.'}
+                  </p>
+                </div>
+
+                <div style={{ marginBottom: '15px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+                    {currentLanguage === 'en' ? 'Crib and Extra Bed Policies' : 'Πολιτικές για βρεφικές κούνιες και επιπλέον κρεβάτια'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' 
+                      ? 'This property does not have cribs and extra beds available.'
+                      : 'Αυτό το κατάλυμα δεν διαθέτει βρεφικές κούνιες και επιπλέον κρεβάτια.'}
+                  </p>
+                </div>
+
+                <div>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
+                    {currentLanguage === 'en' ? 'No Age Restrictions' : 'Χωρίς περιορισμό ηλικίας'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' 
+                      ? 'There are no age restrictions for check-in.'
+                      : 'Δεν υπάρχουν περιορισμοί ηλικίας για το check-in'}
+                  </p>
+                </div>
+              </div>
+
+              {/* Property Policies */}
+              <div style={{ 
+                backgroundColor: 'white',
+                padding: '25px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#6f42c1', display: 'flex', alignItems: 'center' }}>
+                  <Building size={24} style={{ marginRight: '10px' }} />
+                  {currentLanguage === 'en' ? 'Property Policies' : 'Πολιτικές καταλύματος'}
+                </h3>
+                
+                <div style={{ marginBottom: '15px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
+                    <Wind size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
+                    {currentLanguage === 'en' ? 'Smoking Policy' : 'Πολιτική καπνίσματος'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' ? 'Smoking is not allowed.' : 'Δεν επιτρέπεται το κάπνισμα.'}
+                  </p>
+                </div>
+
+                <div style={{ marginBottom: '15px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
+                    <Sparkles size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
+                    {currentLanguage === 'en' ? 'Parties' : 'Πάρτι'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' 
+                      ? 'Parties or events are not allowed.'
+                      : 'Δεν επιτρέπονται τα πάρτι ή/και οι εκδηλώσεις'}
+                  </p>
+                </div>
+
+                <div>
+                  <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
+                    <Home size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
+                    {currentLanguage === 'en' ? 'Pets' : 'Κατοικίδια ζώα'}
+                  </h4>
+                  <p style={{ fontSize: '14px', color: '#666' }}>
+                    {currentLanguage === 'en' ? 'Pets are not allowed.' : 'Τα κατοικίδια δεν επιτρέπονται.'}
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
