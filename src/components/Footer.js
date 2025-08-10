@@ -4,7 +4,7 @@ import "../styles/main.css";
 
 export default function Footer() {
   const { t } = useLanguage();
-
+  
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -12,16 +12,15 @@ export default function Footer() {
           <div className="footer-center-section">
             <div className="footer-section">
               <h3 className="footer-section-title">{t.footer.brandName}</h3>
-              <div className="footer-description">
-                <p className="description-text">
-                  {t.footer.description}
-                </p>
-                <p className="description-text">
-                  {t.footer.subDescription}
-                </p>
+              <p className="footer-description">
+                {t.footer.description}
+              </p>
+              <div className="social-links">
+            
+                <a href="#" className="social-link">📷</a>
               </div>
             </div>
-
+            
             <div className="footer-section">
               <h4 className="footer-section-title">{t.footer.contactInfo.title}</h4>
               <div className="contact-info">
@@ -32,7 +31,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
+        
         <div className="footer-bottom">
           <p className="footer-copyright">
             {t.footer.copyright}

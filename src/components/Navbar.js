@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NanasRoomsLogo from '../NanasRoomsLogo.svg';
 import { useLanguage } from "../contexts/LanguageContext";
 import "../styles/main.css";
 
@@ -16,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <img src={NanasRoomsLogo} alt="Nana's Rooms Logo" style={{ height: 40, width: 'auto', borderRadius: 8, background: '#fff' }} />
+          <img src="/nanasLogo.png" alt="Nana's Rooms Logo" style={{ height: 70, width: 'auto', borderRadius: 8, background: '#fff' }} />
         </div>
         <ul className="navbar-links">
           <li className="navbar-item">
