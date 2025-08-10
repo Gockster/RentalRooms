@@ -139,8 +139,8 @@ export default function AriesSuite() {
                       }}
                     >
                       {showAllImages 
-                        ? (currentLanguage === 'en' ? 'Show Less' : 'Λιγότερα') 
-                        : (currentLanguage === 'en' ? `Show More (${images.length - initialImageCount} more)` : `Περισσότερα (${images.length - initialImageCount} ακόμη)`)}
+                        ? (t.roomDetails?.showLess || 'Show Less') 
+                        : (t.roomDetails?.showMore ? `${t.roomDetails.showMore} (${images.length - initialImageCount} ${t.roomDetails?.more || 'more'})` : `Show More (${images.length - initialImageCount} more)`)}
                     </button>
                   </div>
                 )}
@@ -204,55 +204,53 @@ export default function AriesSuite() {
                     zIndex: 1002
                   }}>
                     <button className="btn btn-primary btn-large">
-                      {currentLanguage === 'en' 
-                        ? <>For booking call us on <span role="img" aria-label="phone">📞</span> +30 6955217820</> 
-                        : <>Για κράτηση καλέστε μας στο <span role="img" aria-label="phone">📞</span> +30 6955217820</>}
+                      {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
                     </button>
                   </div>
                 </div>
               )}
               <div className="room-facilities-hero">
-                <h3>{currentLanguage === 'en' ? 'Facilities' : 'Παροχές'}</h3>
+                <h3>{t.roomDetails?.facilities || 'Facilities'}</h3>
                 <div className="amenities-grid">
                   <div className="amenity-item">
                     <span className="amenity-icon"><Home size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Entire place to yourself' : 'Όλο το κατάλυμα στη διάθεσή σας'}</span>
+                    <span>{t.roomDetails?.entirePlace || 'Entire place to yourself'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Ruler size={20} /></span>
-                    <span>{currentLanguage === 'en' ? '42 m² size' : '42 τ.μ. μέγεθος'}</span>
+                    <span>{t.roomDetails?.size42 || '42 m² size'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Wifi size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Free WiFi' : 'Δωρεάν Wi-Fi'}</span>
+                    <span>{t.roomDetails?.freeWifi || 'Free WiFi'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><ShowerHead size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Private Bathroom' : 'Ιδιωτικό μπάνιο'}</span>
+                    <span>{t.roomDetails?.privateBathroom || 'Private Bathroom'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Snowflake size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Air Conditioning' : 'Κλιματισμός'}</span>
+                    <span>{t.roomDetails?.airConditioning || 'Air Conditioning'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Building size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Balcony' : 'Μπαλκόνι'}</span>
+                    <span>{t.roomDetails?.balcony || 'Balcony'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Building size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Terrace' : 'Βεράντα'}</span>
+                    <span>{t.roomDetails?.terrace || 'Terrace'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Bath size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Bath or Shower' : 'Μπανιέρα ή ντους'}</span>
+                    <span>{t.roomDetails?.bathOrShower || 'Bath or Shower'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Bell size={20} /></span>
-                    <span>{currentLanguage === 'en' ? '24-hour Front Desk' : '24ωρη Ρεσεψιόν'}</span>
+                    <span>{t.roomDetails?.frontDesk24 || '24-hour Front Desk'}</span>
                   </div>
                   <div className="amenity-item">
                     <span className="amenity-icon"><Sparkles size={20} /></span>
-                    <span>{currentLanguage === 'en' ? 'Daily Housekeeping' : 'Καθημερινή υπηρεσία καθαριότητας'}</span>
+                    <span>{t.roomDetails?.dailyHousekeeping || 'Daily Housekeeping'}</span>
                   </div>
                 </div>
               </div>
@@ -260,68 +258,60 @@ export default function AriesSuite() {
             <div className="room-details-section">
               <div className="room-info">
                 <h2 className="section-title">
-                  {currentLanguage === 'en' ? 'About This Property' : 'Σχετικά με το Ακίνητο'}
+                  {t.roomDetails?.aboutProperty || 'About This Property'}
                 </h2>
                 
                 {/* Property Description */}
                 <div className="property-description" style={{ marginBottom: '25px' }}>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
-                    {currentLanguage === 'en' 
-                      ? "The entire place is yours. ARIES Suite in Mykonos offers a holiday home with comfortable accommodation featuring 42 m² of space, two bedrooms and two bathrooms." 
-                      : "Στην καρδιά του προορισμού Μύκονος Χώρα και σε μικρή απόσταση από τα σημεία ενδιαφέροντος Παραλία Αγία Άννα και Αρχαιολογικό Μουσείο Μυκόνου, το ARIES Suite προσφέρει δωρεάν WiFi, κλιματισμό και οικιακές παροχές, όπως ψυγείο και ηλεκτρικό βραστήρα. Αυτό το κατάλυμα προσφέρει πρόσβαση σε βεράντα."}
+                    {t.roomDetails?.ariesDescription1 || "The entire place is yours. ARIES Suite in Mykonos offers a holiday home with comfortable accommodation featuring 42 m² of space, two bedrooms and two bathrooms."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
-                    {currentLanguage === 'en' 
-                      ? "The property features 2 bathrooms with bath or shower, and free toiletries and hair dryer are provided." 
-                      : "Το κατάλυμα έχει επίσης 2 μπάνια με μπανιέρα ή ντους, ενώ διατίθενται δωρεάν προϊόντα μπάνιου και στεγνωτήρας μαλλιών."}
+                    {t.roomDetails?.ariesDescription2 || "The property features 2 bathrooms with bath or shower, and free toiletries and hair dryer are provided."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
-                    {currentLanguage === 'en' 
-                      ? "The reception staff speaks Arabic, Greek and English." 
-                      : "Οι γλώσσες που μιλάει το προσωπικό στη ρεσεψιόν είναι Αραβικά, Ελληνικά και Αγγλικά."}
+                    {t.roomDetails?.ariesDescription3 || "The reception staff speaks Arabic, Greek and English."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6' }}>
-                    {currentLanguage === 'en' 
-                      ? "Near ARIES Suite you will find popular attractions such as Mykonos Old Port, Mykonos Windmills and Little Venice. Mykonos Airport is 3 km away from the property." 
-                      : "Κοντά στο ARIES Suite θα βρείτε δημοφιλή σημεία ενδιαφέροντος, όπως Παλιό Λιμάνι Μυκόνου, Ανεμόμυλοι Μυκόνου και Μικρή Βενετία. Το αεροδρόμιο Αεροδρόμιο Μυκόνου είναι 3 χλμ μακριά από το κατάλυμα."}
+                    {t.roomDetails?.ariesDescription4 || "Near ARIES Suite you will find popular attractions such as Mykonos Old Port, Mykonos Windmills and Little Venice. Mykonos Airport is 3 km away from the property."}
                   </p>
                 </div>
 
                 <h3 className="section-title" style={{ fontSize: '20px', marginBottom: '15px' }}>
-                  {currentLanguage === 'en' ? 'Suite Specifications' : 'Προδιαγραφές Σουίτας'}
+                  {t.roomDetails?.suiteSpecifications || 'Suite Specifications'}
                 </h3>
                 <div className="room-specs">
                   <div className="spec-item">
                     <span className="spec-icon"><Ruler size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Size' : 'Μέγεθος'}</h4>
+                      <h4>{t.roomDetails?.size || 'Size'}</h4>
                       <p>42 m²</p>
                     </div>
                   </div>
                   <div className="spec-item">
                     <span className="spec-icon"><Home size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Bedrooms' : 'Υπνοδωμάτια'}</h4>
-                      <p>{currentLanguage === 'en' ? '2 Bedrooms' : '2 Υπνοδωμάτια'}</p>
+                      <h4>{t.roomDetails?.bedrooms || 'Bedrooms'}</h4>
+                      <p>{t.roomDetails?.twoBedroomsTwo || '2 Bedrooms'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
                     <span className="spec-icon"><ShowerHead size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Bathrooms' : 'Μπάνια'}</h4>
-                      <p>{currentLanguage === 'en' ? '2 Private Bathrooms' : '2 Ιδιωτικά Μπάνια'}</p>
+                      <h4>{t.roomDetails?.bathrooms || 'Bathrooms'}</h4>
+                      <p>{t.roomDetails?.twoBathrooms || '2 Private Bathrooms'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
                     <span className="spec-icon"><Users size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Guests' : 'Επισκέπτες'}</h4>
-                      <p>{currentLanguage === 'en' ? 'Up to 4 people' : 'Έως 4 άτομα'}</p>
+                      <h4>{t.roomDetails?.guests || 'Guests'}</h4>
+                      <p>{t.roomDetails?.upToGuests || 'Up to 4 people'}</p>
                     </div>
                   </div>
                 </div>
                 <div className="room-pricing">
-                  <h3>{currentLanguage === 'en' ? 'Pricing' : 'Τιμές'}</h3>
+                  <h3>{t.roomDetails?.pricing || 'Pricing'}</h3>
                   <div className="price-info">
                     <span className="price">200</span>
                     <span className="price-period">{t.gallery?.priceLabels?.night}</span>
@@ -334,9 +324,7 @@ export default function AriesSuite() {
                 {!enlargedImage && (
                   <div className="room-actions">
                     <button className="btn btn-primary btn-large">
-                      {currentLanguage === 'en' 
-                        ? <>For booking call us on <span role="img" aria-label="phone">📞</span> +30 6955217820</> 
-                        : <>Για κράτηση καλέστε μας στο <span role="img" aria-label="phone">📞</span> +30 6955217820</>}
+                      {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
                     </button>
                   </div>
                 )}
@@ -356,7 +344,7 @@ export default function AriesSuite() {
         }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
-              {currentLanguage === 'en' ? 'Property Area' : 'Περιοχή καταλύματος'}
+              {t.roomDetails?.propertyArea || 'Property Area'}
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
@@ -369,47 +357,47 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', display: 'flex', alignItems: 'center' }}>
                   <Building size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'What\'s nearby' : 'Τι υπάρχει κοντά'}
+                  {t.roomDetails?.whatsNearby || "What's nearby"}
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Little Venice' : 'Μικρή Βενετία'}</span>
+                    <span>{t.roomDetails?.littleVenice || 'Little Venice'}</span>
                     <span style={{ color: '#666' }}>150 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Meletopoulou Municipal Garden' : 'Δημοτικός Κήπος του Μελετόπουλου'}</span>
+                    <span>{t.roomDetails?.meletopoulouGarden || 'Meletopoulou Municipal Garden'}</span>
                     <span style={{ color: '#666' }}>150 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Mykonos Windmills' : 'Ανεμόμυλοι Μυκόνου'}</span>
+                    <span>{t.roomDetails?.mykonosWindmills || 'Mykonos Windmills'}</span>
                     <span style={{ color: '#666' }}>350 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Archaeological Museum of Mykonos' : 'Αρχαιολογικό Μουσείο Μυκόνου'}</span>
+                    <span>{t.roomDetails?.archaeologicalMuseum || 'Archaeological Museum of Mykonos'}</span>
                     <span style={{ color: '#666' }}>500 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>Fabrica Square</span>
+                    <span>{t.roomDetails?.fabricaSquare || 'Fabrica Square'}</span>
                     <span style={{ color: '#666' }}>500 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Tholos Tomb of Mykonos' : 'Θολωτοσ Ταφοσ Μυκονου'}</span>
+                    <span>{t.roomDetails?.tholosTomb || 'Tholos Tomb of Mykonos'}</span>
                     <span style={{ color: '#666' }}>1,6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Armenistis Lighthouse' : 'Φάρος Αρμενιστής'}</span>
+                    <span>{t.roomDetails?.armenistisLighthouse || 'Armenistis Lighthouse'}</span>
                     <span style={{ color: '#666' }}>5 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Neolithic Settlement of Ftelia Mykonos' : 'Νεολιθικοσ Οικισμοσ Φτελιασ Μυκονου'}</span>
+                    <span>{t.roomDetails?.neolithicSettlement || 'Neolithic Settlement of Ftelia Mykonos'}</span>
                     <span style={{ color: '#666' }}>6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Gyzi Castle' : 'Καστρο Γκυζη'}</span>
+                    <span>{t.roomDetails?.gyziCastle || 'Gyzi Castle'}</span>
                     <span style={{ color: '#666' }}>7 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{currentLanguage === 'en' ? 'Stadium District' : 'Συνοικια Του Σταδιου'}</span>
+                    <span>{t.roomDetails?.stadiumDistrict || 'Stadium District'}</span>
                     <span style={{ color: '#666' }}>10 χλμ.</span>
                   </div>
                 </div>
@@ -424,19 +412,19 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#28a745', display: 'flex', alignItems: 'center' }}>
                   <Coffee size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Restaurants & Cafes' : 'Εστιατόρια & καφέ'}
+                  {t.roomDetails?.restaurantsCafes || 'Restaurants & Cafes'}
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Room 101' : 'Καφέ/μπαρRoom 101'}</span>
+                    <span>{t.roomDetails?.cafeBarRoom101 || 'Cafe/Bar Room 101'}</span>
                     <span style={{ color: '#666' }}>20 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Boutique di Vito' : 'Καφέ/μπαρBoutique di Vito'}</span>
+                    <span>{t.roomDetails?.cafeBarBoutique || 'Cafe/Bar Boutique di Vito'}</span>
                     <span style={{ color: '#666' }}>3 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{currentLanguage === 'en' ? 'Cafe/Bar Paloma Bar' : 'Καφέ/μπαρPaloma Bar'}</span>
+                    <span>{t.roomDetails?.cafeBarPaloma || 'Cafe/Bar Paloma Bar'}</span>
                     <span style={{ color: '#666' }}>20 μ.</span>
                   </div>
                 </div>
@@ -451,27 +439,27 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#17a2b8', display: 'flex', alignItems: 'center' }}>
                   <Waves size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Nearby Beaches' : 'Κοντινές παραλίες'}
+                  {t.roomDetails?.nearbyBeaches || 'Nearby Beaches'}
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Agia Anna Beach' : 'Παραλία Αγία Άννα'}</span>
+                    <span>{t.roomDetails?.agiaAnnaBeach || 'Agia Anna Beach'}</span>
                     <span style={{ color: '#666' }}>200 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Agios Charalampos Beach' : 'Παραλία Άγιος Χαράλαμπος'}</span>
+                    <span>{t.roomDetails?.agiosCharalamposBeach || 'Agios Charalampos Beach'}</span>
                     <span style={{ color: '#666' }}>550 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Megali Ammos Beach' : 'Παραλία Μεγάλη Άμμος'}</span>
+                    <span>{t.roomDetails?.megaliAmmosBeach || 'Megali Ammos Beach'}</span>
                     <span style={{ color: '#666' }}>950 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Korfos Beach' : 'Παραλία Κόρφος'}</span>
+                    <span>{t.roomDetails?.korfosBeach || 'Korfos Beach'}</span>
                     <span style={{ color: '#666' }}>1,6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{currentLanguage === 'en' ? 'Tourlos Beach' : 'Παραλία Τούρλος'}</span>
+                    <span>{t.roomDetails?.tourlosBeach || 'Tourlos Beach'}</span>
                     <span style={{ color: '#666' }}>1,7 χλμ.</span>
                   </div>
                 </div>
@@ -486,19 +474,19 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#dc3545', display: 'flex', alignItems: 'center' }}>
                   <Plane size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Nearest Airports' : 'Κοντινότερα αεροδρόμια'}
+                  {t.roomDetails?.nearestAirports || 'Nearest Airports'}
                 </h3>
                 <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Mykonos Airport' : 'Αεροδρόμιο Μυκόνου'}</span>
+                    <span>{t.roomDetails?.mykonosAirport || 'Mykonos Airport'}</span>
                     <span style={{ color: '#666' }}>1,9 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Syros Airport' : 'Αεροδρόμιο Σύρου'}</span>
+                    <span>{t.roomDetails?.syrosAirport || 'Syros Airport'}</span>
                     <span style={{ color: '#666' }}>42 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{currentLanguage === 'en' ? 'Naxos State Airport' : 'Κρατικός Αερολιμένας Νάξου'}</span>
+                    <span>{t.roomDetails?.naxosAirport || 'Naxos State Airport'}</span>
                     <span style={{ color: '#666' }}>49 χλμ.</span>
                   </div>
                 </div>
@@ -507,9 +495,7 @@ export default function AriesSuite() {
 
             <div style={{ marginTop: '30px', textAlign: 'center' }}>
               <p style={{ fontSize: '14px', color: '#666', fontStyle: 'italic' }}>
-                {currentLanguage === 'en' 
-                  ? 'Approximate shortest walking or driving distances are shown. Actual distances may differ.'
-                  : 'Εμφανίζονται οι κατά προσέγγιση συντομότερες αποστάσεις με τα πόδια ή το αυτοκίνητο. Οι πραγματικές αποστάσεις ενδέχεται να διαφέρουν.'}
+                {t.roomDetails?.distanceDisclaimer || 'Approximate shortest walking or driving distances are shown. Actual distances may differ.'}
               </p>
             </div>
           </div>
@@ -525,7 +511,7 @@ export default function AriesSuite() {
         }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
-              {currentLanguage === 'en' ? 'ARIES Suite Amenities' : 'Παροχές του ARIES Suite'}
+              {t.roomDetails?.ariesSuiteAmenities || 'ARIES Suite Amenities'}
             </h2>
 
            
@@ -535,16 +521,16 @@ export default function AriesSuite() {
             <div style={{ marginBottom: '40px' }}>
               <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', textAlign: 'center' }}>
                 <Sparkles size={24} style={{ marginRight: '10px', verticalAlign: 'middle' }} />
-                {currentLanguage === 'en' ? 'Most Popular Amenities' : 'Οι πιο δημοφιλείς παροχές'}
+                {t.roomDetails?.mostPopularAmenities || 'Most Popular Amenities'}
               </h3>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '15px', marginBottom: '30px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', padding: '15px', backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
                   <Wifi size={20} style={{ marginRight: '10px', color: '#28a745' }} />
-                  <span>{currentLanguage === 'en' ? 'Free Wi-Fi' : 'Δωρεάν Wi-Fi'}</span>
+                  <span>{t.roomDetails?.freeWiFiAmenity || 'Free Wi-Fi'}</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', padding: '15px', backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
                   <Bell size={20} style={{ marginRight: '10px', color: '#28a745' }} />
-                  <span>{currentLanguage === 'en' ? '24-hour Reception' : '24ωρη Ρεσεψιόν'}</span>
+                  <span>{t.roomDetails?.reception24Amenity || '24-hour Reception'}</span>
                 </div>
               </div>
             </div>
@@ -560,32 +546,32 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', display: 'flex', alignItems: 'center' }}>
                   <Home size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Perfect for your stay' : 'Ιδανικά για τη διαμονή σας'}
+                  {t.roomDetails?.perfectForStay || 'Perfect for your stay'}
                 </h3>
                 <div style={{ display: 'grid', gap: '10px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <ShowerHead size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Private Bathroom' : 'Ιδιωτικό μπάνιο'}</span>
+                    <span>{t.roomDetails?.privateBathroomAmenity || 'Private Bathroom'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Snowflake size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Air Conditioning' : 'Κλιματισμός'}</span>
+                    <span>{t.roomDetails?.airConditioning || 'Air Conditioning'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Building size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Balcony' : 'Μπαλκόνι'}</span>
+                    <span>{t.roomDetails?.balcony || 'Balcony'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Wifi size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Free Wi-Fi' : 'Δωρεάν Wi-Fi'}</span>
+                    <span>{t.roomDetails?.freeWifi || 'Free Wi-Fi'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Building size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Terrace' : 'Βεράντα'}</span>
+                    <span>{t.roomDetails?.terrace || 'Terrace'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Bath size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Bath or Shower' : 'Μπανιέρα ή ντους'}</span>
+                    <span>{t.roomDetails?.bathOrShowerAmenity || 'Bath or Shower'}</span>
                   </div>
                 </div>
               </div>
@@ -599,10 +585,10 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#dc3545', display: 'flex', alignItems: 'center' }}>
                   <Car size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Parking' : 'Χώρος στάθμευσης'}
+                  {t.roomDetails?.parking || 'Parking'}
                 </h3>
                 <p style={{ margin: '0', color: '#666' }}>
-                  {currentLanguage === 'en' ? 'No parking available.' : 'Δεν υπάρχει χώρος στάθμευσης.'}
+                  {t.roomDetails?.noParkingAvailable || 'No parking available.'}
                 </p>
               </div>
 
@@ -615,10 +601,10 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#28a745', display: 'flex', alignItems: 'center' }}>
                   <Wifi size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Internet' : 'Ίντερνετ'}
+                  {t.roomDetails?.internet || 'Internet'}
                 </h3>
                 <p style={{ margin: '0', color: '#666' }}>
-                  {currentLanguage === 'en' ? 'Wi-Fi is available throughout and is not charged.' : 'Wi-Fi διατίθεται σε όλους τους χώρους και δεν χρεώνεται.'}
+                  {t.roomDetails?.wifiAvailableInfo || 'Wi-Fi is available throughout and is not charged.'}
                 </p>
               </div>
 
@@ -631,20 +617,20 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#ff8c00', display: 'flex', alignItems: 'center' }}>
                   <Utensils size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Kitchen' : 'Κουζίνα'}
+                  {t.roomDetails?.kitchen || 'Kitchen'}
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Utensils size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Dining table' : 'Τραπέζι φαγητού'}</span>
+                    <span>{t.roomDetails?.diningTable || 'Dining table'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Zap size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Electric kettle' : 'Ηλεκτρικός βραστήρας'}</span>
+                    <span>{t.roomDetails?.electricKettle || 'Electric kettle'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Building size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Refrigerator' : 'Ψυγείο'}</span>
+                    <span>{t.roomDetails?.refrigerator || 'Refrigerator'}</span>
                   </div>
                 </div>
               </div>
@@ -658,11 +644,11 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#6f42c1', display: 'flex', alignItems: 'center' }}>
                   <Home size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Bedroom' : 'Υπνοδωμάτιο'}
+                  {t.roomDetails?.bedroom || 'Bedroom'}
                 </h3>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <Clock size={18} style={{ marginRight: '10px', color: '#666' }} />
-                  <span>{currentLanguage === 'en' ? 'Alarm clock' : 'Ξυπνητήρι'}</span>
+                  <span>{t.roomDetails?.alarmClock || 'Alarm clock'}</span>
                 </div>
               </div>
 
@@ -675,32 +661,32 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#17a2b8', display: 'flex', alignItems: 'center' }}>
                   <ShowerHead size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Bathroom' : 'Μπάνιο'}
+                  {t.roomDetails?.bathroom || 'Bathroom'}
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Building size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Toilet paper' : 'Χαρτί υγείας'}</span>
+                    <span>{t.roomDetails?.toiletPaper || 'Toilet paper'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Sparkles size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Towels' : 'Πετσέτες'}</span>
+                    <span>{t.roomDetails?.towels || 'Towels'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Bath size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Bath or shower' : 'Μπανιέρα ή ντους'}</span>
+                    <span>{t.roomDetails?.bathOrShowerAmenity || 'Bath or shower'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <ShowerHead size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Private bathroom' : 'Ιδιωτικό μπάνιο'}</span>
+                    <span>{t.roomDetails?.privateBathroomAmenity || 'Private bathroom'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Sparkles size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Free toiletries' : 'Δωρεάν προϊόντα περιποίησης'}</span>
+                    <span>{t.roomDetails?.freeToiletries || 'Free toiletries'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Wind size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Hair dryer' : 'Στεγνωτήρας μαλλιών'}</span>
+                    <span>{t.roomDetails?.hairDryer || 'Hair dryer'}</span>
                   </div>
                 </div>
               </div>
@@ -714,20 +700,20 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#795548', display: 'flex', alignItems: 'center' }}>
                   <Home size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Living Room' : 'Σαλόνι'}
+                  {t.roomDetails?.livingRoom || 'Living Room'}
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Utensils size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Dining area' : 'Τραπεζαρία'}</span>
+                    <span>{t.roomDetails?.diningArea || 'Dining area'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Home size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Sofa' : 'Καναπές'}</span>
+                    <span>{t.roomDetails?.sofa || 'Sofa'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Home size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Seating area' : 'Καθιστικό'}</span>
+                    <span>{t.roomDetails?.seatingArea || 'Seating area'}</span>
                   </div>
                 </div>
               </div>
@@ -741,36 +727,36 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#e91e63', display: 'flex', alignItems: 'center' }}>
                   <Home size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Room Amenities' : 'Παροχές Δωματίου'}
+                  {t.roomDetails?.roomAmenities || 'Room Amenities'}
                 </h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Plug size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Socket near bed' : 'Πρίζα κοντά στο κρεβάτι'}</span>
+                    <span>{t.roomDetails?.socketNearBed || 'Socket near bed'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Shirt size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Heated clothes rack' : 'Θερμαινόμενη κρεμάστρα για ρούχα'}</span>
+                    <span>{t.roomDetails?.heatedClothesRack || 'Heated clothes rack'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Shirt size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Clothes drying rack' : 'Απλώστρα ρούχων'}</span>
+                    <span>{t.roomDetails?.clothesDryingRack || 'Clothes drying rack'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <TreePine size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Wooden or parquet flooring' : 'Ξύλινο ή παρκέ δάπεδο'}</span>
+                    <span>{t.roomDetails?.woodenOrParquetFlooring || 'Wooden or parquet flooring'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Building size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Tiled/marble flooring' : 'Δάπεδο με πλακάκια / μάρμαρο'}</span>
+                    <span>{t.roomDetails?.tiledMarbleFlooring || 'Tiled/marble flooring'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <DoorOpen size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Private entrance' : 'Ιδιωτική είσοδος'}</span>
+                    <span>{t.roomDetails?.privateEntrance || 'Private entrance'}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Flame size={18} style={{ marginRight: '10px', color: '#666' }} />
-                    <span>{currentLanguage === 'en' ? 'Heating' : 'Θέρμανση'}</span>
+                    <span>{t.roomDetails?.heating || 'Heating'}</span>
                   </div>
                 </div>
               </div>
@@ -788,24 +774,24 @@ export default function AriesSuite() {
               }}>
                 <h4 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#1976d2', display: 'flex', alignItems: 'center' }}>
                   <Bell size={20} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Reception Services' : 'Υπηρεσίες ρεσεψιόν'}
+                  {t.roomDetails?.receptionServices || 'Reception Services'}
                 </h4>
                 <div style={{ display: 'grid', gap: '8px', fontSize: '14px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Receipt size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'Invoice provision possible' : 'Δυνατότητα παροχής τιμολογίου'}
+                    {t.roomDetails?.invoiceProvision || 'Invoice provision possible'}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Luggage size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'Luggage storage (extra charge)' : 'Χώρος φύλαξης αποσκευών (επιπλέον χρέωση)'}
+                    {t.roomDetails?.luggageStorage || 'Luggage storage (extra charge)'}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Clock size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'Express check-in/out (extra charge)' : 'Γρήγορο check in/check out (επιπλέον χρέωση)'}
+                    {t.roomDetails?.expressCheckInOut || 'Express check-in/out (extra charge)'}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Bell size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? '24-hour reception' : '24ωρη Ρεσεψιόν'}
+                    {t.roomDetails?.reception24Hours || '24-hour reception'}
                   </div>
                 </div>
               </div>
@@ -818,11 +804,11 @@ export default function AriesSuite() {
               }}>
                 <h4 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#2e7d32', display: 'flex', alignItems: 'center' }}>
                   <Sparkles size={20} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Cleaning Services' : 'Υπηρεσίες καθαριότητας'}
+                  {t.roomDetails?.cleaningServices || 'Cleaning Services'}
                 </h4>
                 <div style={{ fontSize: '14px', display: 'flex', alignItems: 'center' }}>
                   <Sparkles size={16} style={{ marginRight: '8px', color: '#666' }} />
-                  {currentLanguage === 'en' ? 'Daily housekeeping (extra charge)' : 'Καθημερινή υπηρεσία καθαριότητας (επιπλέον χρέωση)'}
+                  {t.roomDetails?.dailyHousekeepingExtra || 'Daily housekeeping (extra charge)'}
                 </div>
               </div>
 
@@ -834,20 +820,20 @@ export default function AriesSuite() {
               }}>
                 <h4 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '15px', color: '#f57c00', display: 'flex', alignItems: 'center' }}>
                   <Languages size={20} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Communication Languages' : 'Γλώσσες επικοινωνίας'}
+                  {t.roomDetails?.communicationLanguages || 'Communication Languages'}
                 </h4>
                 <div style={{ display: 'grid', gap: '5px', fontSize: '14px' }}>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Languages size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'Arabic' : 'Αραβικά'}
+                    {t.roomDetails?.arabic || 'Arabic'}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Languages size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'Greek' : 'Ελληνικά'}
+                    {t.roomDetails?.greek || 'Greek'}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Languages size={16} style={{ marginRight: '8px', color: '#666' }} />
-                    {currentLanguage === 'en' ? 'English' : 'Αγγλικά'}
+                    {t.roomDetails?.english || 'English'}
                   </div>
                 </div>
               </div>
@@ -866,7 +852,7 @@ export default function AriesSuite() {
         }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
-              {currentLanguage === 'en' ? 'Property Rules & Policies' : 'Κανονισμοί καταλύματος'}
+              {t.roomDetails?.propertyRulesPolicies || 'Property Rules & Policies'}
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
@@ -880,29 +866,27 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', display: 'flex', alignItems: 'center' }}>
                   <Calendar size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Check-in/Check-out' : 'Check-in/Check-out'}
+                  {t.roomDetails?.checkInOut || 'Check-in/Check-out'}
                 </h3>
                 
                 <div style={{ marginBottom: '20px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
-                    {currentLanguage === 'en' ? 'Check-in' : 'Check-in'}
+                    {t.roomDetails?.checkInTime || 'Check-in'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666', marginBottom: '5px' }}>
-                    {currentLanguage === 'en' ? 'From 3:00 PM to 8:00 PM' : 'Από 3:00 μ.μ. έως 8:00 μ.μ.'}
+                    {t.roomDetails?.checkInHours || 'From 3:00 PM to 8:00 PM'}
                   </p>
                   <p style={{ fontSize: '13px', color: '#888', fontStyle: 'italic' }}>
-                    {currentLanguage === 'en' 
-                      ? 'You must inform the property in advance about your arrival time.' 
-                      : 'Θα πρέπει να ενημερώσετε το κατάλυμα εκ των προτέρων τι ώρα θα φτάσετε.'}
+                    {t.roomDetails?.checkInAdvanceNotice || 'You must inform the property in advance about your arrival time.'}
                   </p>
                 </div>
 
                 <div style={{ marginBottom: '20px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
-                    {currentLanguage === 'en' ? 'Check-out' : 'Check-out'}
+                    {t.roomDetails?.checkOutTime || 'Check-out'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' ? 'From 8:00 AM to 12:00 PM' : 'Από 8:00 π.μ. έως 12:00 μ.μ.'}
+                    {t.roomDetails?.checkOutHours || 'From 8:00 AM to 12:00 PM'}
                   </p>
                 </div>
               </div>
@@ -918,37 +902,33 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#28a745', display: 'flex', alignItems: 'center' }}>
                   <Home size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Children and Beds' : 'Παιδιά και κρεβάτια'}
+                  {t.roomDetails?.childrenBeds || 'Children and Beds'}
                 </h3>
                 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
-                    {currentLanguage === 'en' ? 'Children Policies' : 'Πολιτικές σχετικά με τα παιδιά'}
+                    {t.roomDetails?.childrenPolicies || 'Children Policies'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' ? 'Children are not allowed.' : 'Δεν επιτρέπονται τα παιδιά.'}
+                    {t.roomDetails?.childrenNotAllowed || 'Children are not allowed.'}
                   </p>
                 </div>
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
-                    {currentLanguage === 'en' ? 'Crib and Extra Bed Policies' : 'Πολιτικές για βρεφικές κούνιες και επιπλέον κρεβάτια'}
+                    {t.roomDetails?.cribExtraBedPolicies || 'Crib and Extra Bed Policies'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' 
-                      ? 'This property does not have cribs and extra beds available.'
-                      : 'Αυτό το κατάλυμα δεν διαθέτει βρεφικές κούνιες και επιπλέον κρεβάτια.'}
+                    {t.roomDetails?.noCribsExtraBeds || 'This property does not have cribs and extra beds available.'}
                   </p>
                 </div>
 
                 <div>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px' }}>
-                    {currentLanguage === 'en' ? 'No Age Restrictions' : 'Χωρίς περιορισμό ηλικίας'}
+                    {t.roomDetails?.noAgeRestrictions || 'No Age Restrictions'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' 
-                      ? 'There are no age restrictions for check-in.'
-                      : 'Δεν υπάρχουν περιορισμοί ηλικίας για το check-in'}
+                    {t.roomDetails?.noAgeRestrictionsCheckIn || 'There are no age restrictions for check-in.'}
                   </p>
                 </div>
               </div>
@@ -962,38 +942,36 @@ export default function AriesSuite() {
               }}>
                 <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#6f42c1', display: 'flex', alignItems: 'center' }}>
                   <Building size={24} style={{ marginRight: '10px' }} />
-                  {currentLanguage === 'en' ? 'Property Policies' : 'Πολιτικές καταλύματος'}
+                  {t.roomDetails?.propertyPolicies || 'Property Policies'}
                 </h3>
                 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
                     <Wind size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
-                    {currentLanguage === 'en' ? 'Smoking Policy' : 'Πολιτική καπνίσματος'}
+                    {t.roomDetails?.smokingPolicy || 'Smoking Policy'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' ? 'Smoking is not allowed.' : 'Δεν επιτρέπεται το κάπνισμα.'}
+                    {t.roomDetails?.smokingNotAllowed || 'Smoking is not allowed.'}
                   </p>
                 </div>
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
                     <Sparkles size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
-                    {currentLanguage === 'en' ? 'Parties' : 'Πάρτι'}
+                    {t.roomDetails?.parties || 'Parties'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' 
-                      ? 'Parties or events are not allowed.'
-                      : 'Δεν επιτρέπονται τα πάρτι ή/και οι εκδηλώσεις'}
+                    {t.roomDetails?.partiesNotAllowed || 'Parties or events are not allowed.'}
                   </p>
                 </div>
 
                 <div>
                   <h4 style={{ fontSize: '16px', fontWeight: 'bold', color: '#333', marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
                     <Home size={18} style={{ marginRight: '8px', color: '#dc3545' }} />
-                    {currentLanguage === 'en' ? 'Pets' : 'Κατοικίδια ζώα'}
+                    {t.roomDetails?.pets || 'Pets'}
                   </h4>
                   <p style={{ fontSize: '14px', color: '#666' }}>
-                    {currentLanguage === 'en' ? 'Pets are not allowed.' : 'Τα κατοικίδια δεν επιτρέπονται.'}
+                    {t.roomDetails?.petsNotAllowed || 'Pets are not allowed.'}
                   </p>
                 </div>
               </div>

@@ -44,6 +44,30 @@ export default function Navbar() {
                   >
                     🇬🇷 Ελληνικά
                   </button>
+                  <button
+                    onClick={() => selectLanguage('it')}
+                    className={`dropdown-item ${currentLanguage === 'it' ? 'active-language' : ''}`}
+                  >
+                    🇮🇹 Italiano
+                  </button>
+                  <button
+                    onClick={() => selectLanguage('de')}
+                    className={`dropdown-item ${currentLanguage === 'de' ? 'active-language' : ''}`}
+                  >
+                    🇩🇪 Deutsch
+                  </button>
+                  <button
+                    onClick={() => selectLanguage('es')}
+                    className={`dropdown-item ${currentLanguage === 'es' ? 'active-language' : ''}`}
+                  >
+                    🇪🇸 Español
+                  </button>
+                  <button
+                    onClick={() => selectLanguage('ar')}
+                    className={`dropdown-item ${currentLanguage === 'ar' ? 'active-language' : ''}`}
+                  >
+                    🇸🇦 العربية
+                  </button>
                 </div>
               )}
             </div>

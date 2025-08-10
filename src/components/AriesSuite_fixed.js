@@ -68,12 +68,17 @@ export default function AriesSuite() {
             </div>
             <div className="room-title-section">
               <h1 className="room-title">
-                {currentLanguage === 'en' ? 'Aries Suite' : 'Aries Suite'}
+                {t.gallery?.rooms?.find(room => room.id === 'aries-suite')?.title || 'Aries Suite'}
               </h1>
               <p className="room-subtitle">
-                {currentLanguage === 'en' 
-                  ? 'Elegant suite in the heart of Mykonos with panoramic views' 
-                  : 'Κομψή σουίτα στην καρδιά της Μυκόνου με πανοραμική θέα'}
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Καλλιάρχη 9, Μύκονος Χώρα, 846 00, Ελλάδα')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#007bff', textDecoration: 'none' }}
+                >
+                  Καλλιάρχη 9, Μύκονος Χώρα, 846 00, Ελλάδα
+                </a>
               </p>
             </div>
           </div>
