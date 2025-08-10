@@ -521,6 +521,7 @@ const translations = {
         // Room Details
         roomDetails: {
             aboutProperty: "Σχετικά με το Ακίνητο",
+            propertyArea: "Περιοχή Καταλύματος",
             suiteSpecifications: "Προδιαγραφές Σουίτας",
             guests: "Επισκέπτες",
             bedrooms: "Υπνοδωμάτια",
