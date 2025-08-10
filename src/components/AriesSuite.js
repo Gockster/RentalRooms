@@ -32,7 +32,8 @@ import {
   Flame,
   Receipt,
   Luggage,
-  Languages
+  Languages,
+  ArrowUp
 } from "lucide-react";
 
 export default function AriesSuite() {
@@ -996,6 +997,46 @@ export default function AriesSuite() {
           </div>
         </div>
       </main>
+      
+      {/* Go to Top Button */}
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        padding: '30px 20px',
+        backgroundColor: '#f8f9fa'
+      }}>
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '12px',
+            backgroundColor: '#007bff',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50%',
+            fontSize: '16px',
+            fontWeight: '500',
+            cursor: 'pointer',
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 12px rgba(0, 123, 255, 0.3)'
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = '#0056b3';
+            e.target.style.transform = 'translateY(-2px)';
+            e.target.style.boxShadow = '0 6px 16px rgba(0, 123, 255, 0.4)';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = '#007bff';
+            e.target.style.transform = 'translateY(0)';
+            e.target.style.boxShadow = '0 4px 12px rgba(0, 123, 255, 0.3)';
+          }}
+        >
+          <ArrowUp size={20} />
+        </button>
+      </div>
+      
       <Footer />
     </div>
   );

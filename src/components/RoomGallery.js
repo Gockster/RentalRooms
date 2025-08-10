@@ -48,6 +48,8 @@ export default function RoomGallery() {
   const handleRoomClick = (roomId) => {
     const roomPath = getRoomPath(roomId);
     navigate(`/rooms/${roomPath}`);
+    // Scroll to top when navigating to room details
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const renderStars = (rating) => {
