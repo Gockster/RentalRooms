@@ -4,6 +4,19 @@ import { ariesSuiteImages } from "../data/RoomsImages";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../styles/main.css";
+import { 
+  Home, 
+  Ruler, 
+  Wifi, 
+  Users, 
+  Bath, 
+  Snowflake, 
+  Building, 
+  ShowerHead, 
+  Bell, 
+  Sparkles,
+  Calendar
+} from "lucide-react";
 
 export default function AriesSuite() {
   const { t, currentLanguage } = useLanguage();
@@ -179,43 +192,43 @@ export default function AriesSuite() {
                 <h3>{currentLanguage === 'en' ? 'Facilities' : 'Παροχές'}</h3>
                 <div className="amenities-grid">
                   <div className="amenity-item">
-                    <span className="amenity-icon">🏠</span>
+                    <span className="amenity-icon"><Home size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Entire place to yourself' : 'Όλο το κατάλυμα στη διάθεσή σας'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">�</span>
+                    <span className="amenity-icon"><Ruler size={20} /></span>
                     <span>{currentLanguage === 'en' ? '42 m² size' : '42 τ.μ. μέγεθος'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">�📶</span>
+                    <span className="amenity-icon"><Wifi size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Free WiFi' : 'Δωρεάν Wi-Fi'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🚿</span>
+                    <span className="amenity-icon"><ShowerHead size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Private Bathroom' : 'Ιδιωτικό μπάνιο'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">❄️</span>
+                    <span className="amenity-icon"><Snowflake size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Air Conditioning' : 'Κλιματισμός'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🏛️</span>
+                    <span className="amenity-icon"><Building size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Balcony' : 'Μπαλκόνι'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🌅</span>
+                    <span className="amenity-icon"><Building size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Terrace' : 'Βεράντα'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🛁</span>
+                    <span className="amenity-icon"><Bath size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Bath or Shower' : 'Μπανιέρα ή ντους'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🏨</span>
+                    <span className="amenity-icon"><Bell size={20} /></span>
                     <span>{currentLanguage === 'en' ? '24-hour Front Desk' : '24ωρη Ρεσεψιόν'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">🧹</span>
+                    <span className="amenity-icon"><Sparkles size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Daily Housekeeping' : 'Καθημερινή υπηρεσία καθαριότητας'}</span>
                   </div>
                 </div>
@@ -256,28 +269,28 @@ export default function AriesSuite() {
                 </h3>
                 <div className="room-specs">
                   <div className="spec-item">
-                    <span className="spec-icon">📐</span>
+                    <span className="spec-icon"><Ruler size={24} /></span>
                     <div className="spec-info">
                       <h4>{currentLanguage === 'en' ? 'Size' : 'Μέγεθος'}</h4>
                       <p>42 m²</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">🛏️</span>
+                    <span className="spec-icon"><Home size={24} /></span>
                     <div className="spec-info">
                       <h4>{currentLanguage === 'en' ? 'Bedrooms' : 'Υπνοδωμάτια'}</h4>
                       <p>{currentLanguage === 'en' ? '2 Bedrooms' : '2 Υπνοδωμάτια'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">🚿</span>
+                    <span className="spec-icon"><ShowerHead size={24} /></span>
                     <div className="spec-info">
                       <h4>{currentLanguage === 'en' ? 'Bathrooms' : 'Μπάνια'}</h4>
                       <p>{currentLanguage === 'en' ? '2 Private Bathrooms' : '2 Ιδιωτικά Μπάνια'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">👥</span>
+                    <span className="spec-icon"><Users size={24} /></span>
                     <div className="spec-info">
                       <h4>{currentLanguage === 'en' ? 'Guests' : 'Επισκέπτες'}</h4>
                       <p>{currentLanguage === 'en' ? 'Up to 4 people' : 'Έως 4 άτομα'}</p>

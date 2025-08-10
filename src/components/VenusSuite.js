@@ -4,6 +4,19 @@ import { venusSuiteImages } from "../data/RoomsImages";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../styles/main.css";
+import { 
+  Home, 
+  Ruler, 
+  Wifi, 
+  Users, 
+  Bath, 
+  Snowflake, 
+  Building, 
+  ShowerHead, 
+  Bell, 
+  Sparkles,
+  Calendar
+} from "lucide-react";
 
 export default function VenusSuite() {
   const { t, currentLanguage } = useLanguage();
@@ -179,43 +192,43 @@ export default function VenusSuite() {
                 <h3>{currentLanguage === 'en' ? 'Facilities' : 'Παροχές'}</h3>
                 <div className="amenities-grid">
                   <div className="amenity-item">
-                    <span className="amenity-icon">⌂</span>
+                    <span className="amenity-icon"><Home size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Entire place to yourself' : 'Όλο το κατάλυμα στη διάθεσή σας'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">□</span>
-                    <span>{currentLanguage === 'en' ? '42 m² size' : '42 τ.μ. μέγεθος'}</span>
+                    <span className="amenity-icon"><Ruler size={20} /></span>
+                    <span>{currentLanguage === 'en' ? '32 m² size' : '32 τ.μ. μέγεθος'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">◉</span>
+                    <span className="amenity-icon"><Wifi size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Free WiFi' : 'Δωρεάν Wi-Fi'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">�</span>
+                    <span className="amenity-icon"><Users size={20} /></span>
+                    <span>{currentLanguage === 'en' ? 'Family rooms' : 'Οικογενειακά δωμάτια'}</span>
+                  </div>
+                  <div className="amenity-item">
+                    <span className="amenity-icon"><Bath size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Private Bathroom' : 'Ιδιωτικό μπάνιο'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">❋</span>
+                    <span className="amenity-icon"><Snowflake size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Air Conditioning' : 'Κλιματισμός'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">▢</span>
+                    <span className="amenity-icon"><Building size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Balcony' : 'Μπαλκόνι'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon">◈</span>
-                    <span>{currentLanguage === 'en' ? 'Terrace' : 'Βεράντα'}</span>
+                    <span className="amenity-icon"><ShowerHead size={20} /></span>
+                    <span>{currentLanguage === 'en' ? 'Shower' : 'Ντους'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon"><i className="fas fa-shower"></i></span>
-                    <span>{currentLanguage === 'en' ? 'Bath or Shower' : 'Μπανιέρα ή ντους'}</span>
-                  </div>
-                  <div className="amenity-item">
-                    <span className="amenity-icon"><i className="fas fa-concierge-bell"></i></span>
+                    <span className="amenity-icon"><Bell size={20} /></span>
                     <span>{currentLanguage === 'en' ? '24-hour Front Desk' : '24ωρη Ρεσεψιόν'}</span>
                   </div>
                   <div className="amenity-item">
-                    <span className="amenity-icon"><i className="fas fa-broom"></i></span>
+                    <span className="amenity-icon"><Sparkles size={20} /></span>
                     <span>{currentLanguage === 'en' ? 'Daily Housekeeping' : 'Καθημερινή υπηρεσία καθαριότητας'}</span>
                   </div>
                 </div>
@@ -231,23 +244,23 @@ export default function VenusSuite() {
                 <div className="property-description" style={{ marginBottom: '25px' }}>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
                     {currentLanguage === 'en' 
-                      ? "The entire place is yours. VENUS Suite in Mykonos offers a holiday home with comfortable accommodation featuring 42 m² of space, two bedrooms and two bathrooms." 
-                      : "Στην καρδιά του προορισμού Μύκονος Χώρα και σε μικρή απόσταση από τα σημεία ενδιαφέροντος Παραλία Αγία Άννα και Αρχαιολογικό Μουσείο Μυκόνου, το VENUS Suite προσφέρει δωρεάν WiFi, κλιματισμό και οικιακές παροχές, όπως ψυγείο και ηλεκτρικό βραστήρα. Αυτό το κατάλυμα προσφέρει πρόσβαση σε βεράντα."}
+                      ? "VENUS Suite is located in Mykonos Town and is 300m from Agia Anna Beach. It features a terrace, free WiFi, 24-hour front desk and ATM. The property was built in 1980 and has a balcony." 
+                      : "Το VENUS Suite είναι στη Μύκονο Χώρα και απέχει 300μ από Παραλία Αγία Άννα. Διαθέτει βεράντα, δωρεάν WiFi, 24ωρη ρεσεψιόν και ΑΤΜ. Το κατάλυμα χτίστηκε το 1980 και έχει μπαλκόνι."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
                     {currentLanguage === 'en' 
-                      ? "The property features 2 bathrooms with bath or shower, and free toiletries and hair dryer are provided." 
-                      : "Το κατάλυμα έχει επίσης 2 μπάνια με μπανιέρα ή ντους, ενώ διατίθενται δωρεάν προϊόντα μπάνιου και στεγνωτήρας μαλλιών."}
+                      ? "The air-conditioned accommodation also features 1 bathroom with shower." 
+                      : "Το κλιματιζόμενο κατάλυμα διαθέτει επίσης 1 μπάνιο με ντους."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
                     {currentLanguage === 'en' 
-                      ? "The reception staff speaks Arabic, Greek and English." 
-                      : "Οι γλώσσες που μιλάει το προσωπικό στη ρεσεψιόν είναι Αραβικά, Ελληνικά και Αγγλικά."}
+                      ? "Near VENUS Suite you will find popular attractions such as Little Venice, Archaeological Museum of Mykonos and Mykonos Old Port. Mykonos Airport is 3 km away from the property." 
+                      : "Κοντά στο VENUS Suite θα βρείτε δημοφιλή σημεία ενδιαφέροντος, όπως Μικρή Βενετία, Αρχαιολογικό Μουσείο Μυκόνου και Παλιό Λιμάνι Μυκόνου. Το αεροδρόμιο Αεροδρόμιο Μυκόνου είναι 3 χλμ μακριά από το κατάλυμα."}
                   </p>
                   <p style={{ fontSize: '16px', lineHeight: '1.6' }}>
                     {currentLanguage === 'en' 
-                      ? "Near VENUS Suite you will find popular attractions such as Mykonos Old Port, Mykonos Windmills and Little Venice. Mykonos Airport is 3 km away from the property." 
-                      : "Κοντά στο VENUS Suite θα βρείτε δημοφιλή σημεία ενδιαφέροντος, όπως Παλιό Λιμάνι Μυκόνου, Ανεμόμυλοι Μυκόνου και Μικρή Βενετία. Το αεροδρόμιο Αεροδρόμιο Μυκόνου είναι 3 χλμ μακριά από το κατάλυμα."}
+                      ? "This location is especially popular with couples – they rated it 10.0 for a two-person trip." 
+                      : "Η τοποθεσία αρέσει ιδιαίτερα σε ζευγάρια – τη βαθμολόγησαν με 10,0 για ταξίδι δύο ατόμων."}
                   </p>
                 </div>
 
@@ -256,31 +269,31 @@ export default function VenusSuite() {
                 </h3>
                 <div className="room-specs">
                   <div className="spec-item">
-                    <span className="spec-icon">�</span>
+                    <span className="spec-icon"><Ruler size={24} /></span>
                     <div className="spec-info">
                       <h4>{currentLanguage === 'en' ? 'Size' : 'Μέγεθος'}</h4>
-                      <p>42 m²</p>
+                      <p>32 m²</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">�🛏️</span>
+                    <span className="spec-icon"><Users size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Bedrooms' : 'Υπνοδωμάτια'}</h4>
-                      <p>{currentLanguage === 'en' ? '2 Bedrooms' : '2 Υπνοδωμάτια'}</p>
+                      <h4>{currentLanguage === 'en' ? 'Room Type' : 'Τύπος Δωματίου'}</h4>
+                      <p>{currentLanguage === 'en' ? 'Family Room' : 'Οικογενειακό Δωμάτιο'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">🚿</span>
+                    <span className="spec-icon"><ShowerHead size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Bathrooms' : 'Μπάνια'}</h4>
-                      <p>{currentLanguage === 'en' ? '2 Private Bathrooms' : '2 Ιδιωτικά Μπάνια'}</p>
+                      <h4>{currentLanguage === 'en' ? 'Bathroom' : 'Μπάνιο'}</h4>
+                      <p>{currentLanguage === 'en' ? '1 Private Bathroom with Shower' : '1 Ιδιωτικό Μπάνιο με Ντους'}</p>
                     </div>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-icon">👥</span>
+                    <span className="spec-icon"><Calendar size={24} /></span>
                     <div className="spec-info">
-                      <h4>{currentLanguage === 'en' ? 'Guests' : 'Επισκέπτες'}</h4>
-                      <p>{currentLanguage === 'en' ? 'Up to 4 people' : 'Έως 4 άτομα'}</p>
+                      <h4>{currentLanguage === 'en' ? 'Built' : 'Χτίστηκε'}</h4>
+                      <p>1980</p>
                     </div>
                   </div>
                 </div>
