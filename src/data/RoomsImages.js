@@ -3,33 +3,33 @@
 export const heroImages = [
     {
         url: "/images/RoomsImages/room-nana-01.jpg",
-        title: "Luxury Modern Suites",
-        subtitle: "Premium accommodations with stunning city views"
+        title: "Welcome to Nana's Rooms",
+        subtitle: "Authentic Mykonos accommodations in the heart of Chora"
     },
     {
         url: "/images/RoomsImages/room-nana-04.webp",
-        title: "Cozy Studio Apartments",
-        subtitle: "Perfect for solo travelers and digital nomads"
+        title: "Comfortable & Stylish",
+        subtitle: "Modern amenities with traditional Cycladic charm"
     },
     {
         url: "/images/RoomsImages/room-nana-05.webp",
-        title: "Family-Friendly Spaces",
-        subtitle: "Spacious accommodations for groups and families"
+        title: "Perfect Location",
+        subtitle: "Steps away from Mykonos town's vibrant nightlife"
     },
     {
         url: "/images/RoomsImages/room-nana-52.jpg",
-        title: "Executive Rooms",
-        subtitle: "Professional stays with business amenities"
+        title: "Cozy Retreats",
+        subtitle: "Your home away from home in beautiful Mykonos"
     },
     {
         url: "/images/RoomsImages/room-nana-20.jpg",
-        title: "Executive Rooms",
-        subtitle: "Professional stays with business amenities"
+        title: "Island Living",
+        subtitle: "Experience the magic of Greek island hospitality"
     },
     {
         url: "/images/RoomsImages/room-nana-51.jpg",
-        title: "Executive Rooms",
-        subtitle: "Professional stays with business amenities"
+        title: "Unforgettable Stays",
+        subtitle: "Create memories that will last a lifetime"
     }
 ];
 
