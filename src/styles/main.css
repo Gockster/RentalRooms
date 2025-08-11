@@ -594,6 +594,92 @@
   padding: 0 20px;
 }
 
+/* Column container for each room + FAQ */
+.room-gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-height: 0; /* Allow flex items to shrink */
+}
+
+/* FAQ Wrapper for Room Gallery */
+.room-gallery-faq-wrapper {
+  width: 100%;
+  margin: 30px 0 0 0;
+  position: relative;
+  z-index: 1; /* Lower than modal overlays */
+}
+
+/* ============================================
+   ROOM FAQS SECTION STYLES
+   ============================================ */
+
+.room-faqs-container {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  margin: 40px 0;
+}
+
+.room-faqs-header {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.room-faqs-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.room-faqs-subtitle {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.room-faqs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.room-faqs-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .room-faqs-container {
+    padding: 40px 15px;
+    margin: 30px 0;
+  }
+  
+  .room-faqs-header {
+    margin-bottom: 30px;
+  }
+  
+  .room-faqs-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  
+  .room-faqs-subtitle {
+    font-size: 16px;
+  }
+  
+  .room-faqs-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .room-gallery-grid {
     grid-template-columns: 1fr;
@@ -604,6 +690,10 @@
   
   .room-gallery-card {
     min-height: 500px;
+  }
+  
+  .room-gallery-faq-wrapper {
+    margin: 20px 0 0 0;
   }
   
   .room-gallery-details h3 {

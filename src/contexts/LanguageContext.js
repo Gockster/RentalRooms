@@ -8,7 +8,9 @@ const translations = {
     en: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms en Booking",
+            description: "Your trusted partner for finding the perfect accommodation",
+            subDescription: "Comfortable stays, affordable prices.",
             mobile: "📱 Mobile",
             maps: "🗺️ Maps",
             email: "📧 atdimitriadou@gmail.com",
@@ -85,7 +87,7 @@ const translations = {
                     id: "venus-suite",
                     title: "Venus Suite",
                     description: "Luxurious suite inspired by the goddess of love and beauty."
-                } 
+                }
             ],
             amenityLabels: {
                 "Free Wi-Fi": "Free Wi-Fi",
@@ -193,7 +195,7 @@ const translations = {
             // Addresses with Google Maps links
             ariesAddress: "Kalliarchi 9, Mykonos Chora, 846 00, Greece",
             ariesAddressLink: "https://www.google.com/maps/place/Kalliarchi+9,+Mykonos+846+00,+Greece",
-            venusAddress: "Petrou Drakopoulu 14, Mykonos Chora, 846 00, Greece", 
+            venusAddress: "Petrou Drakopoulu 14, Mykonos Chora, 846 00, Greece",
             venusAddressLink: "https://www.google.com/maps/place/Petrou+Drakopoulu+14,+Mykonos+846+00,+Greece",
             // Property Area section
             whatsNearby: "What's nearby",
@@ -294,7 +296,90 @@ const translations = {
             parties: "Parties",
             partiesNotAllowed: "Parties or events are not allowed.",
             pets: "Pets",
-            petsNotAllowed: "Pets are not allowed."
+            petsNotAllowed: "Pets are not allowed.",
+            // FAQ Section
+            faqSectionTitle: "Frequently Asked Questions",
+            faqSectionSubtitle: "Find answers to common questions about our suites",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Frequently Asked Questions for ARIES Suite",
+                questions: [
+                    {
+                        question: "How many guests can sleep in the ARIES Suite?",
+                        answer: "The ARIES Suite can accommodate the following number of guests:\n\n3 guests"
+                    },
+                    {
+                        question: "Is there a balcony at the ARIES Suite?",
+                        answer: "Yes, this accommodation has options with a balcony. You can learn more about this and other amenities of the ARIES Suite on this page."
+                    },
+                    {
+                        question: "Is there a terrace at the ARIES Suite?",
+                        answer: "Yes, this accommodation has options with a terrace. You can learn more about this and other amenities of the ARIES Suite on this page."
+                    },
+                    {
+                        question: "What are the check-in and check-out times at the ARIES Suite?",
+                        answer: "Check-in at the ARIES Suite is from 3:00 PM and check-out is until 12:00 PM."
+                    },
+                    {
+                        question: "How many bedrooms does the ARIES Suite have?",
+                        answer: "The ARIES Suite includes the following number of bedrooms:\n\n2 bedrooms"
+                    },
+                    {
+                        question: "How much does it cost to stay at the ARIES Suite?",
+                        answer: "Prices at the ARIES Suite may vary depending on your stay (i.e. dates you select, hotel policy etc). Enter your dates to see prices."
+                    },
+                    {
+                        question: "How far is the ARIES Suite from the center of Mykonos Town?",
+                        answer: "The ARIES Suite is 100 m away from the center of Mykonos Town."
+                    },
+                    {
+                        question: "How close to the beach is the ARIES Suite?",
+                        answer: "The nearest beach is only 200 m away from the ARIES Suite."
+                    },
+                    {
+                        question: "Is the ARIES Suite popular with families?",
+                        answer: "Yes, the ARIES Suite is popular with guests booking family stays."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Frequently Asked Questions for VENUS Suite",
+                questions: [
+                    {
+                        question: "How many guests can sleep in the VENUS Suite?",
+                        answer: "The VENUS Suite can accommodate the following number of guests:\n\n2 guests"
+                    },
+                    {
+                        question: "Is there a balcony at the VENUS Suite?",
+                        answer: "Yes, this accommodation has options with a balcony. You can learn more about this and other amenities of the VENUS Suite on this page."
+                    },
+                    {
+                        question: "What are the check-in and check-out times at the VENUS Suite?",
+                        answer: "Check-in at the VENUS Suite is from 3:00 PM and check-out is until 11:00 AM."
+                    },
+                    {
+                        question: "How many bedrooms does the VENUS Suite have?",
+                        answer: "The VENUS Suite includes the following number of bedrooms:\n\n1 bedroom"
+                    },
+                    {
+                        question: "How much does it cost to stay at the VENUS Suite?",
+                        answer: "Prices at the VENUS Suite may vary depending on your stay (i.e. dates you select, hotel policy etc). Enter your dates to see prices."
+                    },
+                    {
+                        question: "How far is the VENUS Suite from the center of Mykonos Town?",
+                        answer: "The VENUS Suite is 100 m away from the center of Mykonos Town."
+                    },
+                    {
+                        question: "How close to the beach is the VENUS Suite?",
+                        answer: "The nearest beach is only 200 m away from the VENUS Suite."
+                    },
+                    {
+                        question: "Is the VENUS Suite popular with families?",
+                        answer: "Yes, the VENUS Suite is popular with guests booking family stays."
+                    }
+                ]
+            }
         },
         // Footer
         footer: {
@@ -415,7 +500,9 @@ const translations = {
     gr: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms su Booking",
+            description: "Il tuo partner fidato per trovare la sistemazione perfetta",
+            subDescription: "Soggiorni confortevoli, prezzi convenienti.",
             mobile: "📱 Κινητό",
             maps: "🗺️ Χάρτες",
             email: "📧 atdimitriadou@gmail.com",
@@ -498,7 +585,7 @@ const translations = {
                     description: "Πολυτελής σουίτα εμπνευσμένη από τη θεά του έρωτα και της ομορφιάς."
                 }
             ],
-            amenityLabels: {    
+            amenityLabels: {
                 "Free Wi-Fi": "Δωρεάν Wi-Fi",
                 "Air Conditioning": "Κλιματισμός",
                 "24/7 Reception": "Ρεσεψιόν 24/7",
@@ -684,11 +771,96 @@ const translations = {
             parties: "Πάρτι",
             partiesNotAllowed: "Δεν επιτρέπονται τα πάρτι ή/και οι εκδηλώσεις",
             pets: "Κατοικίδια ζώα",
-            petsNotAllowed: "Τα κατοικίδια δεν επιτρέπονται."
+            petsNotAllowed: "Τα κατοικίδια δεν επιτρέπονται.",
+            // FAQ Section
+            faqSectionTitle: "Συχνές Ερωτήσεις",
+            faqSectionSubtitle: "Βρείτε απαντήσεις σε συχνές ερωτήσεις για τα διαμερίσματά μας",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Συχνές ερωτήσεις για το ARIES Suite",
+                questions: [
+                    {
+                        question: "Πόσοι επισκέπτες μπορούν να κοιμηθούν στο ARIES Suite;",
+                        answer: "Το ARIES Suite μπορεί να φιλοξενήσει τον ακόλουθο αριθμό επισκεπτών:\n\n3 επισκέπτες"
+                    },
+                    {
+                        question: "Υπάρχει μπαλκόνι στο ARIES Suite;",
+                        answer: "Ναι, σε αυτό το κατάλυμα υπάρχουν επιλογές που προσφέρουν μπαλκόνι. Μπορείτε να μάθετε περισσότερα για αυτό και για τις άλλες παροχές του ARIES Suite σε αυτή τη σελίδα."
+                    },
+                    {
+                        question: "Υπάρχει βεράντα στο ARIES Suite;",
+                        answer: "Ναι, σε αυτό το κατάλυμα υπάρχουν επιλογές που προσφέρουν βεράντα. Μπορείτε να μάθετε περισσότερα για αυτό και για τις άλλες παροχές του ARIES Suite σε αυτή τη σελίδα."
+                    },
+                    {
+                        question: "Ποιες είναι οι ώρες check-in και check-out στο ARIES Suite;",
+                        answer: "Το check-in στο ARIES Suite πραγματοποιείται από τις 15:00 και το check-out μέχρι τις 12:00."
+                    },
+                    {
+                        question: "Πόσα υπνοδωμάτια έχει το ARIES Suite;",
+                        answer: "Το ARIES Suite περιλαμβάνει τον παρακάτω αριθμό υπνοδωματίων:\n\n2 υπνοδωμάτια"
+                    },
+                    {
+                        question: "Πόσο κοστίζει η διαμονή στο ARIES Suite;",
+                        answer: "Οι τιμές στο ARIES Suite μπορεί να διαφέρουν ανάλογα με τη διαμονή σας (δηλ. τις ημερομηνίες που επιλέγετε, την πολιτική του ξενοδοχείου κλπ). Εισαγάγετε τις ημερομηνίες σας για να δείτε τιμές."
+                    },
+                    {
+                        question: "Πόσο μακριά βρίσκεται το ARIES Suite από το κέντρο της πόλης Μύκονος Χώρα;",
+                        answer: "Το ARIES Suite απέχει 100 μ. από το κέντρο της πόλης Μύκονος Χώρα."
+                    },
+                    {
+                        question: "Πόσο κοντά στην παραλία βρίσκεται το ARIES Suite;",
+                        answer: "Η πλησιέστερη παραλία απέχει μόνο 200 μ. από το ARIES Suite."
+                    },
+                    {
+                        question: "Είναι το ARIES Suite δημοφιλές στις οικογένειες;",
+                        answer: "Ναι, το ARIES Suite είναι δημοφιλές στους επισκέπτες που κάνουν κράτηση για οικογενειακές διαμονές."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Συχνές ερωτήσεις για το VENUS Suite",
+                questions: [
+                    {
+                        question: "Πόσοι επισκέπτες μπορούν να κοιμηθούν στο VENUS Suite;",
+                        answer: "Το VENUS Suite μπορεί να φιλοξενήσει τον ακόλουθο αριθμό επισκεπτών:\n\n2 επισκέπτες"
+                    },
+                    {
+                        question: "Υπάρχει μπαλκόνι στο VENUS Suite;",
+                        answer: "Ναι, σε αυτό το κατάλυμα υπάρχουν επιλογές που προσφέρουν μπαλκόνι. Μπορείτε να μάθετε περισσότερα για αυτό και για τις άλλες παροχές του VENUS Suite σε αυτή τη σελίδα."
+                    },
+                    {
+                        question: "Ποιες είναι οι ώρες check-in και check-out στο VENUS Suite;",
+                        answer: "Το check-in στο VENUS Suite πραγματοποιείται από τις 15:00 και το check-out μέχρι τις 11:00."
+                    },
+                    {
+                        question: "Πόσα υπνοδωμάτια έχει το VENUS Suite;",
+                        answer: "Το VENUS Suite περιλαμβάνει τον παρακάτω αριθμό υπνοδωματίων:\n\n1 υπνοδωμάτιο"
+                    },
+                    {
+                        question: "Πόσο κοστίζει η διαμονή στο VENUS Suite;",
+                        answer: "Οι τιμές στο VENUS Suite μπορεί να διαφέρουν ανάλογα με τη διαμονή σας (δηλ. τις ημερομηνίες που επιλέγετε, την πολιτική του ξενοδοχείου κλπ). Εισαγάγετε τις ημερομηνίες σας για να δείτε τιμές."
+                    },
+                    {
+                        question: "Πόσο μακριά βρίσκεται το VENUS Suite από το κέντρο της πόλης Μύκονος Χώρα;",
+                        answer: "Το VENUS Suite απέχει 100 μ. από το κέντρο της πόλης Μύκονος Χώρα."
+                    },
+                    {
+                        question: "Πόσο κοντά στην παραλία βρίσκεται το VENUS Suite;",
+                        answer: "Η πλησιέστερη παραλία απέχει μόνο 200 μ. από το VENUS Suite."
+                    },
+                    {
+                        question: "Είναι το VENUS Suite δημοφιλές στις οικογένειες;",
+                        answer: "Ναι, το VENUS Suite είναι δημοφιλές στους επισκέπτες που κάνουν κράτηση για οικογενειακές διαμονές."
+                    }
+                ]
+            }
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms on Booking",
+            brandName: "Nana's Rooms στην Booking",
+            description: "Ihr vertrauenswürdiger Partner für die perfekte Unterkunft",
+            subDescription: "Komfortable Aufenthalte, günstige Preise.",
             description: "Ο αξιόπιστος συνεργάτης σας για την εύρεση του τέλειου καταλύματος",
             subDescription: "Άνετες διαμονές, προσιτές τιμές.",
             quickLinks: {
@@ -806,7 +978,9 @@ const translations = {
     it: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms en Booking",
+            description: "Su socio de confianza para encontrar el alojamiento perfecto",
+            subDescription: "Estancias cómodas, precios asequibles.",
             mobile: "📱 Cellulare",
             maps: "🗺️ Mappe",
             email: "📧 atdimitriadou@gmail.com",
@@ -1056,6 +1230,89 @@ const translations = {
             arabic: "Arabo",
             greek: "Greco",
             english: "Inglese",
+            // FAQ Section
+            faqSectionTitle: "Domande Frequenti",
+            faqSectionSubtitle: "Trova risposte alle domande comuni sulle nostre suite",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Domande Frequenti per ARIES Suite",
+                questions: [
+                    {
+                        question: "Quanti ospiti possono dormire nella Suite ARIES?",
+                        answer: "La Suite ARIES può ospitare il seguente numero di ospiti:\n\n3 ospiti"
+                    },
+                    {
+                        question: "C'è un balcone nella Suite ARIES?",
+                        answer: "Sì, questa sistemazione offre opzioni con balcone. Puoi trovare maggiori informazioni su questo e altri servizi della Suite ARIES in questa pagina."
+                    },
+                    {
+                        question: "C'è una terrazza nella Suite ARIES?",
+                        answer: "Sì, questa sistemazione offre opzioni con terrazza. Puoi trovare maggiori informazioni su questo e altri servizi della Suite ARIES in questa pagina."
+                    },
+                    {
+                        question: "Quali sono gli orari di check-in e check-out per la Suite ARIES?",
+                        answer: "Il check-in per la Suite ARIES è dalle 15:00 e il check-out è fino alle 12:00."
+                    },
+                    {
+                        question: "Quante camere da letto ci sono nella Suite ARIES?",
+                        answer: "La Suite ARIES include il seguente numero di camere da letto:\n\n2 camere da letto"
+                    },
+                    {
+                        question: "Quanto costa soggiornare nella Suite ARIES?",
+                        answer: "I prezzi della Suite ARIES possono variare in base al soggiorno (cioè alle date selezionate, alla politica dell'hotel, ecc.). Inserisci le tue date per vedere i prezzi."
+                    },
+                    {
+                        question: "A che distanza si trova la Suite ARIES dal centro di Mykonos?",
+                        answer: "La Suite ARIES si trova a 100 m dal centro di Mykonos."
+                    },
+                    {
+                        question: "Quanto è vicina la Suite ARIES alla spiaggia?",
+                        answer: "La spiaggia più vicina si trova a soli 200 m dalla Suite ARIES."
+                    },
+                    {
+                        question: "La Suite ARIES è popolare tra le famiglie?",
+                        answer: "Sì, la Suite ARIES è popolare tra gli ospiti che prenotano soggiorni in famiglia."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Domande Frequenti per VENUS Suite",
+                questions: [
+                    {
+                        question: "Quanti ospiti possono dormire nella Suite VENUS?",
+                        answer: "La Suite VENUS può ospitare il seguente numero di ospiti:\n\n2 ospiti"
+                    },
+                    {
+                        question: "C'è un balcone nella Suite VENUS?",
+                        answer: "Sì, questa sistemazione offre opzioni con balcone. Puoi trovare maggiori informazioni su questo e altri servizi della Suite VENUS in questa pagina."
+                    },
+                    {
+                        question: "Quali sono gli orari di check-in e check-out per la Suite VENUS?",
+                        answer: "Il check-in per la Suite VENUS è dalle 15:00 e il check-out è fino alle 11:00."
+                    },
+                    {
+                        question: "Quante camere da letto ci sono nella Suite VENUS?",
+                        answer: "La Suite VENUS include il seguente numero di camere da letto:\n\n1 camera da letto"
+                    },
+                    {
+                        question: "Quanto costa soggiornare nella Suite VENUS?",
+                        answer: "I prezzi della Suite VENUS possono variare in base al soggiorno (cioè alle date selezionate, alla politica dell'hotel, ecc.). Inserisci le tue date per vedere i prezzi."
+                    },
+                    {
+                        question: "A che distanza si trova la Suite VENUS dal centro di Mykonos?",
+                        answer: "La Suite VENUS si trova a 100 m dal centro di Mykonos."
+                    },
+                    {
+                        question: "Quanto è vicina la Suite VENUS alla spiaggia?",
+                        answer: "La spiaggia più vicina si trova a soli 200 m dalla Suite VENUS."
+                    },
+                    {
+                        question: "La Suite VENUS è popolare tra le famiglie?",
+                        answer: "Sì, la Suite VENUS è popolare tra gli ospiti che prenotano soggiorni in famiglia."
+                    }
+                ]
+            },
             // Property Rules section
             propertyRulesPolicies: "Regole e Politiche della Struttura",
             checkInOut: "Check-in/Check-out",
@@ -1081,7 +1338,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms on Booking",
+            brandName: "Camere di Nana su prenotazione",
             description: "Il tuo partner fidato per trovare la sistemazione perfetta",
             subDescription: "Soggiorni confortevoli, prezzi convenienti.",
             quickLinks: {
@@ -1114,7 +1371,9 @@ const translations = {
     de: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms sur Booking",
+            description: "Votre partenaire de confiance pour trouver l'hébergement parfait",
+            subDescription: "Séjours confortables, prix abordables.",
             mobile: "📱 Handy",
             maps: "🗺️ Karten",
             email: "📧 atdimitriadou@gmail.com",
@@ -1364,6 +1623,89 @@ const translations = {
             arabic: "Arabisch",
             greek: "Griechisch",
             english: "Englisch",
+            // FAQ Section
+            faqSectionTitle: "Häufig Gestellte Fragen",
+            faqSectionSubtitle: "Finden Sie Antworten auf häufige Fragen zu unseren Suiten",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Häufig Gestellte Fragen zur ARIES Suite",
+                questions: [
+                    {
+                        question: "Wie viele Gäste können in der ARIES Suite schlafen?",
+                        answer: "Die ARIES Suite bietet Platz für folgende Anzahl von Gästen:\n\n3 Gäste"
+                    },
+                    {
+                        question: "Gibt es einen Balkon in der ARIES Suite?",
+                        answer: "Ja, diese Unterkunft bietet Optionen mit Balkon. Weitere Informationen hierzu und zu anderen Annehmlichkeiten der ARIES Suite finden Sie auf dieser Seite."
+                    },
+                    {
+                        question: "Gibt es eine Terrasse in der ARIES Suite?",
+                        answer: "Ja, diese Unterkunft bietet Optionen mit Terrasse. Weitere Informationen hierzu und zu anderen Annehmlichkeiten der ARIES Suite finden Sie auf dieser Seite."
+                    },
+                    {
+                        question: "Wie sind die Check-in- und Check-out-Zeiten in der ARIES Suite?",
+                        answer: "Der Check-in in der ARIES Suite ist ab 15:00 Uhr und der Check-out bis 12:00 Uhr möglich."
+                    },
+                    {
+                        question: "Wie viele Schlafzimmer hat die ARIES Suite?",
+                        answer: "Die ARIES Suite verfügt über folgende Anzahl an Schlafzimmern:\n\n2 Schlafzimmer"
+                    },
+                    {
+                        question: "Wie viel kostet ein Aufenthalt in der ARIES Suite?",
+                        answer: "Die Preise in der ARIES Suite können je nach Aufenthalt variieren (z. B. je nach ausgewählten Daten, Hotelrichtlinie usw.). Geben Sie Ihre Daten ein, um die Preise zu sehen."
+                    },
+                    {
+                        question: "Wie weit ist die ARIES Suite vom Zentrum von Mykonos entfernt?",
+                        answer: "Die ARIES Suite liegt 100 m vom Zentrum von Mykonos entfernt."
+                    },
+                    {
+                        question: "Wie nah ist die ARIES Suite am Strand?",
+                        answer: "Der nächste Strand ist nur 200 m von der ARIES Suite entfernt."
+                    },
+                    {
+                        question: "Ist die ARIES Suite bei Familien beliebt?",
+                        answer: "Ja, die ARIES Suite ist bei Gästen, die Familienaufenthalte buchen, beliebt."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Häufig Gestellte Fragen zur VENUS Suite",
+                questions: [
+                    {
+                        question: "Wie viele Gäste können in der VENUS Suite schlafen?",
+                        answer: "Die VENUS Suite bietet Platz für folgende Anzahl von Gästen:\n\n2 Gäste"
+                    },
+                    {
+                        question: "Gibt es einen Balkon in der VENUS Suite?",
+                        answer: "Ja, diese Unterkunft bietet Optionen mit Balkon. Weitere Informationen hierzu und zu anderen Annehmlichkeiten der VENUS Suite finden Sie auf dieser Seite."
+                    },
+                    {
+                        question: "Wie sind die Check-in- und Check-out-Zeiten in der VENUS Suite?",
+                        answer: "Der Check-in in der VENUS Suite ist ab 15:00 Uhr und der Check-out bis 11:00 Uhr möglich."
+                    },
+                    {
+                        question: "Wie viele Schlafzimmer hat die VENUS Suite?",
+                        answer: "Die VENUS Suite verfügt über folgende Anzahl an Schlafzimmern:\n\n1 Schlafzimmer"
+                    },
+                    {
+                        question: "Wie viel kostet ein Aufenthalt in der VENUS Suite?",
+                        answer: "Die Preise in der VENUS Suite können je nach Aufenthalt variieren (z. B. je nach ausgewählten Daten, Hotelrichtlinie usw.). Geben Sie Ihre Daten ein, um die Preise zu sehen."
+                    },
+                    {
+                        question: "Wie weit ist die VENUS Suite vom Zentrum von Mykonos entfernt?",
+                        answer: "Die VENUS Suite liegt 100 m vom Zentrum von Mykonos entfernt."
+                    },
+                    {
+                        question: "Wie nah ist die VENUS Suite am Strand?",
+                        answer: "Der nächste Strand ist nur 200 m von der VENUS Suite entfernt."
+                    },
+                    {
+                        question: "Ist die VENUS Suite bei Familien beliebt?",
+                        answer: "Ja, die VENUS Suite ist bei Gästen, die Familienaufenthalte buchen, beliebt."
+                    }
+                ]
+            },
             // Property Rules section
             propertyRulesPolicies: "Hausordnung & Richtlinien",
             checkInOut: "Check-in/Check-out",
@@ -1389,7 +1731,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms on Booking",
+            brandName: "Nana's Rooms sur Booking",
             description: "Ihr vertrauensvoller Partner bei der Suche nach der perfekten Unterkunft",
             subDescription: "Komfortable Aufenthalte, erschwingliche Preise.",
             quickLinks: {
@@ -1422,7 +1764,7 @@ const translations = {
     es: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             mobile: "📱 Móvil",
             maps: "🗺️ Mapas",
             email: "📧 atdimitriadou@gmail.com",
@@ -1672,6 +2014,9 @@ const translations = {
             arabic: "Árabe",
             greek: "Griego",
             english: "Inglés",
+            // FAQ Section
+            faqSectionTitle: "Preguntas Frecuentes",
+            faqSectionSubtitle: "Encuentra respuestas a preguntas comunes sobre nuestras suites",
             // Property Rules section
             propertyRulesPolicies: "Reglas y Políticas de la Propiedad",
             checkInOut: "Check-in/Check-out",
@@ -1693,11 +2038,91 @@ const translations = {
             parties: "Fiestas",
             partiesNotAllowed: "No se permiten fiestas o eventos.",
             pets: "Mascotas",
-            petsNotAllowed: "No se permiten mascotas."
+            petsNotAllowed: "No se permiten mascotas.",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Preguntas Frecuentes para ARIES Suite",
+                questions: [
+                    {
+                        question: "¿Cuántos huéspedes pueden dormir en la Suite ARIES?",
+                        answer: "La Suite ARIES puede alojar el siguiente número de huéspedes:\n\n3 huéspedes"
+                    },
+                    {
+                        question: "¿Hay balcón en la Suite ARIES?",
+                        answer: "Sí, este alojamiento tiene opciones con balcón. Puede obtener más información sobre esto y otras comodidades de la Suite ARIES en esta página."
+                    },
+                    {
+                        question: "¿Hay terraza en la Suite ARIES?",
+                        answer: "Sí, este alojamiento tiene opciones con terraza. Puede obtener más información sobre esto y otras comodidades de la Suite ARIES en esta página."
+                    },
+                    {
+                        question: "¿Cuáles son los horarios de check-in y check-out en la Suite ARIES?",
+                        answer: "El check-in en la Suite ARIES es a partir de las 15:00 y el check-out es hasta las 12:00."
+                    },
+                    {
+                        question: "¿Cuántos dormitorios tiene la Suite ARIES?",
+                        answer: "La Suite ARIES incluye el siguiente número de dormitorios:\n\n2 dormitorios"
+                    },
+                    {
+                        question: "¿Cuánto cuesta alojarse en la Suite ARIES?",
+                        answer: "Los precios en la Suite ARIES pueden variar según su estancia (es decir, las fechas que seleccione, la política del hotel, etc.). Ingrese sus fechas para ver los precios."
+                    },
+                    {
+                        question: "¿A qué distancia está la Suite ARIES del centro de Mykonos?",
+                        answer: "La Suite ARIES está a 100 m del centro de Mykonos."
+                    },
+                    {
+                        question: "¿Qué tan cerca está la Suite ARIES de la playa?",
+                        answer: "La playa más cercana está a solo 200 m de la Suite ARIES."
+                    },
+                    {
+                        question: "¿Es popular la Suite ARIES entre las familias?",
+                        answer: "Sí, la Suite ARIES es popular entre los huéspedes que reservan estancias familiares."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Preguntas Frecuentes para VENUS Suite",
+                questions: [
+                    {
+                        question: "¿Cuántos huéspedes pueden dormir en la Suite VENUS?",
+                        answer: "La Suite VENUS puede alojar el siguiente número de huéspedes:\n\n2 huéspedes"
+                    },
+                    {
+                        question: "¿Hay balcón en la Suite VENUS?",
+                        answer: "Sí, este alojamiento tiene opciones con balcón. Puede obtener más información sobre esto y otras comodidades de la Suite VENUS en esta página."
+                    },
+                    {
+                        question: "¿Cuáles son los horarios de check-in y check-out en la Suite VENUS?",
+                        answer: "El check-in en la Suite VENUS es a partir de las 15:00 y el check-out es hasta las 11:00."
+                    },
+                    {
+                        question: "¿Cuántos dormitorios tiene la Suite VENUS?",
+                        answer: "La Suite VENUS incluye el siguiente número de dormitorios:\n\n1 dormitorio"
+                    },
+                    {
+                        question: "¿Cuánto cuesta alojarse en la Suite VENUS?",
+                        answer: "Los precios en la Suite VENUS pueden variar según su estancia (es decir, las fechas que seleccione, la política del hotel, etc.). Ingrese sus fechas para ver los precios."
+                    },
+                    {
+                        question: "¿A qué distancia está la Suite VENUS del centro de Mykonos?",
+                        answer: "La Suite VENUS está a 100 m del centro de Mykonos."
+                    },
+                    {
+                        question: "¿Qué tan cerca está la Suite VENUS de la playa?",
+                        answer: "La playa más cercana está a solo 200 m de la Suite VENUS."
+                    },
+                    {
+                        question: "¿Es popular la Suite VENUS entre las familias?",
+                        answer: "Sí, la Suite VENUS es popular entre los huéspedes que reservan estancias familiares."
+                    }
+                ]
+            }
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms on Booking",
+            brandName: "Habitaciones de Nana en Booking",
             description: "Tu socio de confianza para encontrar el alojamiento perfecto",
             subDescription: "Estancias cómodas, precios asequibles.",
             quickLinks: {
@@ -1719,7 +2144,7 @@ const translations = {
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora",
-                bookingAries: "Reserve Aries Suite en Booking.com",
+                bookingAries: "Reservar Aries Suite en Booking.com",
                 bookingVenus: "Reserve Venus Suite en Booking.com",
                 bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
                 bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
@@ -1730,7 +2155,7 @@ const translations = {
     ar: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "غرف نانا على بوكينج",
             mobile: "📱 الهاتف المحمول",
             maps: "🗺️ الخرائط",
             email: "📧 atdimitriadou@gmail.com",
@@ -1980,6 +2405,89 @@ const translations = {
             arabic: "العربية",
             greek: "اليونانية",
             english: "الإنجليزية",
+            // FAQ Section
+            faqSectionTitle: "الأسئلة الشائعة",
+            faqSectionSubtitle: "اعثر على إجابات للأسئلة الشائعة حول أجنحتنا",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "الأسئلة الشائعة لجناح ARIES",
+                questions: [
+                    {
+                        question: "كم عدد الضيوف الذين يمكنهم النوم في جناح ARIES؟",
+                        answer: "يمكن لجناح ARIES استيعاب العدد التالي من الضيوف:\n\n3 ضيوف"
+                    },
+                    {
+                        question: "هل يوجد شرفة في جناح ARIES؟",
+                        answer: "نعم، يوفر هذا السكن خيارات مع شرفة. يمكنك معرفة المزيد عن ذلك والمرافق الأخرى لجناح ARIES في هذه الصفحة."
+                    },
+                    {
+                        question: "هل يوجد تراس في جناح ARIES؟",
+                        answer: "نعم، يوفر هذا السكن خيارات مع تراس. يمكنك معرفة المزيد عن ذلك والمرافق الأخرى لجناح ARIES في هذه الصفحة."
+                    },
+                    {
+                        question: "ما هي مواعيد تسجيل الوصول والمغادرة في جناح ARIES؟",
+                        answer: "تسجيل الوصول في جناح ARIES يبدأ من الساعة 15:00 وتسجيل المغادرة حتى الساعة 12:00."
+                    },
+                    {
+                        question: "كم عدد غرف النوم في جناح ARIES؟",
+                        answer: "يحتوي جناح ARIES على عدد غرف النوم التالي:\n\n2 غرفة نوم"
+                    },
+                    {
+                        question: "كم يكلف الإقامة في جناح ARIES؟",
+                        answer: "قد تختلف الأسعار في جناح ARIES حسب إقامتك (أي التواريخ التي تحددها، سياسة الفندق، إلخ). أدخل تواريخك لمعرفة الأسعار."
+                    },
+                    {
+                        question: "ما المسافة بين جناح ARIES ووسط مدينة ميكونوس؟",
+                        answer: "يقع جناح ARIES على بعد 100 متر من وسط مدينة ميكونوس."
+                    },
+                    {
+                        question: "ما مدى قرب جناح ARIES من الشاطئ؟",
+                        answer: "أقرب شاطئ يبعد فقط 200 متر عن جناح ARIES."
+                    },
+                    {
+                        question: "هل جناح ARIES شائع بين العائلات؟",
+                        answer: "نعم، جناح ARIES شائع بين الضيوف الذين يحجزون إقامات عائلية."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "الأسئلة الشائعة لجناح VENUS",
+                questions: [
+                    {
+                        question: "كم عدد الضيوف الذين يمكنهم النوم في جناح VENUS؟",
+                        answer: "يمكن لجناح VENUS استيعاب العدد التالي من الضيوف:\n\n2 ضيوف"
+                    },
+                    {
+                        question: "هل يوجد شرفة في جناح VENUS؟",
+                        answer: "نعم، يوفر هذا السكن خيارات مع شرفة. يمكنك معرفة المزيد عن ذلك والمرافق الأخرى لجناح VENUS في هذه الصفحة."
+                    },
+                    {
+                        question: "ما هي مواعيد تسجيل الوصول والمغادرة في جناح VENUS؟",
+                        answer: "تسجيل الوصول في جناح VENUS يبدأ من الساعة 15:00 وتسجيل المغادرة حتى الساعة 11:00."
+                    },
+                    {
+                        question: "كم عدد غرف النوم في جناح VENUS؟",
+                        answer: "يحتوي جناح VENUS على عدد غرف النوم التالي:\n\n1 غرفة نوم"
+                    },
+                    {
+                        question: "كم يكلف الإقامة في جناح VENUS؟",
+                        answer: "قد تختلف الأسعار في جناح VENUS حسب إقامتك (أي التواريخ التي تحددها، سياسة الفندق، إلخ). أدخل تواريخك لمعرفة الأسعار."
+                    },
+                    {
+                        question: "ما المسافة بين جناح VENUS ووسط مدينة ميكونوس؟",
+                        answer: "يقع جناح VENUS على بعد 100 متر من وسط مدينة ميكونوس."
+                    },
+                    {
+                        question: "ما مدى قرب جناح VENUS من الشاطئ؟",
+                        answer: "أقرب شاطئ يبعد فقط 200 متر عن جناح VENUS."
+                    },
+                    {
+                        question: "هل جناح VENUS شائع بين العائلات؟",
+                        answer: "نعم، جناح VENUS شائع بين الضيوف الذين يحجزون إقامات عائلية."
+                    }
+                ]
+            },
             // Property Rules section
             propertyRulesPolicies: "قوانين وسياسات العقار",
             checkInOut: "تسجيل الوصول/المغادرة",
@@ -2005,7 +2513,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms on Booking",
+            brandName: "غرف نانا على بوكينج",
             description: "شريكك الموثوق في العثور على الإقامة المثالية",
             subDescription: "إقامات مريحة، أسعار معقولة.",
             quickLinks: {
@@ -2047,7 +2555,7 @@ const translations = {
     fr: {
         // Navbar
         navbar: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             mobile: "📱 Mobile",
             maps: "🗺️ Cartes",
             email: "📧 atdimitriadou@gmail.com",
@@ -2127,7 +2635,7 @@ const translations = {
                     id: "venus-suite",
                     title: "Suite Venus",
                     description: "Suite luxueuse inspirée de la déesse de l'amour et de la beauté."
-                } 
+                }
             ],
             amenityLabels: {
                 "Free Wi-Fi": "Wi-Fi Gratuit",
@@ -2308,7 +2816,90 @@ const translations = {
             agiaAnnaBeach: "Plage d'Agia Anna",
             megaliAmmosBeach: "Plage de Megali Ammos",
             mykonosAirport: "Aéroport de Mykonos",
-            syrosAirport: "Aéroport de Syros"
+            syrosAirport: "Aéroport de Syros",
+            // FAQ Section
+            faqSectionTitle: "Questions Fréquemment Posées",
+            faqSectionSubtitle: "Trouvez des réponses aux questions courantes sur nos suites",
+            // Aries Suite FAQ
+            ariesFAQ: {
+                title: "Questions Fréquemment Posées pour la Suite ARIES",
+                questions: [
+                    {
+                        question: "Combien de personnes peuvent dormir dans la Suite ARIES ?",
+                        answer: "La Suite ARIES peut accueillir le nombre suivant de personnes :\n\n3 personnes"
+                    },
+                    {
+                        question: "Y a-t-il un balcon dans la Suite ARIES ?",
+                        answer: "Oui, cet hébergement propose des options avec balcon. Vous pouvez en savoir plus à ce sujet et sur d'autres équipements de la Suite ARIES sur cette page."
+                    },
+                    {
+                        question: "Y a-t-il une terrasse dans la Suite ARIES ?",
+                        answer: "Oui, cet hébergement propose des options avec terrasse. Vous pouvez en savoir plus à ce sujet et sur d'autres équipements de la Suite ARIES sur cette page."
+                    },
+                    {
+                        question: "Quels sont les horaires d'enregistrement et de départ pour la Suite ARIES ?",
+                        answer: "L'enregistrement à la Suite ARIES se fait à partir de 15h00 et le départ jusqu'à 12h00."
+                    },
+                    {
+                        question: "Combien de chambres y a-t-il dans la Suite ARIES ?",
+                        answer: "La Suite ARIES comprend le nombre suivant de chambres :\n\n2 chambres"
+                    },
+                    {
+                        question: "Combien coûte un séjour à la Suite ARIES ?",
+                        answer: "Les tarifs de la Suite ARIES peuvent varier en fonction de votre séjour (c'est-à-dire des dates que vous sélectionnez, de la politique de l'hôtel, etc.). Saisissez vos dates pour voir les tarifs."
+                    },
+                    {
+                        question: "À quelle distance se trouve la Suite ARIES du centre de Mykonos ?",
+                        answer: "La Suite ARIES se trouve à 100 m du centre de Mykonos."
+                    },
+                    {
+                        question: "À quelle distance se trouve la Suite ARIES de la plage ?",
+                        answer: "La plage la plus proche se trouve à seulement 200 m de la Suite ARIES."
+                    },
+                    {
+                        question: "La Suite ARIES est-elle populaire auprès des familles ?",
+                        answer: "Oui, la Suite ARIES est populaire auprès des clients qui réservent des séjours en famille."
+                    }
+                ]
+            },
+            // Venus Suite FAQ
+            venusFAQ: {
+                title: "Questions Fréquemment Posées pour la Suite VENUS",
+                questions: [
+                    {
+                        question: "Combien de personnes peuvent dormir dans la Suite VENUS ?",
+                        answer: "La Suite VENUS peut accueillir le nombre suivant de personnes :\n\n2 personnes"
+                    },
+                    {
+                        question: "Y a-t-il un balcon dans la Suite VENUS ?",
+                        answer: "Oui, cet hébergement propose des options avec balcon. Vous pouvez en savoir plus à ce sujet et sur d'autres équipements de la Suite VENUS sur cette page."
+                    },
+                    {
+                        question: "Quels sont les horaires d'enregistrement et de départ pour la Suite VENUS ?",
+                        answer: "L'enregistrement à la Suite VENUS se fait à partir de 15h00 et le départ jusqu'à 11h00."
+                    },
+                    {
+                        question: "Combien de chambres y a-t-il dans la Suite VENUS ?",
+                        answer: "La Suite VENUS comprend le nombre suivant de chambres :\n\n1 chambre"
+                    },
+                    {
+                        question: "Combien coûte un séjour à la Suite VENUS ?",
+                        answer: "Les tarifs de la Suite VENUS peuvent varier en fonction de votre séjour (c'est-à-dire des dates que vous sélectionnez, de la politique de l'hôtel, etc.). Saisissez vos dates pour voir les tarifs."
+                    },
+                    {
+                        question: "À quelle distance se trouve la Suite VENUS du centre de Mykonos ?",
+                        answer: "La Suite VENUS se trouve à 100 m du centre de Mykonos."
+                    },
+                    {
+                        question: "À quelle distance se trouve la Suite VENUS de la plage ?",
+                        answer: "La plage la plus proche se trouve à seulement 200 m de la Suite VENUS."
+                    },
+                    {
+                        question: "La Suite VENUS est-elle populaire auprès des familles ?",
+                        answer: "Oui, la Suite VENUS est populaire auprès des clients qui réservent des séjours en famille."
+                    }
+                ]
+            },
         },
         // Room Gallery
         gallery: {
@@ -2338,7 +2929,7 @@ const translations = {
                     id: "venus-suite",
                     title: "Suite Vénus",
                     description: "Suite luxueuse inspirée de la déesse de l'amour et de la beauté."
-                } 
+                }
             ],
             amenityLabels: {
                 "Free Wi-Fi": "Wi-Fi Gratuit",
@@ -2424,10 +3015,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brand: {
-                title: "Nana's Rooms on Booking",
-                description: "Hébergements de luxe au cœur de Mykonos"
-            },
+            brandName: "Les chambres de Nana sur Booking",
             quickLinks: {
                 title: "Liens Rapides",
                 home: "Accueil",
@@ -2439,7 +3027,7 @@ const translations = {
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
                 address: "Ville de Mykonos",
-                bookingAries: "Réserver Aries Suite sur Booking.com",
+                bookingAries: "Réserver la Suite Aries sur Booking.com",
                 bookingVenus: "Réserver Venus Suite sur Booking.com",
                 bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
                 bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"

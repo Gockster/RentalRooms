@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { galleryImages } from "../data/RoomsImages";
 import { useNavigate } from "react-router-dom";
+import RoomFAQs from "./RoomFAQs";
 import "../styles/main.css";
 
 export default function RoomGallery() {
@@ -104,44 +105,50 @@ export default function RoomGallery() {
       </div>
 
       <div className="room-gallery-grid">
-        {filteredRooms.map((room) => (
-          <div 
-            key={room.id} 
-            className="room-gallery-card"
-            onMouseEnter={() => setHoveredCard(room.id)}
-            onMouseLeave={() => setHoveredCard(null)}
-          >
-            <div className="room-gallery-image-container">
-              <img src={room.image} alt={t.gallery.rooms[room.id - 1]?.title || room.titleKey} className="room-gallery-image" />
-              <div className="room-gallery-price-tag">{formatPrice(room.basePrice)}</div>
-              <div className="room-gallery-availability-tag">{t.gallery.availabilityLabels?.[room.availabilityKey] || room.availabilityKey}</div>
+        {filteredRooms.map((room) => {          
+          return (
+            <div key={room.id} className="room-gallery-column">
+              <div 
+                className="room-gallery-card"
+                onMouseEnter={() => setHoveredCard(room.id)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="room-gallery-image-container">
+                  <img src={room.image} alt={t.gallery.rooms[room.id - 1]?.title || room.titleKey} className="room-gallery-image" />
+                  <div className="room-gallery-price-tag">{formatPrice(room.basePrice)}</div>
+                  <div className="room-gallery-availability-tag">{t.gallery.availabilityLabels?.[room.availabilityKey] || room.availabilityKey}</div>
+                </div>
+                <div className="room-gallery-card-content">
+                  <h2 className="room-gallery-title">{t.gallery.rooms[room.id - 1]?.title || room.titleKey}</h2>
+                  <div className="room-gallery-rating">
+                    {renderStars(room.rating)}
+                    <span className="room-gallery-rating-text">{room.rating}</span>
+                  </div>
+                  <p className="room-gallery-description">{t.gallery.rooms[room.id - 1]?.description || room.descriptionKey}</p>
+                  <div className="room-gallery-amenities">
+                    {room.amenities.map((amenity, index) => (
+                      <span key={index} className="room-gallery-amenity-tag">
+                        {t.gallery.amenityLabels?.[amenity] || amenity}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="room-gallery-button-container">
+                    <button 
+                      className="room-gallery-view-button"
+                      onClick={() => handleRoomClick(room.id)}
+                    >
+                      {t.gallery.viewButton}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="room-gallery-card-content">
-              <h2 className="room-gallery-title">{t.gallery.rooms[room.id - 1]?.title || room.titleKey}</h2>
-              <div className="room-gallery-rating">
-                {renderStars(room.rating)}
-                <span className="room-gallery-rating-text">{room.rating}</span>
-              </div>
-              <p className="room-gallery-description">{t.gallery.rooms[room.id - 1]?.description || room.descriptionKey}</p>
-              <div className="room-gallery-amenities">
-                {room.amenities.map((amenity, index) => (
-                  <span key={index} className="room-gallery-amenity-tag">
-                    {t.gallery.amenityLabels?.[amenity] || amenity}
-                  </span>
-                ))}
-              </div>
-              <div className="room-gallery-button-container">
-                <button 
-                  className="room-gallery-view-button"
-                  onClick={() => handleRoomClick(room.id)}
-                >
-                  {t.gallery.viewButton}
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
+      
+      {/* FAQ Section for both suites */}
+      <RoomFAQs />
       
       {filteredRooms.length === 0 && (
         <div className="room-gallery-no-results">
