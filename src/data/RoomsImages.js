@@ -34,13 +34,14 @@ export const heroImages = [
 ];
 
 export const ariesSuiteImages = [
-    '/images/AriesSuiteImages/694316669.jpg',
+    '/images/AriesSuiteImages/702526181.jpg',
     '/images/AriesSuiteImages/694316674.jpg',
     '/images/AriesSuiteImages/694316677.jpg',
     '/images/AriesSuiteImages/694316680.jpg',
     '/images/AriesSuiteImages/694316685.jpg',
     '/images/AriesSuiteImages/694316688.jpg',
     '/images/AriesSuiteImages/694316693.jpg',
+    '/images/AriesSuiteImages/694316669.jpg',
     '/images/AriesSuiteImages/694316697.jpg',
     '/images/AriesSuiteImages/694316700.jpg',
     '/images/AriesSuiteImages/694316704.jpg',
@@ -57,7 +58,6 @@ export const ariesSuiteImages = [
     '/images/AriesSuiteImages/702526042.jpg',
     '/images/AriesSuiteImages/702526067.jpg',
     '/images/AriesSuiteImages/702526149.jpg',
-    '/images/AriesSuiteImages/702526181.jpg',
     '/images/AriesSuiteImages/702526881.jpg',
     '/images/AriesSuiteImages/702526920.jpg',
 ];
@@ -65,7 +65,6 @@ export const ariesSuiteImages = [
 export const venusSuiteImages = [
     '/images/VenusSuiteImages/456521685.jpg',
     '/images/VenusSuiteImages/456522156.jpg',
-    '/images/VenusSuiteImages/377698773.jpg',
     '/images/VenusSuiteImages/456522406.jpg',
     '/images/VenusSuiteImages/456522482.jpg',
     '/images/VenusSuiteImages/456523743.jpg',

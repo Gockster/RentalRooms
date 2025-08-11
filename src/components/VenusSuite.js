@@ -79,7 +79,14 @@ export default function VenusSuite() {
                 {currentLanguage === 'en' ? 'Venus Suite' : 'Venus Suite'}
               </h1>
               <p className="room-subtitle">
-                {t.roomDetails?.venusSubtitle || 'Modern suite located at Petrou Drakopoulu 14, in the heart of Mykonos Town.'}
+                <MapPin size={16} className="map-pin" />
+                <a 
+                  href={t.roomDetails?.venusAddressLink || "https://www.google.com/maps/place/Petrou+Drakopoulu+14,+Mykonos+846+00,+Greece"} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  {t.roomDetails?.venusAddress || "Petrou Drakopoulu 14, Mykonos Chora, 846 00, Greece"}
+                </a>
               </p>
             </div>
           </div>
@@ -90,7 +97,6 @@ export default function VenusSuite() {
                   src={mainImage}
                   alt={currentLanguage === 'en' ? 'Venus Suite' : 'Σουίτα Αφροδίτη'}
                   className="main-room-image"
-                  style={{ cursor: 'pointer' }}
                   onClick={() => {
                     setEnlargedImage(mainImage);
                     setShowAllImages(true); // Show all images when opening lightbox
@@ -103,8 +109,7 @@ export default function VenusSuite() {
                     key={img}
                     src={img}
                     alt={`Room view ${idx + 1}`}
-                    className="thumbnail"
-                    style={{ cursor: 'pointer', border: mainImage === img ? '2px solid #007bff' : 'none' }}
+                    className={`thumbnail ${mainImage === img ? 'selected' : ''}`}
                     onClick={() => setMainImage(img)}
                     onDoubleClick={() => {
                       setEnlargedImage(img);
@@ -177,7 +182,7 @@ export default function VenusSuite() {
                     cursor: 'pointer',
                     zIndex: 1001
                   }} aria-label="Next">›</button>
-                  <img src={enlargedImage} alt="Enlarged" style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: 8, boxShadow: '0 2px 16px #000' }} />
+                  <img src={enlargedImage} alt="Enlarged" className="enlarged-image" />
                   <button onClick={() => setEnlargedImage(null)} style={{
                     position: 'absolute',
                     top: 32,
@@ -255,22 +260,22 @@ export default function VenusSuite() {
                 </h2>
                 
                 {/* Property Description */}
-                <div className="property-description" style={{ marginBottom: '25px' }}>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                <div className="property-description">
+                  <p>
                     {t.roomDetails?.venusDescription1 || "VENUS Suite is located at Petrou Drakopoulu 14 in the center of Mykonos Town, just 300m from Agia Anna Beach. It features a terrace, free WiFi, 24-hour front desk and ATM. The property was built in 1980 and has a balcony."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                  <p>
                     {t.roomDetails?.venusDescription2 || "The air-conditioned accommodation also features 1 bathroom with shower."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                  <p>
                     {t.roomDetails?.venusDescription3 || "Near VENUS Suite you will find popular attractions such as Little Venice, Archaeological Museum of Mykonos and Mykonos Old Port. Mykonos Airport is 3 km away from the property."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6' }}>
+                  <p>
                     {t.roomDetails?.venusDescription4 || "This location is especially popular with couples – they rated it 10.0 for a two-person trip."}
                   </p>
                 </div>
 
-                <h3 className="section-title" style={{ fontSize: '20px', marginBottom: '15px' }}>
+                <h3 className="section-title">
                   {t.roomDetails?.suiteSpecifications || 'Suite Specifications'}
                 </h3>
                 <div className="room-specs">

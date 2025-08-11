@@ -79,13 +79,13 @@ export default function AriesSuite() {
                 {currentLanguage === 'en' ? 'Aries Suite' : 'Aries Suite'}
               </h1>
               <p className="room-subtitle">
+                <MapPin size={16} className="map-pin" />
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CE%AC%CF%81%CF%87%CE%B7+9%2C+%CE%9C%CF%8D%CE%BA%CE%BF%CE%BD%CE%BF%CF%82+%CE%A7%CF%8E%CF%81%CE%B1%2C+846+00%2C+%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1" 
+                  href={t.roomDetails?.ariesAddressLink || "https://www.google.com/maps/place/Kalliarchi+9,+Mykonos+846+00,+Greece"} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  style={{ color: '#007bff', textDecoration: 'underline' }}
                 >
-                  Καλλιάρχη 9, Μύκονος Χώρα, 846 00, Ελλάδα
+                  {t.roomDetails?.ariesAddress || "Kalliarchi 9, Mykonos Chora, 846 00, Greece"}
                 </a>
               </p>
             </div>
@@ -97,7 +97,6 @@ export default function AriesSuite() {
                   src={mainImage}
                   alt={currentLanguage === 'en' ? 'Aries Suite' : 'Σουίτα Αρης'}
                   className="main-room-image"
-                  style={{ cursor: 'pointer' }}
                   onClick={() => {
                     setEnlargedImage(mainImage);
                     setShowAllImages(true); // Show all images when opening lightbox
@@ -110,8 +109,7 @@ export default function AriesSuite() {
                     key={img}
                     src={img}
                     alt={`Room view ${idx + 1}`}
-                    className="thumbnail"
-                    style={{ cursor: 'pointer', border: mainImage === img ? '2px solid #007bff' : 'none' }}
+                    className={`thumbnail ${mainImage === img ? 'selected' : ''}`}
                     onClick={() => setMainImage(img)}
                     onDoubleClick={() => {
                       setEnlargedImage(img);
@@ -120,23 +118,10 @@ export default function AriesSuite() {
                   />
                 ))}
                 {images.length > initialImageCount && (
-                  <div className="show-more-container" style={{ 
-                    display: 'flex', 
-                    justifyContent: 'center', 
-                    marginTop: '15px' 
-                  }}>
+                  <div className="show-more-container">
                     <button 
                       className="btn btn-secondary"
                       onClick={() => setShowAllImages(!showAllImages)}
-                      style={{ 
-                        padding: '8px 16px', 
-                        fontSize: '14px',
-                        borderRadius: '5px',
-                        backgroundColor: '#6c757d',
-                        color: 'white',
-                        border: 'none',
-                        cursor: 'pointer'
-                      }}
                     >
                       {showAllImages 
                         ? (t.roomDetails?.showLess || 'Show Less') 
@@ -184,7 +169,7 @@ export default function AriesSuite() {
                     cursor: 'pointer',
                     zIndex: 1001
                   }} aria-label="Next">›</button>
-                  <img src={enlargedImage} alt="Enlarged" style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: 8, boxShadow: '0 2px 16px #000' }} />
+                  <img src={enlargedImage} alt="Enlarged" className="enlarged-image" />
                   <button onClick={() => setEnlargedImage(null)} style={{
                     position: 'absolute',
                     top: 32,
@@ -262,22 +247,22 @@ export default function AriesSuite() {
                 </h2>
                 
                 {/* Property Description */}
-                <div className="property-description" style={{ marginBottom: '25px' }}>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                <div className="property-description">
+                  <p>
                     {t.roomDetails?.ariesDescription1 || "The entire place is yours. ARIES Suite in Mykonos offers a holiday home with comfortable accommodation featuring 42 m² of space, two bedrooms and two bathrooms."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                  <p>
                     {t.roomDetails?.ariesDescription2 || "The property features 2 bathrooms with bath or shower, and free toiletries and hair dryer are provided."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '15px' }}>
+                  <p>
                     {t.roomDetails?.ariesDescription3 || "The reception staff speaks Arabic, Greek and English."}
                   </p>
-                  <p style={{ fontSize: '16px', lineHeight: '1.6' }}>
+                  <p>
                     {t.roomDetails?.ariesDescription4 || "Near ARIES Suite you will find popular attractions such as Mykonos Old Port, Mykonos Windmills and Little Venice. Mykonos Airport is 3 km away from the property."}
                   </p>
                 </div>
 
-                <h3 className="section-title" style={{ fontSize: '20px', marginBottom: '15px' }}>
+                <h3 className="section-title">
                   {t.roomDetails?.suiteSpecifications || 'Suite Specifications'}
                 </h3>
                 <div className="room-specs">
@@ -341,55 +326,50 @@ export default function AriesSuite() {
           marginTop: '40px',
           marginBottom: '0'
         }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
+          <div className="nearby-attractions">
+            <h2>
               {t.roomDetails?.propertyArea || 'Property Area'}
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '30px' }}>
+            <div className="attractions-grid">
               {/* Nearby Attractions */}
-              <div style={{ 
-                backgroundColor: 'white',
-                padding: '25px',
-                borderRadius: '12px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#007bff', display: 'flex', alignItems: 'center' }}>
-                  <Building size={24} style={{ marginRight: '10px' }} />
+              <div className="attractions-section">
+                <h3>
+                  <Building size={24} className="section-icon" />
                   {t.roomDetails?.whatsNearby || "What's nearby"}
                 </h3>
-                <div style={{ fontSize: '15px', lineHeight: '1.8' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                <div className="attractions-list">
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.littleVenice || 'Little Venice'}</span>
-                    <span style={{ color: '#666' }}>150 μ.</span>
+                    <span className="attraction-distance">150 μ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.meletopoulouGarden || 'Meletopoulou Municipal Garden'}</span>
-                    <span style={{ color: '#666' }}>150 μ.</span>
+                    <span className="attraction-distance">150 μ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.mykonosWindmills || 'Mykonos Windmills'}</span>
-                    <span style={{ color: '#666' }}>350 μ.</span>
+                    <span className="attraction-distance">350 μ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.archaeologicalMuseum || 'Archaeological Museum of Mykonos'}</span>
-                    <span style={{ color: '#666' }}>500 μ.</span>
+                    <span className="attraction-distance">500 μ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.fabricaSquare || 'Fabrica Square'}</span>
-                    <span style={{ color: '#666' }}>500 μ.</span>
+                    <span className="attraction-distance">500 μ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.tholosTomb || 'Tholos Tomb of Mykonos'}</span>
-                    <span style={{ color: '#666' }}>1,6 χλμ.</span>
+                    <span className="attraction-distance">1,6 χλμ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.armenistisLighthouse || 'Armenistis Lighthouse'}</span>
-                    <span style={{ color: '#666' }}>5 χλμ.</span>
+                    <span className="attraction-distance">5 χλμ.</span>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <div className="attraction-item">
                     <span>{t.roomDetails?.neolithicSettlement || 'Neolithic Settlement of Ftelia Mykonos'}</span>
-                    <span style={{ color: '#666' }}>6 χλμ.</span>
+                    <span className="attraction-distance">6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                     <span>{t.roomDetails?.gyziCastle || 'Gyzi Castle'}</span>
@@ -981,39 +961,10 @@ export default function AriesSuite() {
       </main>
       
       {/* Go to Top Button */}
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        padding: '30px 20px',
-        backgroundColor: '#f8f9fa'
-      }}>
+      <div className="go-to-top-container">
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '12px',
-            backgroundColor: '#007bff',
-            color: 'white',
-            border: 'none',
-            borderRadius: '50%',
-            fontSize: '16px',
-            fontWeight: '500',
-            cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            boxShadow: '0 4px 12px rgba(0, 123, 255, 0.3)'
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.backgroundColor = '#0056b3';
-            e.target.style.transform = 'translateY(-2px)';
-            e.target.style.boxShadow = '0 6px 16px rgba(0, 123, 255, 0.4)';
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.backgroundColor = '#007bff';
-            e.target.style.transform = 'translateY(0)';
-            e.target.style.boxShadow = '0 4px 12px rgba(0, 123, 255, 0.3)';
-          }}
+          className="go-to-top-btn"
         >
           <ArrowUp size={20} />
         </button>

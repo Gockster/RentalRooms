@@ -1714,3 +1714,290 @@
     margin-bottom: 0;
   }
 }
+
+/* ============================================
+   SUITE DETAIL STYLES
+   ============================================ */
+
+/* Room Subtitle (Address) */
+.room-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.room-subtitle .map-pin {
+  margin-right: 6px;
+  color: #dc3545;
+}
+
+.room-subtitle a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.room-subtitle a:hover {
+  color: #007bff;
+}
+
+/* Main Image */
+.main-room-image {
+  cursor: pointer;
+}
+
+/* Thumbnail Gallery */
+.thumbnail {
+  cursor: pointer;
+}
+
+.thumbnail.selected {
+  border: 2px solid #007bff;
+}
+
+/* Enlarged Image Modal */
+.enlarged-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px #000;
+}
+
+/* Show More Container */
+.show-more-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.show-more-container:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Property Description */
+.property-description {
+  margin-bottom: 25px;
+}
+
+.property-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.property-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Nearby Attractions */
+.nearby-attractions {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nearby-attractions h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.attractions-section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.attractions-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+}
+
+.attractions-section .section-icon {
+  margin-right: 10px;
+}
+
+.attractions-list {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.attraction-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.attraction-distance {
+  color: #666;
+}
+
+/* Booking Section */
+.booking-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.booking-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.platform-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+
+.airbnb-logo {
+  background-color: #ff5a5f;
+}
+
+.booking-logo {
+  background-color: #003580;
+}
+
+.platform-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.platform-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.book-now-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Go to Top Button */
+.go-to-top-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+}
+
+.go-to-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.go-to-top-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .attractions-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .nearby-attractions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}

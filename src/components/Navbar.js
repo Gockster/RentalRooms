@@ -5,19 +5,50 @@ import "../styles/main.css";
 export default function Navbar() {
   const { currentLanguage, switchLanguage, t } = useLanguage();
   const [showLangDropdown, setShowLangDropdown] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const selectLanguage = (lang) => {
     switchLanguage(lang);
     setShowLangDropdown(false);
   };
 
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <img src="/nanas.png" alt="Nana's Rooms Logo" style={{ height: 70, width: 140, borderRadius: 8, background: '#fff' }} />
+          <img 
+            src="/nanas.png" 
+            alt="Nana's Rooms Logo" 
+            style={{ 
+              height: 'clamp(50px, 8vw, 70px)', 
+              width: 'clamp(90px, 15vw, 130px)', 
+              borderRadius: 8, 
+              background: '#fff' 
+            }} 
+          />
         </div>
-        <ul className="navbar-links">
+        
+        {/* Mobile Hamburger Menu */}
+        <button 
+          className="mobile-menu-toggle"
+          onClick={toggleMobileMenu}
+          style={{
+            display: 'none',
+            background: 'none',
+            border: 'none',
+            fontSize: '24px',
+            cursor: 'pointer',
+            color: '#333'
+          }}
+        >
+          {showMobileMenu ? '✕' : '☰'}
+        </button>
+
+        <ul className={`navbar-links ${showMobileMenu ? 'mobile-active' : ''}`}>
           <li className="navbar-item">
             <div className="language-selector">
               <button
@@ -94,6 +125,77 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
+      {/* Mobile Responsive Styles */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .mobile-menu-toggle {
+            display: block !important;
+          }
+          
+          .navbar-links {
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 2rem;
+            transition: left 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          
+          .navbar-links.mobile-active {
+            left: 0;
+          }
+          
+          .navbar-item {
+            margin: 1rem 0;
+            width: 90%;
+            text-align: center;
+          }
+          
+          .nav-link {
+            font-size: 18px;
+            padding: 12px;
+            display: block;
+            border-radius: 8px;
+            background: #f8f9fa;
+          }
+          
+          .language-selector {
+            width: 100%;
+          }
+          
+          .lang-button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+          }
+          
+          .dropdown {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+            border: 1px solid #ddd;
+            margin-top: 8px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .navbar-container {
+            padding: 0 1rem;
+          }
+          
+          .nav-link {
+            font-size: 16px;
+          }
+        }
+      `}</style>
     </nav>
   );
 }
