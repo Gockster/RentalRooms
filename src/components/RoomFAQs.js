@@ -1,6 +1,8 @@
+
 import React from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import FAQSection from "./FAQSection";
+import "../room-faqs.css";
 
 export default function RoomFAQs() {
   const { t } = useLanguage();
