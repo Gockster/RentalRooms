@@ -99,6 +99,12 @@ export default function Navbar() {
                   >
                     🇸🇦 العربية
                   </button>
+                  <button
+                    onClick={() => selectLanguage('fr')}
+                    className={`dropdown-item ${currentLanguage === 'fr' ? 'active-language' : ''}`}
+                  >
+                    🇫🇷 Français
+                  </button>
                 </div>
               )}
             </div>
