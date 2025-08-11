@@ -201,9 +201,9 @@ export default function VenusSuite() {
                     transform: 'translateX(-50%)',
                     zIndex: 1002
                   }}>
-                    <button className="btn btn-primary btn-large">
+                    <a href="tel:+306955217820" className="btn btn-primary btn-large" style={{ textDecoration: 'none', color: 'white' }}>
                       {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
-                    </button>
+                    </a>
                   </div>
                 </div>
               )}
@@ -320,9 +320,9 @@ export default function VenusSuite() {
                 </div>
                 {!enlargedImage && (
                   <div className="room-actions">
-                    <button className="btn btn-primary btn-large">
+                    <a href="tel:+306955217820" className="btn btn-primary btn-large" style={{ textDecoration: 'none', color: 'white' }}>
                       {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
-                    </button>
+                    </a>
                   </div>
                 )}
               </div>
