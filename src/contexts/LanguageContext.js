@@ -2037,12 +2037,33 @@ const translations = {
             slides: [
                 {
                     title: "Hébergements Cycladiques",
-                    subtitle: "Découvrez le luxe au cœur de Mykonos avec des vues imprenables et un service exceptionnel"
+                    subtitle: "Vie insulaire authentique avec confort moderne"
                 },
                 {
-                    title: "Suites de Luxe", 
-                    subtitle: "Expérience authentique grecque avec des équipements modernes"
+                    title: "Appartements Confortables",
+                    subtitle: "Parfait pour les voyageurs solitaires et nomades digitaux"
+                },
+                {
+                    title: "Espaces Familiaux",
+                    subtitle: "Hébergements spacieux pour groupes et familles"
+                },
+                {
+                    title: "Vie Contemporaine",
+                    subtitle: "Équipements modernes dans des emplacements de choix"
+                },
+                {
+                    title: "Retraites Balnéaires de Mykonos",
+                    subtitle: "Chambres charmantes à quelques pas des vagues égéennes"
                 }
+            ],
+            description: "Découvrez des chambres confortables et abordables dans des emplacements de choix. Votre chez-vous loin de chez vous vous attend avec des équipements modernes et un service exceptionnel.",
+            searchPlaceholder: "Où aimeriez-vous séjourner ?",
+            searchButton: "Rechercher des Chambres",
+            exploreButton: "Explorer les Chambres",
+            features: [
+                "Propriétés Vérifiées",
+                "Meilleurs Prix",
+                "Réservation Sécurisée"
             ]
         },
         // Gallery section
