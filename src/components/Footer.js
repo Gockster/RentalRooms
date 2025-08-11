@@ -12,12 +12,23 @@ export default function Footer() {
           <div className="footer-center-section">
             <div className="footer-section">
               <h3 className="footer-section-title">{t.footer.brandName}</h3>
-              <p className="footer-description">
-                {t.footer.description}
-              </p>
-              <div className="social-links">
-            
-                <a href="#" className="social-link">📷</a>
+              <div className="booking-links">
+                <a 
+                  href={t.footer.contactInfo.bookingAriesLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="booking-link"
+                >
+                  🏨 {t.footer.contactInfo.bookingAries}
+                </a>
+                <a 
+                  href={t.footer.contactInfo.bookingVenusLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="booking-link"
+                >
+                  🏨 {t.footer.contactInfo.bookingVenus}
+                </a>
               </div>
             </div>
             

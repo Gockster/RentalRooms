@@ -298,7 +298,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "Your trusted partner in finding the perfect accommodation. Comfortable stays, affordable prices.",
             quickLinks: {
                 title: "Quick Links",
@@ -318,7 +318,11 @@ const translations = {
                 title: "Contact Info",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Mykonos Chora"
+                address: "Mykonos Chora",
+                bookingAries: "Book Aries Suite on Booking.com",
+                bookingVenus: "Book Venus Suite on Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. All rights reserved."
         },
@@ -684,7 +688,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "Ο αξιόπιστος συνεργάτης σας για την εύρεση του τέλειου καταλύματος",
             subDescription: "Άνετες διαμονές, προσιτές τιμές.",
             quickLinks: {
@@ -705,7 +709,11 @@ const translations = {
                 title: "Στοιχεία Επικοινωνίας",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Μύκονος Χώρα"
+                address: "Μύκονος Χώρα",
+                bookingAries: "Κράτηση Aries Suite στο Booking.com",
+                bookingVenus: "Κράτηση Venus Suite στο Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. Όλα τα δικαιώματα διατηρούνται."
         },
@@ -1073,7 +1081,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "Il tuo partner fidato per trovare la sistemazione perfetta",
             subDescription: "Soggiorni confortevoli, prezzi convenienti.",
             quickLinks: {
@@ -1094,7 +1102,11 @@ const translations = {
                 title: "Informazioni di Contatto",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Mykonos Chora"
+                address: "Mykonos Chora",
+                bookingAries: "Prenota Aries Suite su Booking.com",
+                bookingVenus: "Prenota Venus Suite su Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. Tutti i diritti riservati."
         }
@@ -1377,7 +1389,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "Ihr vertrauensvoller Partner bei der Suche nach der perfekten Unterkunft",
             subDescription: "Komfortable Aufenthalte, erschwingliche Preise.",
             quickLinks: {
@@ -1398,7 +1410,11 @@ const translations = {
                 title: "Kontakt Information",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Mykonos Chora"
+                address: "Mykonos Chora",
+                bookingAries: "Aries Suite auf Booking.com buchen",
+                bookingVenus: "Venus Suite auf Booking.com buchen",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. Alle Rechte vorbehalten."
         }
@@ -1681,7 +1697,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "Tu socio de confianza para encontrar el alojamiento perfecto",
             subDescription: "Estancias cómodas, precios asequibles.",
             quickLinks: {
@@ -1702,7 +1718,11 @@ const translations = {
                 title: "Información de Contacto",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Mykonos Chora"
+                address: "Mykonos Chora",
+                bookingAries: "Reserve Aries Suite en Booking.com",
+                bookingVenus: "Reserve Venus Suite en Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. Todos los derechos reservados."
         }
@@ -1985,7 +2005,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms",
+            brandName: "Nana's Rooms on Booking",
             description: "شريكك الموثوق في العثور على الإقامة المثالية",
             subDescription: "إقامات مريحة، أسعار معقولة.",
             quickLinks: {
@@ -2006,7 +2026,11 @@ const translations = {
                 title: "معلومات الاتصال",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "ميكونوس تشورا"
+                address: "ميكونوس تشورا",
+                bookingAries: "احجز Aries Suite على Booking.com",
+                bookingVenus: "احجز Venus Suite على Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. جميع الحقوق محفوظة."
         },
@@ -2401,7 +2425,7 @@ const translations = {
         // Footer
         footer: {
             brand: {
-                title: "Nana's Rooms",
+                title: "Nana's Rooms on Booking",
                 description: "Hébergements de luxe au cœur de Mykonos"
             },
             quickLinks: {
@@ -2414,7 +2438,11 @@ const translations = {
                 title: "Informations de Contact",
                 email: "atdimitriadou@gmail.com",
                 phone: "+30 6955217820",
-                address: "Ville de Mykonos"
+                address: "Ville de Mykonos",
+                bookingAries: "Réserver Aries Suite sur Booking.com",
+                bookingVenus: "Réserver Venus Suite sur Booking.com",
+                bookingAriesLink: "https://www.booking.com/hotel/gr/aries-suites.el.html?aid=356980&label=gog235jc-10CAsoXEIMYXJpZXMtc3VpdGVzSAlYA2hciAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKu0ejEBsACAdICJDY5NzA3NmVkLWQzZjctNDg3Mi1iZWViLWJmZGJlNzhlNTAyNtgCAeACAQ&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+                bookingVenusLink: "https://www.booking.com/hotel/gr/nanas-mykonos.el.html?label=gen173nr-10CAsoXEINbmFuYXMtbXlrb25vc0gzWARoXIgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtcXoxAbAAgHSAiQ5ZmFlMmZkYi0zY2E1LTRhYTktOGUxYi01NDNjM2IwNGUxNjXYAgHgAgE&sid=eb8ca3d796bd8e230f1f4275542e6e1a&dist=0&keep_landing=1&sb_price_type=total&type=total&"
             },
             copyright: "© 2025 Nana's Rooms. Tous droits réservés."
         },
