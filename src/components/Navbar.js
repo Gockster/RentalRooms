@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <img src="/nanasLogo.png" alt="Nana's Rooms Logo" style={{ height: 70, width: 'auto', borderRadius: 8, background: '#fff' }} />
+          <img src="/nanas.png" alt="Nana's Rooms Logo" style={{ height: 70, width: 'auto', borderRadius: 8, background: '#fff' }} />
         </div>
         <ul className="navbar-links">
           <li className="navbar-item">
