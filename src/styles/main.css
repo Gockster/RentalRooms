@@ -1061,7 +1061,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
@@ -1426,7 +1425,6 @@
   font-size: 1.1rem;
   border-radius: 10px;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   border: none;

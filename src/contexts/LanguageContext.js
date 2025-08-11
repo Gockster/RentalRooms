@@ -537,6 +537,7 @@ const translations = {
             airConditioning: "Κλιματισμός",
             privateBathroom: "Ιδιωτικό Μπάνιο",
             reception24: "Ρεσεψιόν 24/7",
+            bookNowCall: "📞 Κάντε Κράτηση Τώρα - Καλέστε +30 6955217820",
             // Common room elements
             showMore: "Περισσότερα",
             showLess: "Λιγότερα",
@@ -939,6 +940,7 @@ const translations = {
             propertyArea: "Area della Proprietà",
             attractions: "Attrazioni",
             restaurants: "Ristoranti",
+            bookNowCall: "📞 Prenota Ora - Chiama +30 6955217820",
             // Common room elements
             showMore: "Mostra di più",
             showLess: "Mostra di meno",
@@ -1242,6 +1244,7 @@ const translations = {
             propertyArea: "Lage der Unterkunft",
             attractions: "Sehenswürdigkeiten",
             restaurants: "Restaurants",
+            bookNowCall: "📞 Jetzt Buchen - Rufen Sie +30 6955217820 an",
             // Common room elements
             showMore: "Mehr anzeigen",
             showLess: "Weniger anzeigen",
@@ -1545,6 +1548,7 @@ const translations = {
             propertyArea: "Área de la Propiedad",
             attractions: "Atracciones",
             restaurants: "Restaurantes",
+            bookNowCall: "📞 Reservar Ahora - Llama +30 6955217820",
             // Common room elements
             showMore: "Mostrar más",
             showLess: "Mostrar menos",
@@ -1848,6 +1852,7 @@ const translations = {
             propertyArea: "منطقة العقار",
             attractions: "المعالم السياحية",
             restaurants: "المطاعم",
+            bookNowCall: "📞 احجز الآن - اتصل +30 6955217820",
             // Common room elements
             showMore: "عرض المزيد",
             showLess: "عرض أقل",
@@ -2147,7 +2152,7 @@ const translations = {
             showMore: "Voir Plus",
             showLess: "Voir Moins",
             more: "plus",
-            forBookingCall: "Pour réserver, contactez-nous au téléphone ou à l'email atdimitriadou@gmail.com",
+            forBookingCall: "Pour réserver, appelez-nous au",
             pricing: "Tarifs",
             size: "Taille",
             roomType: "Type de Chambre",
