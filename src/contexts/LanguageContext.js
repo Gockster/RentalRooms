@@ -13,7 +13,7 @@ const translations = {
             subDescription: "Comfortable stays, affordable prices.",
             mobile: "📱 Mobile",
             maps: "🗺️ Maps",
-            email: "📧 atdimitriadou@gmail.com",
+            email: "📧 nanasroomspc@gmail.com",
             language: "🌐 EN",
             selectLang: "Select Language",
             callUs: "Call us",
@@ -401,7 +401,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Contact Info",
-                email: "atdimitriadou@gmail.com",
+                email: "nanasroomspc@gmail.com",
                 phone: "+30 6955217820",
                 address: "Mykonos Chora",
                 bookingAries: "Book Aries Suite on Booking.com",
@@ -505,7 +505,7 @@ const translations = {
             subDescription: "Soggiorni confortevoli, prezzi convenienti.",
             mobile: "📱 Κινητό",
             maps: "🗺️ Χάρτες",
-            email: "📧 atdimitriadou@gmail.com",
+            email: "📧 nanasroomspc@gmail.com",
             language: "🌐 ΕΛ",
             selectLang: "Επιλογή Γλώσσας",
             callUs: "Καλέστε μας",
@@ -577,7 +577,7 @@ const translations = {
                 {
                     id: "aries-suite",
                     title: "Aries Suite",
-                    description: "Κομψή σουίτα εμπνευσμένη από τον αστερισμό του Κριού."
+                    description: "Κομψή σουίτα εμπνευσμένη από τον αστερισμό του Κριού. Αριθμός αδείας: 00001625992"
                 },
                 {
                     id: "venus-suite",
@@ -983,7 +983,7 @@ const translations = {
             subDescription: "Estancias cómodas, precios asequibles.",
             mobile: "📱 Cellulare",
             maps: "🗺️ Mappe",
-            email: "📧 atdimitriadou@gmail.com",
+            email: "📧 nanasroomspc@gmail.com",
             language: "🌐 IT",
             selectLang: "Seleziona Lingua",
             callUs: "Chiamaci",
