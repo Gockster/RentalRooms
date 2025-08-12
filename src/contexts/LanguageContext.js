@@ -881,7 +881,7 @@ const translations = {
             },
             contactInfo: {
                 title: "Στοιχεία Επικοινωνίας",
-                email: "atdimitriadou@gmail.com",
+                email: "nanasroomspc@gmail.com",
                 phone: "+30 6955217820",
                 address: "Μύκονος Χώρα",
                 bookingAries: "Κράτηση Aries Suite στο Booking.com",
@@ -1379,7 +1379,7 @@ const translations = {
             subDescription: "Séjours confortables, prix abordables.",
             mobile: "📱 Handy",
             maps: "🗺️ Karten",
-            email: "📧 atdimitriadou@gmail.com",
+            email: "📧 nanasroomspc@gmail.com",
             language: "🌐 DE",
             selectLang: "Sprache Wählen",
             callUs: "Rufen Sie uns an",
