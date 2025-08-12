@@ -110,15 +110,25 @@ export default function Navbar() {
             </div>
           </li>
           <li className="navbar-item">
-            <a 
-              href="tel:+306955217820" 
-              className="nav-link"
-              title={t.navbar.callUs}
-            >
-              📱 +30 6955217820
-              <br />
-              📱 +30 6947203554
-            </a>
+            {/* Render both mobile numbers if available */}
+            {t.footer?.contactInfo?.phone && (
+              <a 
+                href={`tel:${t.footer.contactInfo.phone.replace(/[^+\d]/g, '')}`}
+                className="nav-link"
+                title={t.navbar.callUs}
+              >
+                📱 {t.footer.contactInfo.phone}
+              </a>
+            )}
+            {t.footer?.contactInfo?.phone2 && (
+              <a 
+                href={`tel:${t.footer.contactInfo.phone2.replace(/[^+\d]/g, '')}`}
+                className="nav-link"
+                title={t.navbar.callUs}
+              >
+                📱 {t.footer.contactInfo.phone2}
+              </a>
+            )}
           </li>
           <li className="navbar-item">
             <a 
