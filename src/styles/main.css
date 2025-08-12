@@ -156,6 +156,18 @@
 
 /* Navbar Mobile Responsive */
 @media (max-width: 768px) {
+  .language-selector {
+    margin-bottom: 0;
+  }
+  .language-selector .dropdown {
+    margin-bottom: 0;
+  }
+  .navbar-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .navbar-item .nav-link[href^="tel"],
   .navbar-item .nav-link[href*="maps"] {
     background: #e3eafc !important;
@@ -1345,8 +1357,8 @@
     height: 320px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 8px;
-    padding: 8px;
+    gap: 2px;
+    padding: 2px;
   }
   
   .tile-1 {
@@ -1443,9 +1455,15 @@
   }
   
   .mosaic-collage-board {
-    width: 300px;
-    height: 200px;
+      width: 300px;
+      height: 200px;
+      gap: 1px;
+      padding: 1px;
   }
+    .welcome-collage {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
 }
 
 /* ============================================
