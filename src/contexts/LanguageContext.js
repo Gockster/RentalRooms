@@ -120,7 +120,8 @@ const translations = {
             }
         },
         // Room Details
-        roomDetails: {
+    licenseLabel: "Lizenznummer:",
+    roomDetails: {
             aboutProperty: "About This Property",
             suiteSpecifications: "Suite Specifications",
             guests: "Guests",
@@ -618,7 +619,8 @@ const translations = {
             }
         },
         // Room Details
-        roomDetails: {
+    licenseLabel: "Numéro de licence:",
+    roomDetails: {
             aboutProperty: "Σχετικά με το Ακίνητο",
             propertyArea: "Περιοχή Καταλύματος",
             suiteSpecifications: "Προδιαγραφές Σουίτας",
@@ -1373,8 +1375,9 @@ const translations = {
         }
     },
     de: {
-        // Navbar
-        navbar: {
+    licenseLabel: "Lizenznummer:",
+    // Navbar
+    navbar: {
             brandName: "Nana's Rooms sur Booking",
             description: "Votre partenaire de confiance pour trouver l'hébergement parfait",
             subDescription: "Séjours confortables, prix abordables.",
@@ -2558,8 +2561,9 @@ const translations = {
         }
     },
     fr: {
-        // Navbar
-        navbar: {
+    licenseLabel: "Numéro de licence:",
+    // Navbar
+    navbar: {
             brandName: "Nana's Rooms on Booking",
             mobile: "📱 Mobile",
             maps: "🗺️ Cartes",
