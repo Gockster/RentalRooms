@@ -112,6 +112,8 @@ export default function RoomGallery() {
                 className="room-gallery-card"
                 onMouseEnter={() => setHoveredCard(room.id)}
                 onMouseLeave={() => setHoveredCard(null)}
+                onClick={() => handleRoomClick(room.id)}
+                style={{ cursor: 'pointer' }}
               >
                 <div className="room-gallery-image-container">
                   <img src={room.image} alt={t.gallery.rooms[room.id - 1]?.title || room.titleKey} className="room-gallery-image" />
@@ -135,7 +137,9 @@ export default function RoomGallery() {
                   <div className="room-gallery-button-container">
                     <button 
                       className="room-gallery-view-button"
-                      onClick={() => handleRoomClick(room.id)}
+                      // onClick is not needed here since the card is clickable
+                      tabIndex={-1}
+                      style={{ pointerEvents: 'none' }}
                     >
                       {t.gallery.viewButton}
                     </button>

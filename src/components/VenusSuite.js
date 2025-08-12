@@ -514,9 +514,8 @@ export default function VenusSuite() {
               <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
                 {t.roomDetails.venusFAQ.title}
               </h2>
-
               <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', maxWidth: '800px', margin: '0 auto' }}>
-                {t.roomDetails.venusFAQ.items.map((faq, index) => (
+                {t.roomDetails.venusFAQ.questions.map((faq, index) => (
                   <div 
                     key={index}
                     style={{ 
