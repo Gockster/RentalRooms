@@ -190,6 +190,8 @@ export default function AriesSuite() {
                   }}>
                     <a href="tel:+306955217820" className="btn btn-primary btn-large" style={{ textDecoration: 'none', color: 'white' }}>
                       {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
+                      <br />
+                      {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6947203554
                     </a>
                   </div>
                 </div>
@@ -312,6 +314,8 @@ export default function AriesSuite() {
                   <div className="room-actions">
                     <a href="tel:+306955217820" className="btn btn-primary btn-large" style={{ textDecoration: 'none', color: 'white' }}>
                       {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
+                      <br />
+                      {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6947203554
                     </a>
                   </div>
                 )}

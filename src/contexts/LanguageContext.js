@@ -155,7 +155,7 @@ const translations = {
             support24: "24/7 Support",
             location: "Location",
             mykonosTown: "Mykonos Town",
-            bookNowCall: "📞 Book Now - Call +30 6955217820",
+            bookNowCall: "📞 Book Now - Call +30 6955217820 or +30 6947203554",
             // Common room elements
             showMore: "Show More",
             showLess: "Show Less",
@@ -404,6 +404,7 @@ const translations = {
                 title: "Contact Info",
                 email: "nanasroomspc@gmail.com",
                 phone: "+30 6955217820",
+                phone2: "+30 6947203554",
                 address: "Mykonos Chora",
                 bookingAries: "Book Aries Suite on Booking.com",
                 bookingVenus: "Book Venus Suite on Booking.com",
@@ -630,7 +631,7 @@ const translations = {
             airConditioning: "Κλιματισμός",
             privateBathroom: "Ιδιωτικό Μπάνιο",
             reception24: "Ρεσεψιόν 24/7",
-            bookNowCall: "📞 Κάντε Κράτηση Τώρα - Καλέστε +30 6955217820",
+            bookNowCall: "📞 Κάντε Κράτηση Τώρα - Καλέστε +30 6955217820 ή +30 6947203554",
             // Common room elements
             showMore: "Περισσότερα",
             showLess: "Λιγότερα",
@@ -1125,7 +1126,7 @@ const translations = {
             propertyArea: "Area della Proprietà",
             attractions: "Attrazioni",
             restaurants: "Ristoranti",
-            bookNowCall: "📞 Prenota Ora - Chiama +30 6955217820",
+            bookNowCall: "📞 Prenota Ora - Chiama +30 6955217820 o +30 6947203554",
             // Common room elements
             showMore: "Mostra di più",
             showLess: "Mostra di meno",
@@ -1518,7 +1519,7 @@ const translations = {
             propertyArea: "Lage der Unterkunft",
             attractions: "Sehenswürdigkeiten",
             restaurants: "Restaurants",
-            bookNowCall: "📞 Jetzt Buchen - Rufen Sie +30 6955217820 an",
+            bookNowCall: "📞 Jetzt Buchen - Rufen Sie +30 6955217820 oder +30 6947203554 an",
             // Common room elements
             showMore: "Mehr anzeigen",
             showLess: "Weniger anzeigen",
@@ -1910,7 +1911,7 @@ const translations = {
             propertyArea: "Área de la Propiedad",
             attractions: "Atracciones",
             restaurants: "Restaurantes",
-            bookNowCall: "📞 Reservar Ahora - Llama +30 6955217820",
+            bookNowCall: "📞 Reservar Ahora - Llama +30 6955217820 o +30 6947203554",
             // Common room elements
             showMore: "Mostrar más",
             showLess: "Mostrar menos",
@@ -2301,7 +2302,7 @@ const translations = {
             propertyArea: "منطقة العقار",
             attractions: "المعالم السياحية",
             restaurants: "المطاعم",
-            bookNowCall: "📞 احجز الآن - اتصل +30 6955217820",
+            bookNowCall: "📞 احجز الآن - اتصل +30 6955217820 أو +30 6947203554",
             // Common room elements
             showMore: "عرض المزيد",
             showLess: "عرض أقل",
@@ -2683,7 +2684,7 @@ const translations = {
             support24: "Support 24/7",
             location: "Emplacement",
             mykonosTown: "Ville de Mykonos",
-            bookNowCall: "📞 Réserver Maintenant - Appelez +30 6955217820",
+            bookNowCall: "📞 Réserver Maintenant - Appelez +30 6955217820 ou +30 6947203554",
             // Common room elements
             showMore: "Voir Plus",
             showLess: "Voir Moins",

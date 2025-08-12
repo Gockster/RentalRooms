@@ -37,6 +37,9 @@ export default function Footer() {
               <div className="contact-info">
                 <p className="contact-item">📧 {t.footer.contactInfo.email}</p>
                 <p className="contact-item">📞 {t.footer.contactInfo.phone}</p>
+                {t.footer.contactInfo.phone2 && (
+                  <p className="contact-item">📞 {t.footer.contactInfo.phone2}</p>
+                )}
                 <p className="contact-item">📍 {t.footer.contactInfo.address}</p>
               </div>
             </div>

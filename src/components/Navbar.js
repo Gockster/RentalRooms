@@ -116,6 +116,8 @@ export default function Navbar() {
               title={t.navbar.callUs}
             >
               📱 +30 6955217820
+              <br />
+              📱 +30 6947203554
             </a>
           </li>
           <li className="navbar-item">
