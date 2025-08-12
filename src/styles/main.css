@@ -170,16 +170,16 @@
   }
   .navbar-item .nav-link[href^="tel"],
   .navbar-item .nav-link[href*="maps"] {
-    background: #3498db !important;
-    color: #fff !important;
+    background: #e3eafc !important;
+    color: #1a237e !important;
     font-weight: 600;
-    border: none !important;
-    box-shadow: none !important;
+    border: 1.5px solid #90caf9;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
   }
   .navbar-item .nav-link[href^="tel"]:hover,
   .navbar-item .nav-link[href*="maps"]:hover {
-    background: #2980b9 !important;
-    color: #fff !important;
+    background: #bbdefb !important;
+    color: #1a237e !important;
   }
   .navbar-container {
     padding: 1rem;
