@@ -858,7 +858,7 @@ const translations = {
         },
         // Footer
         footer: {
-            brandName: "Nana's Rooms στην Booking",
+            brandName: "Nana's Rooms στη Booking",
             description: "Ihr vertrauenswürdiger Partner für die perfekte Unterkunft",
             subDescription: "Komfortable Aufenthalte, günstige Preise.",
             description: "Ο αξιόπιστος συνεργάτης σας για την εύρεση του τέλειου καταλύματος",
