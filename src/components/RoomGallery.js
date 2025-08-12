@@ -130,7 +130,7 @@ export default function RoomGallery() {
                     {renderStars(room.rating)}
                     <span className="room-gallery-rating-text">{room.rating}</span>
                   </div>
-                  <p className="room-gallery-description">{t.gallery.rooms[room.id - 1]?.description || room.descriptionKey}</p>
+                  {/* Description removed for cleaner card look */}
                   <div className="room-gallery-amenities">
                     {room.amenities.map((amenity, index) => (
                       <span key={index} className="room-gallery-amenity-tag">
