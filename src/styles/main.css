@@ -58,6 +58,9 @@
 .language-selector {
   position: relative;
   display: inline-block;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .lang-button {
@@ -157,21 +160,34 @@
     padding: 1rem;
     gap: 1rem;
   }
-  
   .navbar-brand {
     padding-left: 0;
   }
-  
   .navbar-links {
     gap: 1rem;
     padding-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+  .language-selector {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .language-selector .dropdown {
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
   .lang-button {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
-  
   .nav-link {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;

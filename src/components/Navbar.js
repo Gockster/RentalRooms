@@ -30,23 +30,23 @@ export default function Navbar() {
               background: '#fff' 
             }} 
           />
+          {/* Mobile Hamburger Menu - now next to logo */}
+          <button 
+            className="mobile-menu-toggle"
+            onClick={toggleMobileMenu}
+            style={{
+              display: 'none',
+              background: 'none',
+              border: 'none',
+              fontSize: '24px',
+              cursor: 'pointer',
+              color: '#333',
+              marginLeft: 10
+            }}
+          >
+            {showMobileMenu ? '✕' : '☰'}
+          </button>
         </div>
-        
-        {/* Mobile Hamburger Menu */}
-        <button 
-          className="mobile-menu-toggle"
-          onClick={toggleMobileMenu}
-          style={{
-            display: 'none',
-            background: 'none',
-            border: 'none',
-            fontSize: '24px',
-            cursor: 'pointer',
-            color: '#333'
-          }}
-        >
-          {showMobileMenu ? '✕' : '☰'}
-        </button>
 
         <ul className={`navbar-links ${showMobileMenu ? 'mobile-active' : ''}`}>
           <li className="navbar-item">
