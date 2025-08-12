@@ -316,7 +316,7 @@ export default function VenusSuite() {
                     <span style={{ color: '#666' }}>550 μ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Tholos Tomb of Mykonos' : 'Θολωτοσ Ταφοσ Μυκονου'}</span>
+                    <span>{currentLanguage === 'en' ? 'Tholos Tomb of Mykonos' : 'Θολωτός Τάφος Μυκόνου'}</span>
                     <span style={{ color: '#666' }}>1,6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
@@ -324,7 +324,7 @@ export default function VenusSuite() {
                     <span style={{ color: '#666' }}>5 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span>{currentLanguage === 'en' ? 'Neolithic Settlement of Ftelia Mykonos' : 'Νεολιθικοσ Οικισμοσ Φτελιασ Μυκονου'}</span>
+                    <span>{currentLanguage === 'en' ? 'Neolithic Settlement of Ftelia Mykonos' : 'Νεολιθικός Οικισμός Φτελιάς Μυκόνου'}</span>
                     <span style={{ color: '#666' }}>6 χλμ.</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
