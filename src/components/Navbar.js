@@ -40,7 +40,7 @@ export default function Navbar() {
               border: 'none',
               fontSize: '24px',
               cursor: 'pointer',
-              color: '#333',
+              color: '#fff', // Set to white
               marginLeft: 10
             }}
           >
@@ -137,6 +137,7 @@ export default function Navbar() {
         @media (max-width: 768px) {
           .mobile-menu-toggle {
             display: block !important;
+            color: #fff !important;
           }
           
           .navbar-links {
