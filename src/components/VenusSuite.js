@@ -195,6 +195,9 @@ export default function VenusSuite() {
               <div className="room-info">
                 <h2 className="section-title">
                   {t.roomDetails?.aboutProperty || 'About This Property'}
+                  <span className="room-license" style={{marginLeft: 12, fontSize: 13, color: '#888', fontWeight: 500, verticalAlign: 'middle'}}>
+                    {t.licenseLabel} 00001610166
+                  </span>
                 </h2>
                 
                 {/* Property Description */}

@@ -6,6 +6,7 @@ const LanguageContext = createContext();
 // Language texts for all components
 const translations = {
     en: {
+    licenseLabel: "License number:",
         // Navbar
         navbar: {
             brandName: "Nana's Rooms en Booking",
@@ -498,6 +499,7 @@ const translations = {
         }
     },
     gr: {
+    licenseLabel: "Αριθμός αδείας:",
         // Navbar
         navbar: {
             brandName: "Nana's Rooms su Booking",
@@ -976,6 +978,7 @@ const translations = {
         }
     },
     it: {
+    licenseLabel: "Numero di licenza:",
         // Navbar
         navbar: {
             brandName: "Nana's Rooms en Booking",
@@ -1762,6 +1765,7 @@ const translations = {
         }
     },
     es: {
+    licenseLabel: "Número de licencia:",
         // Navbar
         navbar: {
             brandName: "Nana's Rooms on Booking",
