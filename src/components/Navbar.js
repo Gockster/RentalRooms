@@ -161,8 +161,8 @@ export default function Navbar() {
           }
           
           .navbar-item {
-            margin: 1rem 0;
-            width: 90%;
+            margin: 0;
+            width: 100%;
             text-align: center;
           }
           
