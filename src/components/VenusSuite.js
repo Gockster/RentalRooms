@@ -144,70 +144,7 @@ export default function VenusSuite() {
                   </div>
                 )}
               </div>
-              {enlargedImage && (
-                <div className="lightbox-overlay" style={{
-                  position: 'fixed',
-                  top: 0,
-                  left: 0,
-                  width: '100vw',
-                  height: '100vh',
-                  background: 'rgba(0,0,0,0.8)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  zIndex: 1000
-                }} onClick={() => setEnlargedImage(null)}>
-                  {/* Prev arrow */}
-                  <button onClick={goToPrev} style={{
-                    position: 'absolute',
-                    left: 32,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    fontSize: 48,
-                    color: '#fff',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    zIndex: 1001
-                  }} aria-label="Previous">‹</button>
-                  {/* Next arrow */}
-                  <button onClick={goToNext} style={{
-                    position: 'absolute',
-                    right: 32,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    fontSize: 48,
-                    color: '#fff',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    zIndex: 1001
-                  }} aria-label="Next">›</button>
-                  <img src={enlargedImage} alt="Enlarged" className="enlarged-image" />
-                  <button onClick={() => setEnlargedImage(null)} style={{
-                    position: 'absolute',
-                    top: 32,
-                    right: 32,
-                    fontSize: 32,
-                    color: '#fff',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    zIndex: 1001
-                  }} aria-label="Close">×</button>
-                  <div style={{
-                    position: 'absolute',
-                    bottom: 48,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    zIndex: 1002
-                  }}>
-                    <a href="tel:+306955217820" className="btn btn-primary btn-large" style={{ textDecoration: 'none', color: 'white' }}>
-                      {t.roomDetails?.forBookingCall || 'For booking call us on'} <span role="img" aria-label="phone">📞</span> +30 6955217820
-                    </a>
-                  </div>
-                </div>
-              )}
+  {/* FAQ section fully removed as requested */}
               <div className="room-facilities-hero">
                 <h3>{t.roomDetails?.facilities || 'Facilities'}</h3>
                 <div className="amenities-grid">
@@ -501,83 +438,7 @@ export default function VenusSuite() {
           </div>
         </div>
 
-        {/* FAQ Section - Full Width */}
-        {t.roomDetails?.venusFAQ && (
-          <div style={{
-            width: '100vw',
-            marginLeft: 'calc(-50vw + 50%)',
-            backgroundColor: '#ffffff',
-            padding: '60px 20px',
-            borderTop: '1px solid #e0e0e0'
-          }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-              <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center', color: '#333' }}>
-                {t.roomDetails.venusFAQ.title}
-              </h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', maxWidth: '800px', margin: '0 auto' }}>
-                {t.roomDetails.venusFAQ.questions.map((faq, index) => (
-                  <div 
-                    key={index}
-                    style={{ 
-                      backgroundColor: '#f8f9fa',
-                      borderRadius: '12px',
-                      overflow: 'hidden',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-                    }}
-                  >
-                    <button
-                      onClick={() => setExpandedFAQ(expandedFAQ === index ? null : index)}
-                      style={{
-                        width: '100%',
-                        padding: '20px 25px',
-                        backgroundColor: 'transparent',
-                        border: 'none',
-                        cursor: 'pointer',
-                        textAlign: 'left',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        fontSize: '18px',
-                        fontWeight: '600',
-                        color: '#333',
-                        transition: 'background-color 0.3s ease'
-                      }}
-                      onMouseEnter={(e) => e.target.style.backgroundColor = '#e9ecef'}
-                      onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
-                    >
-                      <span>{faq.question}</span>
-                      <span style={{ 
-                        fontSize: '24px', 
-                        color: '#007bff',
-                        transform: expandedFAQ === index ? 'rotate(180deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.3s ease'
-                      }}>
-                        ▼
-                      </span>
-                    </button>
-                    
-                    {expandedFAQ === index && (
-                      <div style={{
-                        padding: '0 25px 25px 25px',
-                        backgroundColor: '#ffffff',
-                        borderTop: '1px solid #e0e0e0'
-                      }}>
-                        <p style={{
-                          fontSize: '16px',
-                          lineHeight: '1.6',
-                          color: '#666',
-                          margin: '15px 0 0 0'
-                        }}>
-                          {faq.answer}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+  {/* FAQ section fully removed as requested */}
 
         {/* VENUS Suite Amenities Section - Full Width */}
         <div style={{
